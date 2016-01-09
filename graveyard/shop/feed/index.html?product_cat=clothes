@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Mito &#124; Elegant Multi-Purpose &#38; Shop Theme &#187; Products</title>
+	<atom:link href="http://demo.themesholic.com/mito/shop/feed/?product_cat=clothes" rel="self" type="application/rss+xml" />
+	<link>http://demo.themesholic.com/mito</link>
+	<description>Mito &#124; Elegant Multi-Purpose &#38; Shop Theme</description>
+	<lastBuildDate>Mon, 12 Jan 2015 12:56:08 +0000</lastBuildDate>
+	<language>en-US</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.0.9</generator>
+	<item>
+		<title>Chino Cotton Short</title>
+		<link>http://demo.themesholic.com/mito/product/chino-cotton-short/</link>
+		<comments>http://demo.themesholic.com/mito/product/chino-cotton-short/#comments</comments>
+		<pubDate>Fri, 07 Jun 2013 11:35:18 +0000</pubDate>
+		<dc:creator><![CDATA[ThemesHolic]]></dc:creator>
+		
+		<guid isPermaLink="false">http://demo2.woothemes.com/woocommerce/?post_type=product&#038;p=90</guid>
+		<description><![CDATA[Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.]]></description>
+				<content:encoded><![CDATA[<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://demo.themesholic.com/mito/product/chino-cotton-short/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Chino Short</title>
+		<link>http://demo.themesholic.com/mito/product/chino-short/</link>
+		<comments>http://demo.themesholic.com/mito/product/chino-short/#comments</comments>
+		<pubDate>Fri, 07 Jun 2013 11:36:34 +0000</pubDate>
+		<dc:creator><![CDATA[ThemesHolic]]></dc:creator>
+		
+		<guid isPermaLink="false">http://demo2.woothemes.com/woocommerce/?post_type=product&#038;p=93</guid>
+		<description><![CDATA[Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.]]></description>
+				<content:encoded><![CDATA[<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://demo.themesholic.com/mito/product/chino-short/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Fit Smart Pants</title>
+		<link>http://demo.themesholic.com/mito/product/fit-smart-pants/</link>
+		<comments>http://demo.themesholic.com/mito/product/fit-smart-pants/#comments</comments>
+		<pubDate>Fri, 07 Jun 2013 11:34:14 +0000</pubDate>
+		<dc:creator><![CDATA[ThemesHolic]]></dc:creator>
+		
+		<guid isPermaLink="false">http://demo2.woothemes.com/woocommerce/?post_type=product&#038;p=87</guid>
+		<description><![CDATA[Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.]]></description>
+				<content:encoded><![CDATA[<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://demo.themesholic.com/mito/product/fit-smart-pants/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Skinny Fit Pants</title>
+		<link>http://demo.themesholic.com/mito/product/skinny-fit-pants/</link>
+		<comments>http://demo.themesholic.com/mito/product/skinny-fit-pants/#comments</comments>
+		<pubDate>Fri, 07 Jun 2013 11:33:05 +0000</pubDate>
+		<dc:creator><![CDATA[ThemesHolic]]></dc:creator>
+		
+		<guid isPermaLink="false">http://demo2.woothemes.com/woocommerce/?post_type=product&#038;p=83</guid>
+		<description><![CDATA[Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.]]></description>
+				<content:encoded><![CDATA[<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://demo.themesholic.com/mito/product/skinny-fit-pants/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Straight Fit Pants</title>
+		<link>http://demo.themesholic.com/mito/product/straight-fit-pants/</link>
+		<comments>http://demo.themesholic.com/mito/product/straight-fit-pants/#comments</comments>
+		<pubDate>Fri, 07 Jun 2013 11:37:23 +0000</pubDate>
+		<dc:creator><![CDATA[ThemesHolic]]></dc:creator>
+		
+		<guid isPermaLink="false">http://demo2.woothemes.com/woocommerce/?post_type=product&#038;p=96</guid>
+		<description><![CDATA[Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.]]></description>
+				<content:encoded><![CDATA[<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://demo.themesholic.com/mito/product/straight-fit-pants/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Super Skinny Jeans</title>
+		<link>http://demo.themesholic.com/mito/product/super-skinny-jeans/</link>
+		<comments>http://demo.themesholic.com/mito/product/super-skinny-jeans/#comments</comments>
+		<pubDate>Fri, 07 Jun 2013 11:38:12 +0000</pubDate>
+		<dc:creator><![CDATA[ThemesHolic]]></dc:creator>
+		
+		<guid isPermaLink="false">http://demo2.woothemes.com/woocommerce/?post_type=product&#038;p=99</guid>
+		<description><![CDATA[Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.]]></description>
+				<content:encoded><![CDATA[<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://demo.themesholic.com/mito/product/super-skinny-jeans/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>
