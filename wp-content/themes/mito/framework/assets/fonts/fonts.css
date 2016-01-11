@@ -1463,7 +1463,7 @@ a .icon-flip-vertical:before {
   font-style: normal;
 }
 [class^="lineicon-"]:before, [class*=" lineicon-"]:before,
-[class^="lineicon-"]:after, [class*=" lineicon-"]:after {   
+[class^="lineicon-"]:after, [class*=" lineicon-"]:after {
   font-family: 'flaticon';font-style:normal;font-weight:normal;speak:none;display:inline-block;text-decoration:inherit;width:1em;height:1em;font-size:1em;text-align:center;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;text-rendering:optimizeLegibility
 }
 
@@ -1647,13 +1647,13 @@ font-family:'typicons';font-style:normal;font-weight:normal;speak:none;display:i
   }
 }
 */
- 
+
  [class^="entypo-"]:before, [class*=" entypo-"]:before {
   font-family: "entypo";
   font-style:normal;font-weight:normal;speak:none;display:inline-block;text-decoration:inherit;width:1em;height:1em;font-size:1em;text-align:center;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;text-rendering:optimizeLegibility
 
 }
- 
+
 .entypo-note:before { content: '\e800'; } /* '' */
 .entypo-logo-db:before { content: '\e91b'; } /* '' */
 .entypo-music:before { content: '\e802'; } /* '' */
