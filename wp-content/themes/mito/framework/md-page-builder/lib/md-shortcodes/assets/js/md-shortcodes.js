@@ -32,8 +32,8 @@ MD_SHORTCODES.pageHeader = function(){
 }
 
 MD_SHORTCODES.parallax = function(){
-	
-	$('body[data-device="desktop"][data-css3-animations="enabled"] [data-type]').each(function() {	
+
+	$('body[data-device="desktop"][data-css3-animations="enabled"] [data-type]').each(function() {
 		$(this).data('offsetY', parseInt($(this).attr('data-offsetY')));
 		$(this).data('Xposition', $(this).attr('data-Xposition'));
 		$(this).data('speed', $(this).attr('data-speed'));
@@ -45,7 +45,7 @@ MD_SHORTCODES.parallax = function(){
 	    $(window).scroll(function() {
 			//if ( ($window.scrollTop() + $window.height()) > (topOffset) &&
 			//	 ( (topOffset + $self.height()) > $window.scrollTop() ) ) {
-				var yPos = -($(window).scrollTop() / $self.data('speed')); 
+				var yPos = -($(window).scrollTop() / $self.data('speed'));
 				if ($self.data('offsetY')) {
 					yPos += $self.data('offsetY');
 				}
@@ -54,9 +54,9 @@ MD_SHORTCODES.parallax = function(){
 				/*
 				$('body[data-device="desktop"][data-css3-animations="enabled"] [data-type="sprite"]', $self).each(function() {
 					var $sprite = $(this);
-					var yPos = -($(window).scrollTop() / $sprite.data('speed'));					
+					var yPos = -($(window).scrollTop() / $sprite.data('speed'));
 					var coords = $sprite.data('Xposition') + ' ' + (yPos + $sprite.data('offsetY')) + 'px';
-					$sprite.css({ backgroundPosition: coords });													
+					$sprite.css({ backgroundPosition: coords });
 				});
 				*/
 			// };
@@ -167,21 +167,21 @@ MD_SHORTCODES.alerts = function(){
 }
 
 
-MD_SHORTCODES.tooltips = function(){ 
+MD_SHORTCODES.tooltips = function(){
     $('[data-toggle=tooltip]').tooltip();
 };
 
 
 
 MD_SHORTCODES.counters = function(){
-	
+
 	$('.md-counter .number').scrolledIntoView().on('scrolledin', function () {
 		if(!$(this).hasClass('end')){
-			var $from = $(this).data('from'); 
-			var $to = $(this).data('to'); 
-			var $speed = $(this).data('speed'); 
+			var $from = $(this).data('from');
+			var $to = $(this).data('to');
+			var $speed = $(this).data('speed');
 			var $delay = $(this).data('delay');
-			
+
 			$(this).delay($delay).queue(function(){
 				$(this).addClass('end').countTo({
 					from: $from,
@@ -195,7 +195,7 @@ MD_SHORTCODES.counters = function(){
 
 }
 
-MD_SHORTCODES.carousel = function(){ 
+MD_SHORTCODES.carousel = function(){
     $('.md-carousel').each(function(){
     	var $items 		 = $(this).data('items');
     	var $navigation  = Boolean($(this).data('navigation'));
@@ -224,7 +224,7 @@ MD_SHORTCODES.socialShare = function(){
 	function sharePopup(url){
 		var width = 600;
 		var height = 400;
-	    
+
 	    var leftPosition, topPosition;
 	    leftPosition = (window.screen.width / 2) - ((width / 2) + 10);
 	    topPosition = (window.screen.height / 2) - ((height / 2) + 50);
@@ -289,7 +289,7 @@ MD_SHORTCODES.socialShare = function(){
 		} else {
 			$.getScript('http://assets.pinterest.com/js/pinit.js');
 		}
-	  
+
 	    //Google - Note that the google button will not show if you are opening the page from disk - it needs to be http(s)
 	    if (typeof (gapi) != 'undefined') {
 	        $(".g-plusone").each(function () {
@@ -324,12 +324,12 @@ MD_SHORTCODES.googleMaps = function(){
 			var $map_disable_doubleclick = $map.data('map-disable-doubleclick');
 			var $map_streetview = $map.data('map-streetview');
 
-			
-			
-			var latlng = new google.maps.LatLng($map_lat, $map_lon);			
-			var options = { 
+
+
+			var latlng = new google.maps.LatLng($map_lat, $map_lon);
+			var options = {
 				scrollwheel: $map_scroll,
-				draggable: $map_drag, 
+				draggable: $map_drag,
 				zoomControl: $map_zoom_control,
 				disableDoubleClickZoom: $map_disable_doubleclick,
 				zoom: $map_zoom,
@@ -351,9 +351,9 @@ MD_SHORTCODES.googleMaps = function(){
 					options.mapTypeId = google.maps.MapTypeId.TERRAIN;
 				break;
 			}
-			
+
 			var map = new google.maps.Map(document.getElementById($map_id), options);
-			
+
 			if($map_pin){
 				var marker = new google.maps.Marker({
 					position: latlng,
@@ -361,8 +361,8 @@ MD_SHORTCODES.googleMaps = function(){
 					title: $map_title,
 					icon: $map_pin
 				});
-			
-				if($map_info){		
+
+				if($map_info){
 					var infowindow = new google.maps.InfoWindow({
 						content: $map_info
 					});
@@ -371,14 +371,14 @@ MD_SHORTCODES.googleMaps = function(){
 					google.maps.event.addListener(marker, 'click', function() {
 		      			infowindow.open(map, marker);
 		    		});
-				}	
+				}
 			}
 		});
 	}
 }
 
 MD_SHORTCODES.progressBar = function(){
-	$('.md-progress-bar.progress-animate').scrolledIntoView().on('scrolledin', function () { 
+	$('.md-progress-bar.progress-animate').scrolledIntoView().on('scrolledin', function () {
 		var $progress_width = $(this).find('span.increment').data('percent');
 		$(this).find('span.increment').animate({
 			width : $progress_width+'%'
@@ -389,7 +389,7 @@ MD_SHORTCODES.progressBar = function(){
 
 
 	var chart = $(".md-progress-circular .circular");
-	
+
 	$(chart).each(function() {
 		var currentChart = $(this),
 			currentSize = currentChart.attr('data-size'),
@@ -421,14 +421,14 @@ MD_SHORTCODES.mediaElements = function(){
 	$('.section-video.no-audio video.hosted').mediaelementplayer({
 		videoVolume: 'horizontal',
 		startVolume: 0,
-		success: function (mediaElement, domObject) { 
+		success: function (mediaElement, domObject) {
         	mediaElement.play();
     	}
     });
 
 	$('.section-video.with-audio video.hosted').mediaelementplayer({
 		videoVolume: 'horizontal',
-		success: function (mediaElement, domObject) { 
+		success: function (mediaElement, domObject) {
         	mediaElement.play();
     	}
     });
@@ -443,7 +443,7 @@ MD_SHORTCODES.mediaElements = function(){
 			var header_height = 0;
 			var vid_w_orig = 1280;
 			var vid_h_orig = 720;
-		    
+
 		    var f = $(this).closest(".page-section").outerWidth();
 		    var e = $(this).closest(".page-section").outerHeight();
 		    $(this).width(f);
@@ -462,7 +462,7 @@ MD_SHORTCODES.mediaElements = function(){
 		    $(this).scrollTop(($(this).find("video").height() - (e)) / 2)
 		});
 	}
-	
+
 	$(window).resize(function(){
 		fitVideoBg();
 	}).resize();
@@ -514,15 +514,15 @@ MD_SHORTCODES.flexslider = function(){
 			slideshow	 : $slideshow,
 			slideshowSpeed : $speed,
 			keyboard	 : $keyboard
-		});	
-		
+		});
+
 	});
 
 	$('.section-slider .flexslider img').resizeToParent();
 }
 
 
-MD_SHORTCODES.backToTop = function(){	
+MD_SHORTCODES.backToTop = function(){
 	$(window).scroll(function(){
 		if($(window).scrollTop() > 400){
 			$('#md-back-top').addClass('show');
@@ -537,8 +537,22 @@ MD_SHORTCODES.backToTop = function(){
 		$('body, html').animate({scrollTop: 0 }, 800, 'easeInOutExpo');
 
 		return false;
-	})
-}
+	});
+
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: (target.offset().top - 70)
+        }, 800, 'easeInOutExpo');
+        return false;
+      }
+    }
+  });
+
+};
 
 
 MD_SHORTCODES.textRotator = function(){
@@ -549,7 +563,7 @@ MD_SHORTCODES.textRotator = function(){
 		$(this).fitText(1.1, { minFontSize: $font_min + 'px', maxFontSize: $font_max + 'px' });
 
 	});
-	
+
 	$(".md-rotator .rotator").each(function(){
     	var $rotate_animation = ($(this).parent('.md-rotator').data('rotate-animation')) ? $(this).parent('.md-rotator').data('rotate-animation') : 'fade';
     	var $rotate_speed = ($(this).parent('.md-rotator').data('rotate-speed')) ? $(this).parent('.md-rotator').data('rotate-speed') : 1500;
