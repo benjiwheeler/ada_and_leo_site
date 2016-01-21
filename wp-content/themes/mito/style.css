@@ -7709,3 +7709,9 @@ footer .widget_md_widget_recent_posts li img{
 		left: 75px;
 	}
 }
+
+
+.clearfix {
+    clear: both;
+}
+
