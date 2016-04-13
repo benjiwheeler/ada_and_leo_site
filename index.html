@@ -682,7 +682,7 @@ schedule availability</a>.</p>
                           <h4>{{course.session}} Session</h4>
                           <dl class="dl-horizontal">
                             <dt>Title</dt>
-                            <dd style="color: #{{deterministicWebColor("title")}}">{{course.title}}
+                            <dd ng-style='{"color": deterministicWebColor("title")}'>{{course.title}}
                             </dd>
                             <dt>Eligible students</dt>
                             <dd style="color: #{{deterministicWebColor("eligible")}}">{{course.eligible}}
@@ -740,7 +740,7 @@ schedule availability</a>.</p>
                           <th>Enroll</th>
                         </tr>
                         <tr>
-                          <td style="color: #{{deterministicWebColor("title")}}">{{course.title}}
+                          <td ng-style='{"color": deterministicWebColor("title")}'>{{course.title}}
                           </td>
                           <td style="color: #{{deterministicWebColor("eligible")}}">{{course.eligible}}
                           </td>
