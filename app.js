@@ -30,12 +30,18 @@ var RandomSeeded = function(seed) {
       seedInt *= constant;
       seedInt += prime;
       seedInt = Math.round(seedInt); // make sure it's still an integer!
-      if (min === undefined || max === undefined) {
-        // if 'min' and 'max' are not provided, return random number between 0 & 1
-        return (seedInt % maximum) / maximum;
-      } else {
-        return min+seedInt%maximum/maximum*(max-min);
+      var zeroToOne = (seedInt % maximum) / maximum;
+      // if 'min' and 'max' are provided, return float between min and max,
+      // exclusive of max. if only min is provided, treat it like max,
+      // with min of 0.
+      if (min !== undefined) {
+        if (max === undefined) {
+          max = min;
+          min = 0;
+        }
+        return min + (zeroToOne*(max-min));
       }
+      return zeroToOne;
     }
   };
 };
@@ -44,7 +50,7 @@ var webColors = ["337ab7", "5cb85c", "AA04DC", "45B2D3", "337ab7", "d9534f"];
 
 function deterministicWebColor(seed) {
   var rs = new RandomSeeded(seed);
-  var rv = rs.rand(0, webColors.length - 1);
+  var rv = Math.floor(rs.rand(webColors.length));
   console.log("seed is "+seed+", rand val is "+rv);
   return webColors[rv];
 }
