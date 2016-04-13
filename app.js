@@ -62,6 +62,7 @@ app.controller('CoursesController', ['$scope', '$http', function($scope, $http) 
   $scope.deterministicWebColor = deterministicWebColor;
 
   $http.get('data.json').success(function(data) {
+    alert("success a");
     $scope.courses = data.courses;
   });
 
