@@ -52,7 +52,7 @@ function deterministicWebColor(seed) {
   var rs = new RandomSeeded(seed);
   var rv = Math.floor(rs.rand(webColors.length));
   console.log("seed is "+seed+", rand val is "+rv);
-  return webColors[rv];
+  return "#" + webColors[rv];
 }
 
 var app = angular.module('AdaLeoApp', ['ngSanitize']);
