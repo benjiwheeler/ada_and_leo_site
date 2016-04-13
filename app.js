@@ -44,8 +44,9 @@ var webColors = ["337ab7", "5cb85c", "AA04DC", "45B2D3", "337ab7", "#d9534f"];
 
 function deterministicWebColor(seed) {
   var rs = new RandomSeeded(seed);
-  var whichColor = rs.rand(0, webColors.length - 1);
-  return webColors[whichColor];
+  var rv = rs.rand(0, webColors.length - 1);
+  console.log("seed is "+seed+", rand val is "+rv);
+  return webColors[rv];
 }
 
 var app = angular.module('AdaLeoApp', ['ngSanitize']);

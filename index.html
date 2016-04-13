@@ -740,45 +740,45 @@ schedule availability</a>.</p>
                           <th>Enroll</th>
                         </tr>
                         <tr>
-                            <td style="color: #{{deterministicWebColor("title")}}">{{course.title}}
-                            </td>
-                            <td style="color: #{{deterministicWebColor("eligible")}}">{{course.eligible}}
-                            </td>
-                            <td style="color: #{{deterministicWebColor("ages")}}">{{course.ages}}
-                            </td>
-                            <td style="color: #{{deterministicWebColor("times")}}">{{course.times}}
-                            </td>
-                            <td style="color: #{{deterministicWebColor("dates")}}">{{course.dates}}
-                            </td>
-                            <td style="color: #{{deterministicWebColor("teachers")}}">{{course.teachers}}
-                            </td>
-                            <td style="color: #{{deterministicWebColor("location")}}">{{course.location}}
-                            </td>
-                            <td style="color: #{{deterministicWebColor("cost")}}">{{course.cost}}
-                            </td>
-                            <td>
-                              <span ng-if="course.status == 'waitlist'">
-                                <span style="color: red">Currently full</span><br><i><span style="color: orange">Wait list available</span></i></span>
-                              </span>
-                              <span ng-if="course.status == 'enroll'">
-                                <span style="color: green">Space available</span>
-                              </span>
-                            </td>
-                            <td>
-                              <a ng-href="course.signupurl"
-                              class="md-button small animate fadeInUp button-hero style-2 "
-                              style="width: 100px; display: block; border-color:#000; color:#2b2; "
-                              data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 ">
-                              <span ng-if="course.status == 'waitlist'">Wait List</span><span ng-if="course.status == 'enroll'">Enroll</span></a>
-                            </td>
-                          </tr>
-                        </table>
-                      </div>
+                          <td style="color: #{{deterministicWebColor("title")}}">{{course.title}}
+                          </td>
+                          <td style="color: #{{deterministicWebColor("eligible")}}">{{course.eligible}}
+                          </td>
+                          <td style="color: #{{deterministicWebColor("ages")}}">{{course.ages}}
+                          </td>
+                          <td style="color: #{{deterministicWebColor("times")}}">{{course.times}}
+                          </td>
+                          <td style="color: #{{deterministicWebColor("dates")}}">{{course.dates}}
+                          </td>
+                          <td style="color: #{{deterministicWebColor("teachers")}}">{{course.teachers}}
+                          </td>
+                          <td style="color: #{{deterministicWebColor("location")}}">{{course.location}}
+                          </td>
+                          <td style="color: #{{deterministicWebColor("cost")}}">{{course.cost}}
+                          </td>
+                          <td>
+                            <span ng-if="course.status == 'waitlist'">
+                              <span style="color: red">Currently full</span><br><i><span style="color: orange">Wait list available</span></i></span>
+                            </span>
+                            <span ng-if="course.status == 'enroll'">
+                              <span style="color: green">Space available</span>
+                            </span>
+                          </td>
+                          <td>
+                            <a ng-href="course.signupurl"
+                            class="md-button small animate fadeInUp button-hero style-2 "
+                            style="width: 100px; display: block; border-color:#000; color:#2b2; "
+                            data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 ">
+                            <span ng-if="course.status == 'waitlist'">Wait List</span><span ng-if="course.status == 'enroll'">Enroll</span></a>
+                          </td>
+                        </tr>
+                      </table>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
 <!-- sample section -->
 <!--           <div class="page-section content-full padding-xs bg-default" style="background-color: #45B2D3; ">
