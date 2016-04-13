@@ -30,17 +30,17 @@ var RandomSeeded = function(seed) {
       seedInt *= constant;
       seedInt += prime;
       seedInt = Math.round(seedInt); // make sure it's still an integer!
-      if (min && max) {
-        return min+seedInt%maximum/maximum*(max-min);
-      } else {
+      if (min === undefined || max === undefined) {
         // if 'min' and 'max' are not provided, return random number between 0 & 1
         return (seedInt % maximum) / maximum;
+      } else {
+        return min+seedInt%maximum/maximum*(max-min);
       }
     }
   };
 };
 
-var webColors = ["337ab7", "5cb85c", "AA04DC", "45B2D3", "337ab7", "#d9534f"];
+var webColors = ["337ab7", "5cb85c", "AA04DC", "45B2D3", "337ab7", "d9534f"];
 
 function deterministicWebColor(seed) {
   var rs = new RandomSeeded(seed);
