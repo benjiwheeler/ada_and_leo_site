@@ -86,10 +86,22 @@
   <link rel='stylesheet' id='mito-generate-css' href='wp-content/themes/mito/assets/css/css-generate.php'
     type='text/css' media='all' />
 
+
   <script type='text/javascript' src='wp-includes/js/jquery/jquery.js'></script>
   <script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js'></script>
   <script type='text/javascript' src='wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.tools.min.js'></script>
   <script type='text/javascript' src='wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min.js'></script>
+
+<!-- underscore -->
+    <script src="http://underscorejs.org/underscore.js"></script>
+
+<!-- angular -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular-sanitize.js"></script>
+
+
+<!-- app -->
+    <script src="app.js"></script>
 
 </head>
 <!-- end of effective header -->
@@ -106,8 +118,7 @@
 
 
 
-
-<body class="home page page-id-11 page-template-default md-page-builder" style="background-color:#030e18;"
+<body ng-app="AdaLeoApp" class="home page page-id-11 page-template-default md-page-builder" style="background-color:#030e18;"
   data-device="desktop" data-css3-animations="enabled" data-layout="full-width" data-header-fixed="true"
   data-header-transparent="false" data-header-scroll-transparent="true" data-onepage="false">
 
@@ -647,242 +658,127 @@ schedule availability</a>.</p>
 
 
           <a name="classschedule"></a>
-          <div class="page-section content-full padding-xs bg-default" style="background-color: #45B2D3; ">
-            <div class="container">
-              <div class="section-content">
-                <div class="section-columns">
-                  <div class="clearfix" style="height:5px"></div>
-                  <div class="row">
-                    <h1 class="text-center" style="font-family: Raleway; font-weight: 400; color: white;">Class Schedule
-                    </h1>
+          <div ng-controller="CoursesController">
+            <div class="page-section content-full padding-xs bg-default" style="background-color: #45B2D3; ">
+              <div class="container">
+                <div class="section-content">
+                  <div class="section-columns">
+                    <div class="clearfix" style="height:5px"></div>
+                    <div class="row">
+                      <h1 class="text-center" style="font-family: Raleway; font-weight: 400; color: white;">Class Schedule
+                      </h1>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="page-section visible-xs visible-sm hidden-md hidden-lg content-fixed bg-default padding-xs" style="">
-            <div class="container">
-              <div class="section-content">
-                <div class="clearfix" style="height:5px"></div>
-                <div class="row">
-                  <div class="col-xs-10 col-offset-1">
-                    <h4>Spring 2016 Session</h4>
-                    <dl class="dl-horizontal">
-                      <dt>Title</dt>
-                      <dd style="color: #337ab7">Intro to creative tech
-                      </dd>
-                      <dt>Eligible students</dt>
-                      <dd style="color: #5cb85c">Students attending Brooklyn Coop School at Brevoort location
-                      </dd>
-                      <dt>Ages</dt>
-                      <dd style="color: #5cb85c">6-9 years
-                      </dd>
-                      <dt>Times</dt>
-                      <dd style="color: #EDA01D">Tuesdays 3:45pm-4:30pm
-                      </dd>
-                      <dt>Dates</dt>
-                      <dd style="color: #45B2D3">Apr 5, 12, 19; May 3, 10, 17, 24, 31; June 7, 14 (10 sessions)
-                      </dd>
-                      <dt>Teachers</dt>
-                      <dd style="color: #337ab7">Ben Wheeler
-                      </dd>
-                      <dt>Location</dt>
-                      <dd style="color: #5cb85c">40 Brevoort Pl.
-                      </dd>
-                      <dt>Cost</dt>
-                      <dd style="color: #d9534f">$300
-                      </dd>
-                      <dt>Enroll</dt>
-                      <dd style="color: #5cb85c">
-                       <a href="http://goo.gl/forms/MsaV1rG2Ni " class="md-button small animate fadeInUp button-hero style-2 "
-                       style="width: 80px; display: block; border-color:#000; color:#2b2;"
-                       data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 "><span>Wait List</span></a>
-                     </dd>
-                   </dl>
-                   <h4>Winter/Spring 2016 Session</h4>
-                   <dl class="dl-horizontal">
-                      <dt>Title</dt>
-                      <dd style="color: #337ab7">Intro to creative tech
-                      </dd>
-                      <dt>Ages</dt>
-                      <dd style="color: #5cb85c">6-9 years
-                      </dd>
-                      <dt>Times</dt>
-                      <dd style="color: #EDA01D">Saturdays 2:30pm-3:45pm
-                      </dd>
-                      <dt>Dates</dt>
-                      <dd style="color: #45B2D3">Feb 27; Mar 5, 12, 19, 26; Apr 2, 9, 16, 23; May 7 (10 sessions)
-                      </dd>
-                      <dt>Teachers</dt>
-                      <dd style="color: #337ab7">Ben Wheeler and Ayodamola Okunseinde
-                      </dd>
-                      <dt>Cost</dt>
-                      <dd style="color: #d9534f">$300
-                      </dd>
-                      <dt>Enroll</dt>
-                      <dd style="color: #5cb85c">
-                       <a href="http://goo.gl/forms/MsaV1rG2Ni " class="md-button small animate fadeInUp button-hero style-2 "
-                       style="width: 80px; display: block; border-color:#000; color:#2b2;"
-                       data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 "><span>Wait list</span></a>
-                     </dd>
-                   </dl>
-                  <div class="clearfix" style="height:25px"></div>
-                    <dl class="dl-horizontal">
-                      <dt>Title</dt>
-                      <dd style="color: #337ab7">Intro to creative tech
-                      </dd>
-                      <dt>Ages</dt>
-                      <dd style="color: #5cb85c">6-9 years
-                      </dd>
-                      <dt>Times</dt>
-                      <dd style="color: #EDA01D">Saturdays 9:30am-10:45am
-                      </dd>
-                      <dt>Dates</dt>
-                      <dd style="color: #45B2D3">Feb 6, 13, 27; Mar 5, 12, 19, 26; Apr 2, 9, 16 (10 sessions)
-                      </dd>
-                      <dt>Teachers</dt>
-                      <dd style="color: #337ab7">Ben Wheeler and Audrey Fox
-                      </dd>
-                      <dt>Cost</dt>
-                      <dd style="color: #d9534f">$300
-                      </dd>
-                      <dt>Enroll</dt>
-                      <dd style="color: #5cb85c">
-                       <a href="http://goo.gl/forms/z4IY2m1aLR " class="md-button small animate fadeInUp button-hero style-2 "
-                       style="width: 80px; display: block; border-color:#000; color:#2b2;"
-                       data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 "><span>Wait list</span></a>
-                     </dd>
-                   </dl>
+            <div class="page-section visible-xs visible-sm hidden-md hidden-lg content-fixed bg-default padding-xs" style="">
+              <div ng-repeat="course in courses | isActive">
+                <div class="container">
+                  <div class="section-content">
+                    <div class="clearfix" style="height:5px"></div>
+                      <div class="row">
+                        <div class="col-xs-10 col-offset-1">
+                          <h4>{{course.session}} Session</h4>
+                          <dl class="dl-horizontal">
+                            <dt>Title</dt>
+                            <dd style="color: #{{deterministicWebColor("title")}}">{{course.title}}
+                            </dd>
+                            <dt>Eligible students</dt>
+                            <dd style="color: #{{deterministicWebColor("eligible")}}">{{course.eligible}}
+                            </dd>
+                            <dt>Ages</dt>
+                            <dd style="color: #{{deterministicWebColor("ages")}}">{{course.ages}}
+                            </dd>
+                            <dt>Times</dt>
+                            <dd style="color: #{{deterministicWebColor("times")}}">{{course.times}}
+                            </dd>
+                            <dt>Dates</dt>
+                            <dd style="color: #{{deterministicWebColor("dates")}}">{{course.dates}}
+                            </dd>
+                            <dt>Teachers</dt>
+                            <dd style="color: #{{deterministicWebColor("teachers")}}">{{course.teachers}}
+                            </dd>
+                            <dt>Location</dt>
+                            <dd style="color: #{{deterministicWebColor("location")}}">{{course.location}}
+                            </dd>
+                            <dt>Cost</dt>
+                            <dd style="color: #{{deterministicWebColor("cost")}}">{{course.cost}}
+                            </dd>
+                            <dt>Enroll</dt>
+                            <dd>
+                             <a ng-href="course.signupurl" class="md-button small animate fadeInUp button-hero style-2 "
+                             style="width: 80px; display: block; border-color:#000; color:#2b2;"
+                             data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 "><span ng-if="course.status == 'waitlist'">Wait List</span><span ng-if="course.status == 'enroll'">Enroll</span></a>
+                            </dd>
+                          </dl>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- closes ng course in courses -->
+            </div>
+            <div class="page-section visible-md visible-lg hidden-xs hidden-sm content-fixed bg-default padding-xs" style="">
+              <div ng-repeat="course in courses | isActive">
+                <div class="container">
+                  <div class="section-content">
+                    <div class="clearfix" style="height:5px"></div>
+                    <div class="row">
+                      <h4>{{course.session}} Session</h4>
+                      <table class="table">
+                        <tr>
+                          <th>Title</th>
+                          <th>Eligibility</th>
+                          <th>Ages</th>
+                          <th>Times</th>
+                          <th>Dates</th>
+                          <th>Teachers</th>
+                          <th>Location</th>
+                          <th>Cost</th>
+                          <th>Status</th>
+                          <th>Enroll</th>
+                        </tr>
+                        <tr>
+                            <td style="color: #{{deterministicWebColor("title")}}">{{course.title}}
+                            </td>
+                            <td style="color: #{{deterministicWebColor("eligible")}}">{{course.eligible}}
+                            </td>
+                            <td style="color: #{{deterministicWebColor("ages")}}">{{course.ages}}
+                            </td>
+                            <td style="color: #{{deterministicWebColor("times")}}">{{course.times}}
+                            </td>
+                            <td style="color: #{{deterministicWebColor("dates")}}">{{course.dates}}
+                            </td>
+                            <td style="color: #{{deterministicWebColor("teachers")}}">{{course.teachers}}
+                            </td>
+                            <td style="color: #{{deterministicWebColor("location")}}">{{course.location}}
+                            </td>
+                            <td style="color: #{{deterministicWebColor("cost")}}">{{course.cost}}
+                            </td>
+                            <td>
+                              <span ng-if="course.status == 'waitlist'">
+                                <span style="color: red">Currently full</span><br><i><span style="color: orange">Wait list available</span></i></span>
+                              </span>
+                              <span ng-if="course.status == 'enroll'">
+                                <span style="color: green">Space available</span>
+                              </span>
+                            </td>
+                            <td>
+                              <a ng-href="course.signupurl"
+                              class="md-button small animate fadeInUp button-hero style-2 "
+                              style="width: 100px; display: block; border-color:#000; color:#2b2; "
+                              data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 ">
+                              <span ng-if="course.status == 'waitlist'">Wait List</span><span ng-if="course.status == 'enroll'">Enroll</span></a>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="page-section visible-md visible-lg hidden-xs hidden-sm content-fixed bg-default padding-xs" style="">
-            <div class="container">
-              <div class="section-content">
-                <div class="clearfix" style="height:5px"></div>
-                <div class="row">
-                  <h4>Spring 2016 Session</h4>
-                  <table class="table">
-                    <tr>
-                      <th>Title</th>
-                      <th>Ages</th>
-                      <th>Eligibility</th>
-                      <th>Times</th>
-                      <th>Dates</th>
-                      <th>Teachers</th>
-                      <th>Location</th>
-                      <th>Status</th>
-                      <th>Cost</th>
-                      <th>Enroll</th>
-                    </tr>
-                    <tr>
-                      <td style="color: #337ab7">Intro to creative tech
-                      </td>
-                      <td style="color: #5cb85c">6-9 years
-                      </td>
-                      <td style="color: #5cb85c">Students attending Brooklyn Coop School at Brevoort location
-                      </td>
-                      <td style="color: #AA04DC">Tuesdays 3:45pm-4:30pm
-                      </td>
-                      <td style="color: #45B2D3">Apr 5, 12, 19;<br>May 3, 10, 17, 24, 31;<br>June 7, 14<br>(10 sessions)
-                      </td>
-                      <td style="color: #337ab7">Ben Wheeler
-                      </td>
-                      <td style="color: #337ab7">40 Brevoort Pl.
-                      </td>
-                      <td style="color: #5cb85c">Currently full<br><i>Wait list available</i>
-                      </td>
-                      <td style="color: #d9534f">$300
-                      </td>
-                      <td style="color: #5cb85c">
-                        <a href="http://goo.gl/forms/z4IY2m1aLR "
-                        class="md-button small animate fadeInUp button-hero style-2 "
-                           style="width: 100px; display: block; border-color:#000; color:#2b2; "
-                           data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 ">
-                           <span >Wait list</span></a>
-                      </td>
-                    </tr>
-                  </table>
-                  <h4>Winter/Spring 2016 Session</h4>
-                  <table class="table">
-                    <tr>
-                      <th>Title</th>
-                      <th>Ages</th>
-                      <th>Times</th>
-                      <th>Dates</th>
-                      <th>Teachers</th>
-                      <th>Status</th>
-                      <th>Cost</th>
-                      <th>Enroll</th>
-                    </tr>
-                    <tr>
-                      <td style="color: #337ab7">Intro to creative tech
-                      </td>
-                      <td style="color: #5cb85c">6-9 years
-                      </td>
-                      <td style="color: #AA04DC">Saturdays 2:30pm-3:45pm
-                      </td>
-                      <td style="color: #45B2D3">Feb 27;<br>Mar 5, 12, 19, 26;<br>Apr 2, 9, 16, 23;<br>May 7<br>(10 sessions)
-                      </td>
-                      <td style="color: #337ab7">Ben Wheeler and Ayodamola Okunseinde
-                      </td>
-                      <td style="color: #5cb85c">Currently full
-                      </td>
-                      <td style="color: #d9534f">$300
-                      </td>
-                      <td style="color: #5cb85c">
-                        <a href="http://goo.gl/forms/z4IY2m1aLR "
-                        class="md-button small animate fadeInUp button-hero style-2 "
-                           style="width: 100px; display: block; border-color:#000; color:#2b2; "
-                           data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 ">
-                           <span >Wait list</span></a>
-                      </td>
-                    </tr>
-                  </table>
-                  <div class="clearfix" style="height:25px"></div>
-                  <table class="table">
-                    <tr>
-                      <th>Title</th>
-                      <th>Ages</th>
-                      <th>Times</th>
-                      <th>Dates</th>
-                      <th>Teachers</th>
-                      <th>Status</th>
-                      <th>Cost</th>
-                      <th>Enroll</th>
-                    </tr>
-                    <tr>
-                      <td style="color: #337ab7">Intro to creative tech
-                      </td>
-                      <td style="color: #5cb85c">6-9 years
-                      </td>
-                      <td style="color: #AA04DC">Saturdays 9:30am-10:45am
-                      </td>
-                      <td style="color: #45B2D3">Feb 6, 13, 27;<br>Mar 5, 12, 19, 26;<br>Apr 2, 9, 16<br>(10 sessions)
-                      </td>
-                      <td style="color: #337ab7">Ben Wheeler and Audrey Fox
-                      </td>
-                      <td style="color: #AA04DC">Currently full
-                      </td>
-                      <td style="color: #d9534f">$300
-                      </td>
-                      <td style="color: #5cb85c">
-                        <a href="http://goo.gl/forms/z4IY2m1aLR "
-                        class="md-button small animate fadeInUp button-hero style-2 "
-                           style="width: 100px; display: block; border-color:#000; color:#2b2; "
-                           data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 ">
-                           <span >Wait list</span></a>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
 
 <!-- sample section -->
 <!--           <div class="page-section content-full padding-xs bg-default" style="background-color: #45B2D3; ">

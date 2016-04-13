@@ -1,0 +1,45 @@
+{
+  "courses": [
+    {
+    "session": "Spring 2016"
+    ,"active": true
+    ,"title": "Intro to creative tech"
+    ,"eligible": "Students attending Brooklyn Coop School at Brevoort location"
+    ,"ages": "6-9 years"
+    ,"times": "Tuesdays 3:45pm-4:30pm"
+    ,"dates": "Apr 5, 12, 19; May 3, 10, 17, 24, 31; June 7, 14 (10 sessions)"
+    ,"teachers": "Ben Wheeler"
+    ,"location": "40 Brevoort Pl."
+    ,"cost": "$300"
+    ,"status": "waitlist"
+    ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
+    }
+    ,{
+    "session": "Winter 2016"
+    ,"title": "Intro to creative tech"
+    ,"eligible": "all children!"
+    ,"active": true
+    ,"ages": "6-9 years"
+    ,"times": "Saturdays 2:30pm-3:45pm"
+    ,"dates": "Feb 27; Mar 5, 12, 19, 26; Apr 2, 9, 16, 23; May 7 (10 sessions)"
+    ,"teachers": "Ben Wheeler and Ayodamola Okunseinde"
+    ,"cost": "$300"
+    ,"status": "waitlist"
+    ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
+    }
+    ,{
+    "session": "Winter 2016"
+    ,"title": "Intro to creative tech"
+    ,"eligible": "all children!"
+    ,"active": true
+    ,"ages": "6-9 years"
+    ,"times": "Saturdays 9:30am-10:45am"
+    ,"dates": "Feb 6, 13, 27; Mar 5, 12, 19, 26; Apr 2, 9, 16 (10 sessions)"
+    ,"teachers": "Ben Wheeler and Audrey Fox"
+    ,"cost": "$300"
+    ,"status": "waitlist"
+    ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
+    }
+  ]
+}
+
