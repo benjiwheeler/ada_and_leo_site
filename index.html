@@ -694,7 +694,7 @@ schedule availability</a>.</p>
                           </dd>
                           <dt>Enroll</dt>
                           <dd>
-                           <a ng-href="{course.signupurl}" class="md-button small animate fadeInUp button-hero style-2 "
+                           <a ng-href="{{course.signupurl}}" class="md-button small animate fadeInUp button-hero style-2 "
                            style="width: 80px; display: block; border-color:#000; color:#2b2;"
                            data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 "><span ng-if="course.status == 'waitlist'">Wait List</span><span ng-if="course.status == 'enroll'">Enroll</span></a>
                           </dd>
@@ -751,11 +751,11 @@ schedule availability</a>.</p>
                             </span>
                           </td>
                           <td>
-                            <a ng-href="{course.signupurl}"
+                            <a ng-href="{{course.signupurl}}"
                             class="md-button small animate fadeInUp button-hero style-2 "
                             style="width: 100px; display: block; border-color:#000; color:#2b2; "
                             data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 ">
-                            <span ng-if="course.status == 'waitlist'">Wait List</span><span ng-if="course.status == 'enroll'">Enroll</span></a>
+                            <span ng-if="course.status == 'waitlist'">Wait List</span><span ng-if="course.status == 'enroll'">Enroll!</span></a>
                           </td>
                         </tr>
                       </table>
