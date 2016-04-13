@@ -50,13 +50,13 @@ function deterministicWebColor(seed) {
 
 var app = angular.module('AdaLeoApp', ['ngSanitize']);
 
-app.filter('isActive', function () {
-  return function (courses) {
-    return courses.filter(function (course) {
-      return (course.hasOwnProperty('active') && person.active === true);
+app.filter('isActive', [function() {
+  return function(courses) {
+    return courses.filter( function(course) {
+      return (course.hasOwnProperty('active') && course.active === true);
     });
   };
-});
+}]);
 
 app.controller('CoursesController', ['$scope', '$http', function($scope, $http) {
   $scope.deterministicWebColor = deterministicWebColor;
