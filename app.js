@@ -46,12 +46,16 @@ var RandomSeeded = function(seed) {
   };
 };
 
-var webColors = ["337ab7", "5cb85c", "AA04DC", "45B2D3", "337ab7", "d9534f"];
+var webColors = ["337ab7", "5cb85c", "AA04DC", "45B2D3", "337ab7", "d9534f",
+		 "D070D0", "FFA000", "609020", "000080", "008880", "6090F0", 
+		 "60A0A0", "A02820", "8028E0", "008000", "FF00E0", "800080", 
+		 "D07090", "4068E0", "804010", "0000E0", "308850", "F08080", 
+		 "006000", "B08800", "506830", "FF8800", "9070D0", "008080", 
+		 "4080B0", "FF6040", "403880", "305050", "C01080", "40D0D0"];
 
 function deterministicWebColor(seed) {
   var rs = new RandomSeeded(seed);
   var rv = Math.floor(rs.rand(webColors.length));
-  console.log("seed is "+seed+", rand val is "+rv);
   return "#" + webColors[rv];
 }
 
