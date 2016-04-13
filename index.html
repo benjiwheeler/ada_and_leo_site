@@ -677,47 +677,46 @@ schedule availability</a>.</p>
                 <div class="container">
                   <div class="section-content">
                     <div class="clearfix" style="height:5px"></div>
-                      <div class="row">
-                        <div class="col-xs-10 col-offset-1">
-                          <h4>{{course.session}} Session</h4>
-                          <dl class="dl-horizontal">
-                            <dt>Title</dt>
-                            <dd ng-style='{"color": deterministicWebColor("title")}'>{{course.title}}
-                            </dd>
-                            <dt>Eligible students</dt>
-                            <dd ng-style='{"color": deterministicWebColor("eligible")}'>{{course.eligible}}
-                            </dd>
-                            <dt>Ages</dt>
-                            <dd ng-style='{"color": deterministicWebColor("ages")}'>{{course.ages}}
-                            </dd>
-                            <dt>Times</dt>
-                            <dd ng-style='{"color": deterministicWebColor("times")}'>{{course.times}}
-                            </dd>
-                            <dt>Dates</dt>
-                            <dd ng-style='{"color": deterministicWebColor("dates")}'>{{course.dates}}
-                            </dd>
-                            <dt>Teachers</dt>
-                            <dd ng-style='{"color": deterministicWebColor("teachers")}'>{{course.teachers}}
-                            </dd>
-                            <dt>Location</dt>
-                            <dd ng-style='{"color": deterministicWebColor("location")}'>{{course.location}}
-                            </dd>
-                            <dt>Cost</dt>
-                            <dd ng-style='{"color": deterministicWebColor("cost")}'>{{course.cost}}
-                            </dd>
-                            <dt>Enroll</dt>
-                            <dd>
-                             <a ng-href="course.signupurl" class="md-button small animate fadeInUp button-hero style-2 "
-                             style="width: 80px; display: block; border-color:#000; color:#2b2;"
-                             data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 "><span ng-if="course.status == 'waitlist'">Wait List</span><span ng-if="course.status == 'enroll'">Enroll</span></a>
-                            </dd>
-                          </dl>
-                        </div>
+                    <div class="row">
+                      <div class="col-xs-10 col-offset-1">
+                        <h4>{{course.session}} Session</h4>
+                        <dl class="dl-horizontal">
+                          <dt>Title</dt>
+                          <dd ng-style='{"color": deterministicWebColor("title")}'>{{course.title}}
+                          </dd>
+                          <dt>Eligible students</dt>
+                          <dd ng-style='{"color": deterministicWebColor("eligible")}'>{{course.eligible}}
+                          </dd>
+                          <dt>Ages</dt>
+                          <dd ng-style='{"color": deterministicWebColor("ages")}'>{{course.ages}}
+                          </dd>
+                          <dt>Times</dt>
+                          <dd ng-style='{"color": deterministicWebColor("times")}'>{{course.times}}
+                          </dd>
+                          <dt>Dates</dt>
+                          <dd ng-style='{"color": deterministicWebColor("dates")}'>{{course.dates}}
+                          </dd>
+                          <dt>Teachers</dt>
+                          <dd ng-style='{"color": deterministicWebColor("teachers")}'>{{course.teachers}}
+                          </dd>
+                          <dt>Location</dt>
+                          <dd ng-style='{"color": deterministicWebColor("location")}'>{{course.location}}
+                          </dd>
+                          <dt>Cost</dt>
+                          <dd ng-style='{"color": deterministicWebColor("cost")}'>{{course.cost}}
+                          </dd>
+                          <dt>Enroll</dt>
+                          <dd>
+                           <a ng-href="course.signupurl" class="md-button small animate fadeInUp button-hero style-2 "
+                           style="width: 80px; display: block; border-color:#000; color:#2b2;"
+                           data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 "><span ng-if="course.status == 'waitlist'">Wait List</span><span ng-if="course.status == 'enroll'">Enroll</span></a>
+                          </dd>
+                        </dl>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div> <!-- closes ng course in courses -->
+              </div>  <!-- closes ng course in courses -->
             </div>
             <div class="page-section visible-md visible-lg hidden-xs hidden-sm content-fixed bg-default padding-xs" style="">
                 <div class="container">
