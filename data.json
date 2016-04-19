@@ -8,7 +8,7 @@
     ,"ages": "6-9 years"
     ,"times": "Wednesdays 2pm-3:15pm"
     ,"dates": "May 4, 11, 18, 25; June 1, 8, 15, 22 (8 sessions)"
-    ,"teachers": "Taylor Black"
+    ,"teachers": ["Taylor Black"]
     ,"location": "30 Macon St. (near the Nostrand A train stop)"
     ,"cost": "$240"
     ,"status": "enroll"
@@ -22,7 +22,7 @@
     ,"ages": "7-11 years"
     ,"times": "Sundays 11:30am-12:45pm"
     ,"dates": "May 8, 15, 22, 29; June 5, 12, 19 (7 sessions)"
-    ,"teachers": "Dakota Pailes-Friedman"
+    ,"teachers": ["Dakota Pailes-Friedman"''
     ,"location": "30 Macon St. (near the Nostrand A train stop)"
     ,"cost": "$225"
     ,"status": "enroll"
@@ -36,7 +36,7 @@
     ,"ages": "6-9 years"
     ,"times": "Tuesdays 3:45pm-4:30pm"
     ,"dates": "Apr 5, 12, 19; May 3, 10, 17, 24, 31; June 7, 14 (10 sessions)"
-    ,"teachers": "Ben Wheeler"
+    ,"teachers": ["Ben Wheeler"]
     ,"location": "40 Brevoort Pl."
     ,"cost": "$300"
     ,"status": "waitlist"
@@ -50,7 +50,7 @@
     ,"ages": "6-9 years"
     ,"times": "Saturdays 2:30pm-3:45pm"
     ,"dates": "Feb 27; Mar 5, 12, 19, 26; Apr 2, 9, 16, 23; May 7 (10 sessions)"
-    ,"teachers": "Ben Wheeler and Ayodamola Okunseinde"
+    ,"teachers": ["Ben Wheeler", "Ayodamola Okunseinde"]
     ,"location": "30 Macon St. (near the Nostrand A train stop)"
     ,"cost": "$300"
     ,"status": "waitlist"
@@ -64,7 +64,7 @@
     ,"ages": "6-9 years"
     ,"times": "Saturdays 9:30am-10:45am"
     ,"dates": "Feb 6, 13, 27; Mar 5, 12, 19, 26; Apr 2, 9, 16 (10 sessions)"
-    ,"teachers": "Ben Wheeler and Audrey Fox"
+    ,"teachers": ["Ben Wheeler", "Audrey Fox"]
     ,"location": "30 Macon St. (near the Nostrand A train stop)"
     ,"cost": "$300"
     ,"status": "waitlist"

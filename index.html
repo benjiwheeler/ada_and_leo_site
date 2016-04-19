@@ -520,9 +520,12 @@ schedule availability</a>.</p>
                           <dt>Dates</dt>
                           <dd ng-style='{"color": deterministicWebColor("dates")}'>{{course.dates}}
                           </dd>
-                          <dt>Teachers</dt>
-                          <dd ng-style='{"color": deterministicWebColor("teachers")}'>{{course.teachers}}
-                          </dd>
+                          <dt><ng-pluralize count="course.teachers.length"
+                 when="{'0': 'Teacher',
+                     '1': 'Teacher',
+                     'other': 'Teachers'}">
+</ng-pluralize></dt>
+                          <dd><a href="#whoweare"><span ng-repeat="teacher in course.teachers"><span ng-style='{"color": deterministicWebColor(teacher)}'>{{teacher}}<span ng-if="!first"> and </span></span></span></a></dd>
                           <dt>Location</dt>
                           <dd ng-style='{"color": deterministicWebColor("location")}'>{{course.location}}
                           </dd>
@@ -556,7 +559,11 @@ schedule availability</a>.</p>
                           <th>Ages</th>
                           <th>Times</th>
                           <th>Dates</th>
-                          <th>Teachers</th>
+                          <th>ng-pluralize count="course.teachers.length"
+                 when="{'0': 'Teacher',
+                     '1': 'Teacher',
+                     'other': 'Teachers'}">
+</ng-pluralize></th>
                           <th>Location</th>
                           <th>Cost</th>
                           <th>Status</th>
@@ -573,8 +580,7 @@ schedule availability</a>.</p>
                           </td>
                           <td ng-style='{"color": deterministicWebColor("dates")}'>{{course.dates}}
                           </td>
-                          <td ng-style='{"color": deterministicWebColor("teachers")}'>{{course.teachers}}
-                          </td>
+                          <td><a href="#whoweare"><span ng-repeat="teacher in course.teachers"><span ng-style='{"color": deterministicWebColor(teacher)}'>{{teacher}}<span ng-if="!first"> and </span></span></span></a></td>
                           <td ng-style='{"color": deterministicWebColor("location")}'>{{course.location}}
                           </td>
                           <td ng-style='{"color": deterministicWebColor("cost")}'>{{course.cost}}
@@ -658,36 +664,38 @@ schedule availability</a>.</p>
               </div>
             </div>
           </div>
-          <div class="page-section content-fixed bg-default padding-xs" style="">
+          <div class="page-section content-fixed bg-default padding-xs" style="" ng-controller="ColorController">
             <div class="container">
               <div class="section-content">
                 <div class="clearfix" style="height:5px"></div>
                 <div class="row">
                   <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
-                    <h4>Ben Wheeler</h4>
+                    <h4 ng-style='{"color": deterministicWebColor("Ben Wheeler")}'>Ben Wheeler</h4>
                     <p>Ben is a veteran developer and teacher in Brooklyn. He’s taught hundreds of people to program,
                     helped foment a revolution (ask him sometime!), and makes a mean gumbo.
                     His work has been published in the
-                    Harvard International Review and The Best of Make Magazine.
+                    Harvard International Review and The Best of Make Magazine, and he is <span style="color: yellow">totally geeking out</span> about the phenomenal talent of the teachers below.
                     You can see even more of his eclectic interests at
                     <a href="http://techno-social.com">techno-social.com</a>.
-                    <h4>Audrey Fox</h4>
+                    <h4 ng-style='{"color": deterministicWebColor("Audrey Fox")}'>Audrey Fox</h4>
                     <p>Audrey is a MFA candidate in Design and Technology at Parsons in New York City.
-                    She is an experienced branding designer and enjoys stints working as well as a tech educator for children.
-                    Her current work focuses on using sensors, computer vision and Internet of Things to build multi-sensory
-                    interactive environments. See more at <a href="http://www.artificialforest.com/">artificialforest.com</a>.
-                    <h4>Ayodamola Okunseinde</h4>
+                    She is an experienced branding designer as well as a tech educator for children.
+                    Her current work focuses on using sensors, computer vision and Internet of Things to build <span style="color: yellow">multi-sensory
+                    interactive environments</span>. See more at <a href="http://www.artificialforest.com/">artificialforest.com</a>.
+                    <h4 ng-style='{"color": deterministicWebColor("2Ayodamola Okunseinde")}'>Ayodamola Okunseinde</h4>
                     <p>Ayodamola ("Ayo" for short) is an artist and interactive designer, and is currently an adjunct
                     faculty member at The New School, Parsons School of Design. His works range from painting and
-                    speculative design to physically interactive works and explorations of Afrofuturism.
+                    speculative design to <span style="color: yellow">physically interactive works and explorations of Afrofuturism</span>.
                     See more of his work at <a href="http://www.ayo.io/">ayo.io</a>.
-                    <h4>Dakota Pailes-Friedman</h4>
-                    <p>Dakota (AKA "Dakota PF") is a Brooklyn-born and -based artist. As half of <a href="https://vimeo.com/lowresfilm">LOW-RES FILMS</a>, he directs, edits, writes and designs sound for live-action and animation films. Outside of film-making, Dakota also paints and creates digital design work, and teaches kids karate.
-                    <h4>Taylor Black</h4>
-                    <p>Taylor is a tech educator with a background in technical theatre and 3D design software. She is currently a PhD candidate at NYU Performance Studies, with a research focus in online community building.
+                    <h4 ng-style='{"color": deterministicWebColor("title")}'>Dakota Pailes-Friedman</h4>
+                    <p>Dakota (AKA "Dakota PF") is a Brooklyn-born and -based artist. As half of <a href="https://vimeo.com/lowresfilm">LOW-RES FILMS</a>, he directs, edits, writes and designs sound for <span style="color: yellow">live-action and animation films</span>. Outside of film-making, Dakota also paints and creates digital design work, and teaches kids karate.
+                    <h4 ng-style='{"color": deterministicWebColor("Taylor Black")}'>Taylor Black</h4>
+                    <p>Taylor is a tech educator with a background in technical theatre and 3D design software. She is currently a PhD candidate at NYU Performance Studies, with a research focus in <span style="color: yellow">online community building</span>.
                     Taylor's computer course experience includes Achievement First Endeavor Middle School, NYU Magnet game center, and the Arvada Center for the Arts and Humanities.</p>
-                    <h4>Bryn Haffey</h4>
-                    <p>Bryn is a data engineer at an advertising technology company and holds a Master's in Computer Science.  She has prior experience teaching introductory programming courses to first year college students, but loves younger children, especially her own niece and nephew.  She lives with her husband and rescue dog named Franklyn in Clinton Hill and enjoys biking and Pixar movies.
+                    <h4 ng-style='{"color": deterministicWebColor("Bryn Haffey")}'>Bryn Haffey</h4>
+                    <p>Bryn is a data engineer at an advertising technology company and holds a Master's in Computer Science.  She has prior experience teaching introductory programming courses to first year college students, but loves younger children, especially her own niece and nephew.  She lives with her husband and <span style="color: yellow">rescue dog named Franklyn</span> in Clinton Hill and enjoys biking and Pixar movies.
+                    <h4 ng-style='{"color": deterministicWebColor("Katya Vasilaky")}'>Katya Vasilaky</h4>
+                    <p>Katya is a postdoc in economics at Columbia University, an upcoming instructor at Girls Who Code in NYC 2016, akd a co-organizer of Pyladies NYC. She also <span style="color: yellow">volunteers as a dance teacher</span> in Harlem schools and has danced ballet professinally. See more on <a href="https://katyavasilaky.com/">her site.</a>
                   </div>
                 </div>
               </div>
