@@ -548,13 +548,13 @@ schedule availability</a>.</p>
               </div>
             </div>
             <div class="page-section visible-md visible-lg hidden-xs hidden-sm content-fixed bg-default padding-xs" style="">
-              <div ng-repeat="season in seasons">
+              <div ng-repeat="season in seasons()">
                 <div ng-repeat="course in coursesForSeason(season)">
                   <div class="container">
                     <div class="section-content">
                       <div class="clearfix" style="height:5px"></div>
                       <div class="row">
-                          <h4 ng-if="$first">f{{$first}} i{{$index}} {{course.session}} Session</h4>
+                        <h4 ng-if="$first">f{{$first}} i{{$index}} {{course.session}} Session</h4>
                         <table class="table">
                           <tr>
                             <th>Title</th>
