@@ -548,62 +548,64 @@ schedule availability</a>.</p>
               </div>
             </div>
             <div class="page-section visible-md visible-lg hidden-xs hidden-sm content-fixed bg-default padding-xs" style="">
-              <div ng-repeat="course in courses">
-                <div class="container">
-                  <div class="section-content">
-                    <div class="clearfix" style="height:5px"></div>
-                    <div class="row">
-                      <h4>{{course.session}} Session</h4>
-                      <table class="table">
-                        <tr>
-                          <th>Title</th>
-                          <th>Eligibility</th>
-                          <th>Ages</th>
-                          <th>Times</th>
-                          <th>Dates</th>
-                          <th><ng-pluralize count="course.teachers.length"
-                 when="{'0': 'Teacher',
-                     '1': 'Teacher',
-                     'other': 'Teachers'}">
-</ng-pluralize></th>
-                          <th>Location</th>
-                          <th>Cost</th>
-                          <th>Status</th>
-                          <th>Enroll</th>
-                        </tr>
-                        <tr>
-                          <td ng-style='{"color": deterministicWebColor("title")}'>{{course.title}}
-                          </td>
-                          <td ng-style='{"color": deterministicWebColor("eligible")}'>{{course.eligible}}
-                          </td>
-                          <td ng-style='{"color": deterministicWebColor("ages")}'>{{course.ages}}
-                          </td>
-                          <td ng-style='{"color": deterministicWebColor("times")}'>{{course.times}}
-                          </td>
-                          <td ng-style='{"color": deterministicWebColor("dates")}'>{{course.dates}}
-                          </td>
-                          <td><a href="#whoweare"><span ng-repeat="teacher in course.teachers"><span ng-style='{"color": deterministicWebColor(teacher)}'>{{teacher}}</span><span ng-if="!$last && course.teachers.length > 1"> and </span></span></a></td>
-                          <td ng-style='{"color": deterministicWebColor("location")}'>{{course.location}}
-                          </td>
-                          <td ng-style='{"color": deterministicWebColor("cost")}'>{{course.cost}}
-                          </td>
-                          <td>
-                            <span ng-if="course.status == 'waitlist'">
-                              <span style="color: red">Currently full</span><br><i><span style="color: orange">Wait list available</span></i></span>
-                            </span>
-                            <span ng-if="course.status == 'enroll'">
-                              <span style="color: green">Space available</span>
-                            </span>
-                          </td>
-                          <td>
-                            <a ng-href="{{course.signupurl}}"
-                            class="md-button small animate fadeInUp button-hero style-2 "
-                            style="width: 100px; display: block; border-color:#000; color:#2b2; "
-                            data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 ">
-                            <span ng-if="course.status == 'waitlist'">Wait List</span><span ng-if="course.status == 'enroll'">Enroll!</span></a>
-                          </td>
-                        </tr>
-                      </table>
+              <div ng-repeat="season in seasons">
+                <div ng-repeat="course in coursesForSeason(season)">
+                  <div class="container">
+                    <div class="section-content">
+                      <div class="clearfix" style="height:5px"></div>
+                      <div class="row">
+                          <h4 ng-if="$first">f{{$first}} i{{$index}} {{course.session}} Session</h4>
+                        <table class="table">
+                          <tr>
+                            <th>Title</th>
+                            <th>Eligibility</th>
+                            <th>Ages</th>
+                            <th>Times</th>
+                            <th>Dates</th>
+                            <th><ng-pluralize count="course.teachers.length"
+                   when="{'0': 'Teacher',
+                       '1': 'Teacher',
+                       'other': 'Teachers'}">
+  </ng-pluralize></th>
+                            <th>Location</th>
+                            <th>Cost</th>
+                            <th>Status</th>
+                            <th>Enroll</th>
+                          </tr>
+                          <tr>
+                            <td ng-style='{"color": deterministicWebColor("title")}'>{{course.title}}
+                            </td>
+                            <td ng-style='{"color": deterministicWebColor("eligible")}'>{{course.eligible}}
+                            </td>
+                            <td ng-style='{"color": deterministicWebColor("ages")}'>{{course.ages}}
+                            </td>
+                            <td ng-style='{"color": deterministicWebColor("times")}'>{{course.times}}
+                            </td>
+                            <td ng-style='{"color": deterministicWebColor("dates")}'>{{course.dates}}
+                            </td>
+                            <td><a href="#whoweare"><span ng-repeat="teacher in course.teachers"><span ng-style='{"color": deterministicWebColor(teacher)}'>{{teacher}}</span><span ng-if="!$last && course.teachers.length > 1"> and </span></span></a></td>
+                            <td ng-style='{"color": deterministicWebColor("location")}'>{{course.location}}
+                            </td>
+                            <td ng-style='{"color": deterministicWebColor("cost")}'>{{course.cost}}
+                            </td>
+                            <td>
+                              <span ng-if="course.status == 'waitlist'">
+                                <span style="color: red">Currently full</span><br><i><span style="color: orange">Wait list available</span></i></span>
+                              </span>
+                              <span ng-if="course.status == 'enroll'">
+                                <span style="color: green">Space available</span>
+                              </span>
+                            </td>
+                            <td>
+                              <a ng-href="{{course.signupurl}}"
+                              class="md-button small animate fadeInUp button-hero style-2 "
+                              style="width: 100px; display: block; border-color:#000; color:#2b2; "
+                              data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 ">
+                              <span ng-if="course.status == 'waitlist'">Wait List</span><span ng-if="course.status == 'enroll'">Enroll!</span></a>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
                     </div>
                   </div>
                 </div>
