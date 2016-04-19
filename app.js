@@ -81,6 +81,14 @@ app.controller('CoursesController', ['$scope', '$http', function($scope, $http) 
     console.log("courses: ");
     console.log($scope.courses);
   });
+
+  $scope.seasons = function() {
+    return _.pluck($scope.courses, "session");
+  };
+
+  $scope.coursesForSeason = function(season) {
+    return _.where($scope.courses, {"session": season});
+  };
 }]);
 
 
