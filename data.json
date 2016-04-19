@@ -17,14 +17,28 @@
     ,{
     "session": "Spring 2016"
     ,"active": true
+    ,"title": "Intro to creative tech"
+    ,"eligible": "all children!"
+    ,"ages": "6-9 years"
+    ,"times": "Saturdays 1pm-2:15pm"
+    ,"dates": "May 7, 14, 21; June 4, 11, 18, 25 (7 sessions)"
+    ,"teachers": ["Bryn Haffey", "Katya Vasilaky"]
+    ,"location": "30 Macon St. (near the Nostrand A train stop)"
+    ,"cost": "$220"
+    ,"status": "enroll"
+    ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
+    }
+    ,{
+    "session": "Spring 2016"
+    ,"active": true
     ,"title": "Intro to Animation"
     ,"eligible": "all children!"
     ,"ages": "7-11 years"
     ,"times": "Sundays 11:30am-12:45pm"
-    ,"dates": "May 8, 15, 22, 29; June 5, 12, 19 (7 sessions)"
+    ,"dates": "May 8, 15, 22; June 5, 12, 19 (6 sessions)"
     ,"teachers": ["Dakota Pailes-Friedman"]
     ,"location": "30 Macon St. (near the Nostrand A train stop)"
-    ,"cost": "$225"
+    ,"cost": "$200"
     ,"status": "enroll"
     ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
     }
