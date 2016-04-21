@@ -539,6 +539,8 @@ schedule availability</a>.</p>
                              style="width: 80px; display: block; border-color:#000; color:#2b2;"
                              data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 "><span ng-if="course.status == 'waitlist'">Wait List</span><span ng-if="course.status == 'enroll'">Enroll</span></a>
                             </dd>
+                            <dt ng-if="course.additonal">Additional Info</dt>
+                            <dd ng-style='{"color": deterministicWebColor("additional")}'>{{course.additional}}</dd>
                           </dl>
                         </div>
                       </div>
@@ -601,6 +603,9 @@ schedule availability</a>.</p>
                               style="width: 100px; display: block; border-color:#000; color:#2b2; "
                               data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 ">
                               <span ng-if="course.status == 'waitlist'">Wait List</span><span ng-if="course.status == 'enroll'">Enroll!</span></a></td>
+                          </tr>
+                          <tr ng-if="course.additonal"><td colspan=10><span ng-style='{"color": deterministicWebColor("additional title")}'>Additional Info:</span>
+                            <span ng-style='{"color": deterministicWebColor("additional content")}'>{{course.additional}}</span></td>
                           </tr>
                         </table>
                       </div>
