@@ -558,21 +558,21 @@ schedule availability</a>.</p>
                       <div class="row">
                         <h4 ng-if="$first">{{course.session}} Session</h4>
                         <table class="table">
-                          <tr style="color: white" ng-style='{"background-color": course.color}'>
-                            <th>Title</th>
-                            <th>Eligibility</th>
-                            <th>Ages</th>
-                            <th>Times</th>
-                            <th>Dates</th>
-                            <th><ng-pluralize count="course.teachers.length"
+                          <tr style="color: white" ng-init='numCols = 0' ng-style='{"background-color": course.color}'>
+                            <th ng-init='numCols++'>Title</th>
+                            <th ng-init='numCols++'>Eligibility</th>
+                            <th ng-init='numCols++'>Ages</th>
+                            <th ng-init='numCols++'>Times</th>
+                            <th ng-init='numCols++'>Dates</th>
+                            <th ng-init='numCols++'><ng-pluralize count="course.teachers.length"
                    when="{'0': 'Teacher',
                        '1': 'Teacher',
                        'other': 'Teachers'}">
   </ng-pluralize></th>
-                            <th>Location</th>
-                            <th>Cost</th>
-                            <th>Status</th>
-                            <th>Enroll</th>
+                            <th ng-init='numCols++'>Location</th>
+                            <th ng-init='numCols++'>Cost</th>
+                            <th ng-init='numCols++'>Status</th>
+                            <th ng-init='numCols++'>Enroll</th>
                           </tr>
                           <tr>
                             <td ng-style='{"color": deterministicWebColor("title")}'>{{course.title}}
@@ -604,7 +604,7 @@ schedule availability</a>.</p>
                               data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 ">
                               <span ng-if="course.status == 'waitlist'">Wait List</span><span ng-if="course.status == 'enroll'">Enroll!</span></a></td>
                           </tr>
-                          <tr ng-if="course.additional"><td colspan=10><span ng-style='{"color": deterministicWebColor("additional title")}'>Additional Info:</span>
+                          <tr ng-if="course.additional"><td colspan=10>numcols: {{numCols}}<span ng-style='{"color": deterministicWebColor("additional title")}'>Additional Info:</span>
                             <span ng-style='{"color": deterministicWebColor("additional content")}'>{{course.additional}}</span></td>
                           </tr>
                         </table>
