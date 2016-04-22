@@ -558,7 +558,7 @@ schedule availability</a>.</p>
                       <div class="row">
                         <h4 ng-if="$first">{{course.session}} Session</h4>
                         <table class="table">
-                          <tr style="color: white" ng-init='numCols = 5' ng-style='{"background-color": course.color}'>
+                          <tr style="color: white" ng-init='numCols = 0' ng-style='{"background-color": course.color}'>
                             <th ng-init='numCols = numCols + 1'>Title</th>
                             <th ng-init='numCols = numCols + 1'>Eligibility</th>
                             <th ng-init='numCols = numCols + 1'>Ages</th>
@@ -604,7 +604,7 @@ schedule availability</a>.</p>
                               data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 ">
                               <span ng-if="course.status == 'waitlist'">Wait List</span><span ng-if="course.status == 'enroll'">Enroll!</span></a></td>
                           </tr>
-                          <tr ng-if="course.additional"><td colspan=10>numcols: {{numCols}}<span ng-style='{"color": deterministicWebColor("additional title")}'>Additional Info:</span>
+                          <tr ng-if="course.additional"><td colspan="{{10}}">numcols: {{numCols}}<span ng-style='{"color": deterministicWebColor("additional title")}'>Additional Info:</span>
                             <span ng-style='{"color": deterministicWebColor("additional content")}'>{{course.additional}}</span></td>
                           </tr>
                         </table>
