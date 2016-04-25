@@ -185,6 +185,12 @@
       ,"bio": "James has worked on many bestselling and award-winning games, from smash hit <i>Two Dots</i> to his acclaimed \"mobile musical\" <i>Peter Panic</i>, produced with Broadway and game design legends. He holds an MFA in game design from Tisch, won “Best Game” award at the 2015 Global Game Jam, and been published on several popular game-related websites."
       ,"nutshell": "award-winning game designer, NYU MFA"
     }
+    ,{
+      "fullname": "Pierre Depaz"
+      ,"nickname": "Pierre"
+      ,"bio": "Pierre is an adjunct faculty member at the NYU Game Center. He also volunteers for the afterschool program ScriptEd, and is eager to introduce kids to Processing/p5, Arduino and creating games!"
+      ,"nutshell": "adjunct faculty member, NYU Game Center"
+    }
   ],
 
   "faquestions": [
