@@ -21,6 +21,21 @@
     ,"active": true
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
+    ,"ages": "7-10 years"
+    ,"times": "Thursdays 4pm-5pm"
+    ,"dates": "May 12, 19, 26; June 2, 9, 16, 23 (7 sessions)"
+    ,"teachers": ["Hilary Fung"]
+    ,"location": "30 Macon St. (near the Nostrand A train stop)"
+    ,"cost": "$200"
+    ,"status": "enroll"
+    ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
+    ,"color": "#87e"
+    }
+    ,{
+    "session": "Spring 2016"
+    ,"active": true
+    ,"title": "Intro to creative tech"
+    ,"eligible": "all children!"
     ,"ages": "6-9 years"
     ,"times": "Saturdays 1pm-2:15pm"
     ,"dates": "May 7, 14, 21; June 4, 11, 18, 25 (7 sessions)"
@@ -30,6 +45,22 @@
     ,"status": "enroll"
     ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
     ,"color": "#97e"
+    ,"additional": "Note: Bryn and Katya will be trading off most classes and won't both be present at all classes."
+    }
+    ,{
+    "session": "Spring 2016"
+    ,"active": true
+    ,"title": "Intro to Game Design"
+    ,"eligible": "all children!"
+    ,"ages": "7-11 years"
+    ,"times": "Saturdays 10am-11:30pm (snack break provided)"
+    ,"dates": "May 14, 21; June 4, 11, 18 (5 sessions)"
+    ,"teachers": ["Dakota Pailes-Friedman"]
+    ,"location": "30 Macon St. (near the Nostrand A train stop)"
+    ,"cost": "$250"
+    ,"status": "enroll"
+    ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
+    ,"color": "#3d5"
     }
     ,{
     "session": "Spring 2016"

@@ -497,6 +497,7 @@ schedule availability</a>.</p>
               </div>
             </div>
             <div class="page-section visible-xs visible-sm hidden-md hidden-lg content-fixed bg-default padding-xs" style="">
+            <h3 class="text-center" style="font-family: Raleway; font-weight: 400; color: #7e5;"><i>Classes have an average of 5 students per teacher, and are capped at 7 students per teacher.</i></h3>
               <div ng-repeat="season in seasons()" ng-cloak>
                 <div ng-repeat="course in coursesForSeason(season)">
                   <div class="container">
@@ -526,7 +527,7 @@ schedule availability</a>.</p>
                        '1': 'Teacher',
                        'other': 'Teachers'}">
   </ng-pluralize></dt>
-                            <dd><a href="#whoweare"><span ng-repeat="teacher in course.teachers"><span ng-style='{"color": deterministicWebColor(teacher)}'>{{teacher}}</span><span ng-if="!$last && course.teachers.length > 1"> and </span></span></a></dd>
+                            <dd><a href="#whoweare"><span ng-repeat="teacher in getTeachers(course.teachers)"><span style="text-decoration: underline" ng-style='{"color": deterministicWebColor(teacher.fullname)}'>{{teacher.fullname}}</span><span style="color: #a9a;" ng-if="teacher.nutshell"> ({{teacher.nutshell}})</span><span ng-if="!$last && course.teachers.length > 1"> and </span></span></a></dd>
                             <dt>Location</dt>
                             <dd ng-style='{"color": deterministicWebColor("location")}'>{{course.location}}
                             </dd>
