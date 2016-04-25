@@ -99,6 +99,12 @@ app.controller('StaffController', ['$scope', '$http', function($scope, $http) {
   });
 }]);
 
+app.controller('FAQController', ['$scope', '$http', function($scope, $http) {
+  $http.get('data.json').success(function(data) {
+    $scope.faquestions = data.faquestions;
+  });
+}]);
+
 
 
 
