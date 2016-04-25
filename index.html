@@ -586,7 +586,7 @@ schedule availability</a>.</p>
                             </td>
                             <td ng-style='{"color": deterministicWebColor("dates")}'>{{course.dates}}
                             </td>
-                            <td><a href="#whoweare"><span ng-repeat="teacher in getTeachers(course.teachers)"><span ng-style='{"color": deterministicWebColor(teacher.fullname)}'>{{teacher.fullname}}</span><span style="color: #777;" ng-if="teacher.nutshell">({{teacher.nutshell}})</span><span ng-if="!$last && course.teachers.length > 1"> and </span></span></a></td>
+                            <td><a href="#whoweare"><span ng-repeat="teacher in getTeachers(course.teachers)"><span ng-style='{"color": deterministicWebColor(teacher.fullname)}'>{{teacher.fullname}}</span><span style="color: #a9a;" ng-if="teacher.nutshell"> ({{teacher.nutshell}})</span><span ng-if="!$last && course.teachers.length > 1"> and </span></span></a></td>
                             <td ng-style='{"color": deterministicWebColor("location")}'>{{course.location}}
                             </td>
                             <td ng-style='{"color": deterministicWebColor("cost")}'>{{course.cost}}
