@@ -55,12 +55,13 @@
     ,"ages": "7-11 years"
     ,"times": "Saturdays 10am-11:30pm (snack break provided)"
     ,"dates": "May 14, 21; June 4, 11, 18 (5 sessions)"
-    ,"teachers": ["Dakota Pailes-Friedman"]
+    ,"teachers": ["James Marion", "Pierre Depaz", "Chris Wallace"]
     ,"location": "30 Macon St. (near the Nostrand A train stop)"
     ,"cost": "$250"
     ,"status": "enroll"
     ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
-    ,"color": "#3d5"
+    ,"color": "#4a5"
+    ,"additional": "Note: teacher's schedule subject to cool programs they're waiting to hear back from; class will have at least 2 teachers present at all times."
     }
     ,{
     "session": "Spring 2016"
