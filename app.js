@@ -91,4 +91,14 @@ app.controller('CoursesController', ['$scope', '$http', function($scope, $http) 
   };
 }]);
 
+app.controller('StaffController', ['$scope', '$http', function($scope, $http) {
+  $scope.deterministicWebColor = deterministicWebColor;
+
+  $http.get('data.json').success(function(data) {
+    $scope.staff = data.staff;
+  });
+}]);
+
+
+
 
