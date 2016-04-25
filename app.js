@@ -78,6 +78,7 @@ app.controller('CoursesController', ['$scope', '$http', function($scope, $http) 
 
   $http.get('data.json').success(function(data) {
     $scope.courses = data.courses;
+    $scope.staff = data.staff;
     console.log("courses: ");
     console.log($scope.courses);
   });
@@ -88,6 +89,13 @@ app.controller('CoursesController', ['$scope', '$http', function($scope, $http) 
 
   $scope.coursesForSeason = function(season) {
     return _.where($scope.courses, {"session": season});
+  };
+
+  // gets all the teacher objects for the fullnames listed for each course
+  $scope.getTeachers = function(teacherFullnameArr) {
+    return _.map(teacherFullnameArr, function(teacherFullname) {
+      return _.findWhere($scope.staff, {"fullname": teacherFullname});
+    });
   };
 }]);
 

@@ -497,7 +497,7 @@ schedule availability</a>.</p>
               </div>
             </div>
             <div class="page-section visible-xs visible-sm hidden-md hidden-lg content-fixed bg-default padding-xs" style="">
-              <div ng-repeat="season in seasons()">
+              <div ng-repeat="season in seasons()" ng-cloak>
                 <div ng-repeat="course in coursesForSeason(season)">
                   <div class="container">
                     <div class="section-content">
@@ -550,7 +550,7 @@ schedule availability</a>.</p>
               </div>
             </div>
             <div class="page-section visible-md visible-lg hidden-xs hidden-sm content-fixed bg-default padding-xs" style="">
-              <div ng-repeat="season in seasons()">
+              <div ng-repeat="season in seasons()" ng-cloak>
                 <div ng-repeat="course in coursesForSeason(season)">
                   <div class="container">
                     <div class="section-content">
@@ -586,7 +586,7 @@ schedule availability</a>.</p>
                             </td>
                             <td ng-style='{"color": deterministicWebColor("dates")}'>{{course.dates}}
                             </td>
-                            <td><a href="#whoweare"><span ng-repeat="teacher in course.teachers"><span ng-style='{"color": deterministicWebColor(teacher)}'>{{teacher}}</span><span ng-if="!$last && course.teachers.length > 1"> and </span></span></a></td>
+                            <td><a href="#whoweare"><span ng-repeat="teacher in getTeachers(course.teachers)"><span ng-style='{"color": deterministicWebColor(teacher.fullname)}'>{{teacher.fullname}}</span><span style="color: #777;" ng-if="teacher.nutshell">({{teacher.nutshell}})</span><span ng-if="!$last && course.teachers.length > 1"> and </span></span></a></td>
                             <td ng-style='{"color": deterministicWebColor("location")}'>{{course.location}}
                             </td>
                             <td ng-style='{"color": deterministicWebColor("cost")}'>{{course.cost}}
@@ -672,7 +672,7 @@ schedule availability</a>.</p>
               </div>
             </div>
           </div>
-          <div class="page-section content-fixed bg-default padding-xs" style="font-size: 1.6rem; line-height: 150%" ng-controller="StaffController">
+          <div class="page-section content-fixed bg-default padding-xs" style="font-size: 1.6rem; line-height: 150%" ng-controller="StaffController" ng-cloak>
             <div class="container">
               <div class="section-content">
                 <div class="clearfix" style="height:5px"></div>
@@ -767,14 +767,14 @@ schedule availability</a>.</p>
             </div>
           </div>
           <div class="page-section content-fixed bg-default padding-xs" style="font-size: 1.6rem; line-height: 150%">
-            <div class="container" ng-controller="FAQController">
+            <div class="container" ng-controller="FAQController" ng-cloak>
               <div class="section-content">
                 <div class="clearfix" style="height:5px"></div>
                 <div class="row">
                   <div class="col-xs-10 col-offset-1">
                     <div ng-repeat="question in faquestions">
                       <h4>Q. {{question.q}}</h4>
-                      <p><b>A.</b> <span ng-bind-html="question.a"></span></p>
+                      <p><b>A.</b> <p ng-bind-html="question.a"></p></p>
                     </div>
                   </div>
                 </div>

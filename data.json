@@ -112,21 +112,25 @@
       "fullname": "Dakota Pailes-Friedman"
       ,"nickname": "Dakota"
       ,"bio": "Dakota (AKA \"Dakota PF\") is a Brooklyn-born and -based artist. As half of <a href=\"https://vimeo.com/lowresfilm\">LOW-RES FILMS</a>, he directs, edits, writes and designs sound for <span style=\"background-color: yellow\">live-action and animation films</span>. Outside of film-making, Dakota also paints and creates digital design work, and teaches kids karate."
+      ,"nutshell": "veteran animator, director, and karate teacher"
     }
     ,{
       "fullname": "Taylor Black"
       ,"nickname": "Taylor"
       ,"bio": "Taylor is a tech educator with a background in technical theatre and 3D design software. She is currently a PhD candidate at NYU Performance Studies, with a research focus in <span style=\"background-color: yellow\">online community building</span>. Taylor's computer course experience includes Achievement First Endeavor Middle School, NYU Magnet game center, and the Arvada Center for the Arts and Humanities.</p> "
+      ,"nutshell": "PhD candidate at NYU and veteran tech educator"
     }
     ,{
       "fullname": "Bryn Haffey"
       ,"nickname": "Bryn"
       ,"bio": "Bryn is a data engineer at an advertising technology company and holds a Master's in Computer Science.  She has prior experience teaching introductory programming courses to first year college students, but loves younger children, especially her own niece and nephew.  She lives with her husband and <span style=\"background-color: yellow\">rescue dog named Franklyn</span> in Clinton Hill and enjoys biking and Pixar movies. "
+      ,"nutshell": "data engineer, CS MS, dog lover"
     }
     ,{
       "fullname": "Katya Vasilaky"
       ,"nickname": "Katya"
       ,"bio": "Katya is a postdoc in economics at Columbia University, an upcoming instructor at Girls Who Code in NYC 2016, akd a co-organizer of Pyladies NYC. She also <span style=\"background-color: yellow\">volunteers as a dance teacher</span> in Harlem schools and has danced ballet professinally. See more on <a href=\"https://katyavasilaky.com/\">her site.</a>"
+      ,"nutshell": "Econ PhD and dance teacher"
     }
     ,{
       "fullname": "Chris Wallace"
@@ -137,6 +141,13 @@
       "fullname": "Hilary Fung"
       ,"nickname": "Hilary"
       ,"bio": "Hilary works at the Huffington Post, where she reports, designs and develops data stories and multimedia features. She has also worked with kids through Sierra Club NYC ICO, Camp/Interactive, and more."
+      ,"nutshell": "data journalist and designer at Huffington Post, teaching at Camp/Interactive"
+    }
+    ,{
+      "fullname": "James Marion"
+      ,"nickname": "James"
+      ,"bio": "James has worked on many bestselling and award-winning games, from smash hit <i>Two Dots</i> to his acclaimed \"mobile musical\" <i>Peter Panic</i>, produced with Broadway and game design legends. He holds an MFA in game design from Tisch, won “Best Game” award at the 2015 Global Game Jam, and been published on several popular game-related websites."
+      ,"nutshell": "award-winning game designer of Peter Panic, contributor to Two Dots, NYU MFA"
     }
   ],
 
