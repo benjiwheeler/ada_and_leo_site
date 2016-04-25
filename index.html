@@ -576,7 +576,7 @@ schedule availability</a>.</p>
                             <th ng-init='numCols = numCols + 1'>Status</th>
                             <th ng-init='numCols = numCols + 1'>Enroll</th>
                           </tr>
-                          <tr>
+                          <tr ng-style="course.status == 'waitlist' && {'background-color': '#ddd'}">
                             <td ng-style='{"color": deterministicWebColor("title")}'>{{course.title}}
                             </td>
                             <td ng-style='{"color": deterministicWebColor("eligible")}'>{{course.eligible}}
