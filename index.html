@@ -688,8 +688,6 @@ schedule availability</a>.</p>
             </div>
           </div>
 
-
-
           <a name="articles"></a>
           <div class="page-section content-full padding-xs bg-default" style="background-color: orange; ">
             <div class="container">
@@ -769,12 +767,15 @@ schedule availability</a>.</p>
             </div>
           </div>
           <div class="page-section content-fixed bg-default padding-xs" style="">
-            <div class="container">
+            <div class="container" ng-controller="FAQController">
               <div class="section-content">
                 <div class="clearfix" style="height:5px"></div>
                 <div class="row">
                   <div class="col-xs-10 col-offset-1">
-                    <h4>Questions/answers to come!</h4>
+                    <div ng-repeat="question in faquestions">
+                      <h4>Q. {{question.q}}</h4>
+                      <p><b>A.</b> {{question.a}}</p>
+                    </div>
                   </div>
                 </div>
               </div>

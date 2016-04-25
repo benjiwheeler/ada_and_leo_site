@@ -133,5 +133,17 @@
       ,"nickname": "Chris"
       ,"bio": "Chris is an experienced game designer, web developer, and project manager that grew up in New York. He's trained and taught kung fu to people of all ages for 13 years at the USA Shaolin Temple. He also enjoys traveling and walking up mountains in the middle of the night."
     }
+    ,{
+      "fullname": "Hilary Fung"
+      ,"nickname": "Hilary"
+      ,"bio": "Hilary works at the Huffington Post, where she reports, designs and develops data stories and multimedia features. She has also worked with kids through Sierra Club NYC ICO, Camp/Interactive, and more."
+    }
+  ],
+
+  "faq": [
+    {
+      "q": "What makes Ada & Leo different from other programs?"
+      "a": "Our guiding philosophy has been to encourage direct experience with real materials and the real creative process whenever possible, which sometimes means not having as impressive a final product as some other programs might, and also means making kids a little more frustrated than other programs might.<p>Everything we do, we try to aim to primarily influence the experience of the students after they finish the class. often that means giving them a fun and rewarding experience with tools inside the class, because play and joy are so crucial to developing creative power. But a class where the teacher did all the work and dazzled the kids would be one I would consider something of a failure, even if the kids felt perfectly happy. whereas a class where kids came out of it and obsessively used even just one single tool they learned in the class to create dozens of their own creations would be one I would consider a huge success.<p>The same goes for working through problems. Students often feel frustrated in my class and want me to fix the problem for them. Knowing each kid in their situation and their needs, sometimes I do fix it!  I'm not been absolutist about these things :). But ideally, I will just encourage the student to keep trying to figure it out themselves,  express my support, and give them a tiny push in the right direction. I believe strongly that a problem they solve themselves is worth 10 problems we solve for them, though of course in practice it's often not really that simple!"
+    }
   ]
 }
