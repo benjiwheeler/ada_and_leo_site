@@ -52,6 +52,8 @@ var webColors = ["337ab7", "5cb85c", "AA04DC", "45B2D3", "337ab7", "d9534f",
 		 "D07090", "4068E0", "804010", "0000E0", "308850", "F08080",
 		 "006000", "B08800", "506830", "FF8800", "9070D0", "008080",
 		 "4080B0", "FF6040", "403880", "305050", "C01080", "40D0D0"];
+// css colors for white text:  e84 orange;
+
 
 function deterministicWebColor(seed) {
   var rs = new RandomSeeded(seed);
