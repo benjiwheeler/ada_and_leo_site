@@ -280,6 +280,10 @@ a.button{
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
+#header.is-sticky #header-menu {
+		margin-top: 20px;
+}
+
 #header-content .container{
 	position: relative;
 }
@@ -7344,7 +7348,7 @@ footer .widget_md_widget_recent_posts li img{
 /*-----------------------------------------------------------------------------------*/
 /*  Media Queries - Small Devices
 /*-----------------------------------------------------------------------------------*/
-@media (max-width:1199px){
+@media (max-width:991px){
 	body[data-device="mobile"] .section-video video{
 		display: none;
 	}
@@ -7493,7 +7497,7 @@ footer .widget_md_widget_recent_posts li img{
 }
 
 
-@media (max-width:1199px){
+@media (max-width:991px){
 	#wrap,
 	#header,
 	#header-content,
@@ -7527,6 +7531,7 @@ footer .widget_md_widget_recent_posts li img{
 	header.is-sticky{
 		top: 0;
 	}
+
 
 	#header-top,
 	#header-menu,
