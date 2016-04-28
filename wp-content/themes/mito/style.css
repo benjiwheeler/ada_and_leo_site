@@ -541,7 +541,10 @@ a.button{
 	color: #fe0;
 border-bottom: #6a6 1px solid;
 background-color: #226;
-	padding: 7px;
+	padding-left: 6px;
+	padding-rigt: 6px;
+	padding-bottom: 10px;
+	padding-top: 10px;
 	display: block;
 	position: relative;
 	font-size: 14px;
