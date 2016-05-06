@@ -881,15 +881,16 @@ schedule availability</a>.</p>
                   <div class="col-xs-10 col-offset-1">
                     <div ng-repeat="question in faquestions">
                       <h4>Q. {{question.q}}</h4>
-                      <p><b>A.</b> <p ng-bind-html="question.a"></p></p>
+                      <p>
+                        <b>A.</b>
+                        <p ng-repeat="aParagraph in question.aParagraphs" ng-bind-html="aParagraph"></p>
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-
 
 
           <a name="contact"></a>
