@@ -25,6 +25,7 @@ var RandomSeeded = function(seed) {
       // if there is no seed, use timestamp
       seedInt = (new Date()).getTime();
   }
+  if (seedInt < 0) { seedInt = seedInt * -1 }
 
   return {
     rand : function(min, max) {
