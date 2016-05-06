@@ -11,7 +11,7 @@
     ,"teachers": ["Taylor Black"]
     ,"location": "30 Macon St. (near the Nostrand A train stop)"
     ,"cost": "$240"
-    ,"status": "enroll"
+    ,"status": "waitlist"
     ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
     ,"color": "#77e"
     ,"additional": "Optional: we will do pickup at Compass Charter School (300 Adelphi) at 1pm, transport students safely, and take care of students until the class starts at 2pm. Cost: $16 per pickup, or $100 if paid in advance for the full 8 classes (in which case the grand total is $340)."
@@ -21,12 +21,12 @@
     ,"active": true
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
-    ,"ages": "7-10 years"
-    ,"times": "Thursdays 4pm-5pm"
-    ,"dates": "May 12, 19, 26; June 2, 9, 16, 23 (7 sessions)"
+    ,"ages": "6-10 years"
+    ,"times": "Sundays 1:30pm-2:45pm"
+    ,"dates": "May 15, 22; June 5, 12, 19, 26 (6 sessions)"
     ,"teachers": ["Hilary Fung"]
     ,"location": "30 Macon St. (near the Nostrand A train stop)"
-    ,"cost": "$200"
+    ,"cost": "$180"
     ,"status": "enroll"
     ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
     ,"color": "#87e"
