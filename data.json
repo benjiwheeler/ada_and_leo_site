@@ -3,6 +3,22 @@
     {
     "session": "Spring 2016"
     ,"active": true
+    ,"title": "Intro to Game Design"
+    ,"eligible": "all children!"
+    ,"ages": "7-11 years"
+    ,"times": "Saturdays 10am-11:30pm (snack break provided)"
+    ,"dates": "May 14, 21; June 4, 11, 18 (5 sessions)"
+    ,"teachers": ["James Marion", "Pierre Depaz", "Chris Wallace"]
+    ,"location": "30 Macon St. (near the Nostrand A train stop)"
+    ,"cost": "$250"
+    ,"status": "enroll"
+    ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
+    ,"color": "#4a5"
+    ,"additional": "Note: one teacher's schedule is subject to cool applications they're waiting to hear back from! Class will have at least 2 teachers present at all times."
+    }
+    ,{
+    "session": "Spring 2016"
+    ,"active": true
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
     ,"ages": "6-9 years"
@@ -15,21 +31,6 @@
     ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
     ,"color": "#77e"
     ,"additional": "Optional: we will do pickup at Compass Charter School (300 Adelphi) at 1pm, transport students safely, and take care of students until the class starts at 2pm. Cost: $16 per pickup, or $100 if paid in advance for the full 8 classes (in which case the grand total is $340)."
-    }
-    ,{
-    "session": "Spring 2016"
-    ,"active": true
-    ,"title": "Intro to creative tech"
-    ,"eligible": "all children!"
-    ,"ages": "6-10 years"
-    ,"times": "Sundays 1:30pm-2:45pm"
-    ,"dates": "May 15, 22; June 5, 12, 19, 26 (6 sessions)"
-    ,"teachers": ["Hilary Fung"]
-    ,"location": "30 Macon St. (near the Nostrand A train stop)"
-    ,"cost": "$180"
-    ,"status": "enroll"
-    ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
-    ,"color": "#87e"
     }
     ,{
     "session": "Spring 2016"
@@ -50,18 +51,17 @@
     ,{
     "session": "Spring 2016"
     ,"active": true
-    ,"title": "Intro to Game Design"
+    ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
-    ,"ages": "7-11 years"
-    ,"times": "Saturdays 10am-11:30pm (snack break provided)"
-    ,"dates": "May 14, 21; June 4, 11, 18 (5 sessions)"
-    ,"teachers": ["James Marion", "Pierre Depaz", "Chris Wallace"]
+    ,"ages": "6-10 years"
+    ,"times": "Sundays 1:30pm-2:45pm"
+    ,"dates": "May 15, 22; June 5, 12, 19, 26 (6 sessions)"
+    ,"teachers": ["Hilary Fung"]
     ,"location": "30 Macon St. (near the Nostrand A train stop)"
-    ,"cost": "$250"
+    ,"cost": "$180"
     ,"status": "enroll"
     ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
-    ,"color": "#4a5"
-    ,"additional": "Note: one teacher's schedule is subject to cool applications they're waiting to hear back from! Class will have at least 2 teachers present at all times."
+    ,"color": "#87e"
     }
     ,{
     "session": "Spring 2016"
@@ -191,9 +191,9 @@
       ,"bio": "Pierre is a software developer who grew up in Europe and settled in New York to complete a Masters in Game Design. He is currently working as a freelancer for multiple companies in the tech and arts world and is an adjunct faculty member at NYU. He also volunteers for the afterschool program ScriptEd, and is eager to introduce kids to Processing/p5, Arduino and creating games!"
       ,"nutshell": "adjunct faculty member, NYU Game Center"
     }
-  ],
+  ]
 
-  "faquestions": [
+  ,"faquestions": [
     {
       "q": "What makes Ada & Leo different from other programs?"
       ,"aParagraphs": [
@@ -201,6 +201,29 @@
         ,"Everything we do, we try to aim to primarily influence the experience of the students after they finish the class. often that means giving them a fun and rewarding experience with tools inside the class, because play and joy are so crucial to developing creative power. But a class where the teacher did all the work and dazzled the kids would be one I would consider something of a failure, even if the kids felt perfectly happy. whereas a class where kids came out of it and obsessively used even just one single tool they learned in the class to create dozens of their own creations would be one I would consider a huge success."
         ,"The same goes for working through problems. Students often feel frustrated in my class and want me to fix the problem for them. Knowing each kid in their situation and their needs, sometimes I do fix it!  I'm not been absolutist about these things :). But ideally, I will just encourage the student to keep trying to figure it out themselves,  express my support, and give them a tiny push in the right direction. I believe strongly that a problem they solve themselves is worth 10 problems we solve for them, though of course in practice it's often not really that simple!"
       ]
+    }
+  ]
+
+  ,"testimonials": [
+    {
+      "quote": "M. LOVED the first class yesterday. He was so excited about it!"
+      ,"person": "M.K., mother of 6 year old boy"
+    }
+    ,{
+      "quote": "A. *LOVES* the class. I'm excited to find her [Tinkercad project]. And now I know she can play further and do other projects there. We'll check it out more later this week! Thank YOU."
+      ,"person": "J.D., mother of 6 year old girl"
+    }
+    ,{
+      "quote": "R. is really enjoying his tech classes. He asked us why normal school was not as much fun..."
+      ,"person": "V.S., mother of 6 year old boy"
+    }
+    ,{
+      "quote": "Would totally do it again!"
+      ,"person": "E.G., mother of 7 year old boy"
+    }
+    ,{
+      "quote": "My daughter has taken this class twice now, last fall and this past winter. I thought I would have trouble getting her up on Saturday mornings, but I never did. She enjoyed Ben's class so very much and couldn't stop talking about all the things she leaned once class was over."
+      ,"person": "M.S.B, mother of 7 year old girl"
     }
   ]
 }

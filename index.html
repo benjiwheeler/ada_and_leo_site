@@ -856,6 +856,35 @@ schedule availability</a>.</p>
           </div>
 
 
+          <a name="faq"></a>
+          <div class="page-section content-full bg-default" style="background-color: #118; ">
+            <div class="container">
+              <div class="section-content">
+                <div class="section-columns">
+                  <div class="clearfix" style="height:5px"></div>
+                  <div class="row">
+                    <h1 class="text-center" style="font-family: Raleway; font-weight: 400; color: white;">Testimonials
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page-section content-fixed bg-default padding-xs" style="font-size: 1.6rem; line-height: 150%">
+            <div class="container" ng-controller="FAQController" ng-cloak>
+              <div class="section-content">
+                <div class="clearfix" style="height:5px"></div>
+                <div class="row">
+                  <div class="col-xs-10 col-offset-1">
+                    <div ng-repeat="testimonial in testimonials">
+                      <h4>&ldquo;{{testimonial.quote}}&rdquo;</h4>
+                      <p>-{{testimonial.person}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
 
@@ -880,7 +909,7 @@ schedule availability</a>.</p>
                 <div class="row">
                   <div class="col-xs-10 col-offset-1">
                     <div ng-repeat="question in faquestions">
-                      <h4>Q. {{question.q}}</h4>
+                      <h4>Q.<br><br>{{question.q}}</h4>
                       <p>
                         <b>A.</b>
                         <p ng-repeat="aParagraph in question.aParagraphs" ng-bind-html="aParagraph"></p>
