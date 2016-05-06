@@ -54,11 +54,24 @@ var webColors = ["337ab7", "5cb85c", "AA04DC", "45B2D3", "337ab7", "d9534f",
 		 "4080B0", "FF6040", "403880", "305050", "C01080", "40D0D0"];
 // css colors for white text:  e84 orange;
 
+var blueColors = ["337ab7", "45B2D3", "337ab7",
+    "000080", "6090F0",
+    "8028E0",
+     "4068E0", "0000E0",
+    "9070D0",
+     "4080B0", "403880"];
+
 
 function deterministicWebColor(seed) {
   var rs = new RandomSeeded(seed);
   var rv = Math.floor(rs.rand(webColors.length));
   return "#" + webColors[rv];
+}
+
+function deterministicBlueColor(seed) {
+  var rs = new RandomSeeded(seed);
+  var rv = Math.floor(rs.rand(blueColors.length));
+  return "#" + blueColors[rv];
 }
 
 var app = angular.module('AdaLeoApp', ['ngSanitize']);
@@ -116,7 +129,7 @@ app.controller('FAQController', ['$scope', '$http', function($scope, $http) {
 }]);
 
 app.controller('TestimonialController', ['$scope', '$http', function($scope, $http) {
-  $scope.deterministicWebColor = deterministicWebColor;
+  $scope.deterministicBlueColor = deterministicBlueColor;
 
   $http.get('data.json').success(function(data) {
     $scope.testimonials = data.testimonials;
