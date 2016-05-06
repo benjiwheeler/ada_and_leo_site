@@ -116,6 +116,8 @@ app.controller('FAQController', ['$scope', '$http', function($scope, $http) {
 }]);
 
 app.controller('TestimonialController', ['$scope', '$http', function($scope, $http) {
+  $scope.deterministicWebColor = deterministicWebColor;
+
   $http.get('data.json').success(function(data) {
     $scope.testimonials = data.testimonials;
   });
