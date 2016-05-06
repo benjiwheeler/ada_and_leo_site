@@ -596,8 +596,20 @@ schedule availability</a>.</p>
                             <dt>Cost</dt>
                             <dd ng-style='{"color": deterministicWebColor("cost")}'>{{course.cost}}
                             </dd>
-                            <dt>Enroll</dt>
+                            <dt>Status</dt>
                             <dd>
+                              <span ng-if="course.status == 'waitlist'">
+                                <span style="color: red">Currently full</span><br><i><span style="color: orange">Wait list available</span></i></span>
+                              </span>
+                              <span ng-if="course.status == 'enroll'">
+                                <span style="color: green">Space available</span>
+                              </span>
+                              <span ng-if="course.status == 'ended'">
+                                <span style="color: darkgray">Course has ended</span>
+                              </span>
+                            </dd>
+                            <dt ng-if="course.status !== 'ended'">Enroll</dt>
+                            <dd ng-if="course.status !== 'ended'">
                              <a ng-href="{{course.signupurl}}" class="md-button small button-hero style-2 "
                              style="width: 80px; display: block; border-color:#000; color:#2b2;"
                              data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 "><span ng-if="course.status == 'waitlist'">Wait List</span><span ng-if="course.status == 'enroll'">Enroll</span></a>
@@ -644,7 +656,7 @@ schedule availability</a>.</p>
                             <th ng-init='numCols = numCols + 1'>Location</th>
                             <th ng-init='numCols = numCols + 1'>Cost</th>
                             <th ng-init='numCols = numCols + 1'>Status</th>
-                            <th ng-init='numCols = numCols + 1'>Enroll</th>
+                            <th ng-if="course.status !== 'ended'" ng-init='numCols = numCols + 1'>Enroll</th>
                           </tr>
                           <tr ng-style="course.status == 'waitlist' && {'background-color': '#ddd'}">
                             <td ng-style='{"color": deterministicWebColor("title")}'>{{course.title}}
@@ -669,8 +681,11 @@ schedule availability</a>.</p>
                               <span ng-if="course.status == 'enroll'">
                                 <span style="color: green">Space available</span>
                               </span>
+                              <span ng-if="course.status == 'ended'">
+                                <span style="color: darkgray">Course has ended</span>
+                              </span>
                             </td>
-                            <td><a ng-href="{{course.signupurl}}"
+                            <td ng-if="course.status !== 'ended'"><a ng-href="{{course.signupurl}}"
                               class="md-button small button-hero style-2 "
                               style="width: 100px; display: block; border-color:#000; color:#2b2; "
                               data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 ">
