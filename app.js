@@ -117,7 +117,7 @@ app.controller('CoursesController', ['$scope', '$http', function($scope, $http) 
       return numColsAlwaysPresent;
     } else {
       return numColsAlwaysPresent + 1;
-    });
+    }
   };
 }]);
 
