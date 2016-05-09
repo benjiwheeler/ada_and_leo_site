@@ -656,9 +656,8 @@ schedule availability</a>.</p>
                             <th ng-init='numCols = numCols + 1'>Location</th>
                             <th ng-init='numCols = numCols + 1'>Cost</th>
                             <th ng-init='numCols = numCols + 1'>Status</th>
-                            <th ng-if="course.status !== 'ended'">Enroll</th>
+                            <th ng-init="(course.status !== 'ended') && (numCols = numCols + 5)" ng-if="course.status !== 'ended'">Enroll</th>
                             <!-- hack to keep col count correct -->
-                            <div ng-init="(course.status !== 'ended') && (numCols = numCols + 5)"></div>
                           </tr>
                           <tr ng-style="(course.status == 'waitlist' || course.status == 'ended') && {'background-color': '#ddd'}">
                             <td ng-style='{"color": deterministicWebColor("title")}'>{{course.title}}
