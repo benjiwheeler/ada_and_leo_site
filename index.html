@@ -693,7 +693,7 @@ schedule availability</a>.</p>
                               <span ng-if="course.status == 'waitlist'">Wait List</span><span ng-if="course.status == 'enroll'">Enroll!</span></a></td>
                           </tr>
 <!--                          <tr ng-if="course.additional"> -->
-                          <tr><td colspan="{{numColsForCourse(numColsAlwaysPresent)}}"><span ng-style='{"color": deterministicWebColor("additional title")}'>{{numColsForCourse(numColsAlwaysPresent)}}cols; Additional Info:</span>
+                          <tr><td colspan="{{numColsForCourse(course, numColsAlwaysPresent)}}"><span ng-style='{"color": deterministicWebColor("additional title")}'>{{numColsForCourse(course, numColsAlwaysPresent)}}cols; Additional Info:</span>
                             <span ng-style='{"color": deterministicWebColor("additional content")}'>{{course.additional}}</span></td>
                           </tr>
                         </table>
