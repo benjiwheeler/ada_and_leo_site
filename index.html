@@ -653,10 +653,12 @@ schedule availability</a>.</p>
                        '1': 'Teacher',
                        'other': 'Teachers'}">
   </ng-pluralize></th>
-                            <th ng-init='numCols = numCols + 1'>Location</th>
-                            <th ng-init='numCols = numCols + 1'>Cost</th>
+                            <th ng-init='numCols = numCols + 0'>Location</th>
+                            <th ng-init='numCols = numCols + 0'>Cost</th>
                             <th ng-init='numCols = numCols + 1'>Status</th>
-                            <th ng-if="course.status !== 'ended'"><div ng-init='numCols = numCols + 1'></div>Enroll</th>
+                            <th ng-if="course.status !== 'ended'"></div>Enroll</th>
+                            <!-- hack to keep col count correct -->
+                            <div ng-init="course.status !== 'ended' && numCols = numCols - 1"></div>
                           </tr>
                           <tr ng-style="(course.status == 'waitlist' || course.status == 'ended') && {'background-color': '#ddd'}">
                             <td ng-style='{"color": deterministicWebColor("title")}'>{{course.title}}
