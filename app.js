@@ -111,6 +111,14 @@ app.controller('CoursesController', ['$scope', '$http', function($scope, $http) 
       return _.findWhere($scope.staff, {"fullname": teacherFullname});
     });
   };
+
+  $scope.numColsForCourse = function(course, numColsAlwaysPresent) {
+    if (course.status == "ended") {
+      return numColsAlwaysPresent;
+    } else {
+      return numColsAlwaysPresent + 1;
+    });
+  };
 }]);
 
 app.controller('StaffController', ['$scope', '$http', function($scope, $http) {

@@ -641,22 +641,22 @@ schedule availability</a>.</p>
                         <div class="row">
                         <h4 ng-if="$first">{{course.session}} Session</h4>
                         <table class="table">
-                        <!-- I'm getting a bit fancy here, but the numCols variable let's me very that number of columns while still having the additional info row span exactly the right number of columns. -->
-                          <tr style="color: white" ng-init='numCols = 0' ng-style='{"background-color": course.color}'>
-                            <th ng-init='numCols = numCols + 1'>Title</th>
-                            <th ng-init='numCols = numCols + 1'>Eligibility</th>
-                            <th ng-init='numCols = numCols + 1'>Ages</th>
-                            <th ng-init='numCols = numCols + 1'>Times</th>
-                            <th ng-init='numCols = numCols + 1'>Dates</th>
-                            <th ng-init='numCols = numCols + 1'><ng-pluralize count="course.teachers.length"
+                        <!-- I'm getting a bit fancy here, but the numColsAlwaysPresent variable let's me very that number of columns while still having the additional info row span exactly the right number of columns. -->
+                          <tr style="color: white" ng-init='numColsAlwaysPresent = 0' ng-style='{"background-color": course.color}'>
+                            <th ng-init='numColsAlwaysPresent = numColsAlwaysPresent + 1'>Title</th>
+                            <th ng-init='numColsAlwaysPresent = numColsAlwaysPresent + 1'>Eligibility</th>
+                            <th ng-init='numColsAlwaysPresent = numColsAlwaysPresent + 1'>Ages</th>
+                            <th ng-init='numColsAlwaysPresent = numColsAlwaysPresent + 1'>Times</th>
+                            <th ng-init='numColsAlwaysPresent = numColsAlwaysPresent + 1'>Dates</th>
+                            <th ng-init='numColsAlwaysPresent = numColsAlwaysPresent + 1'><ng-pluralize count="course.teachers.length"
                    when="{'0': 'Teacher',
                        '1': 'Teacher',
                        'other': 'Teachers'}">
   </ng-pluralize></th>
-                            <th ng-init='numCols = numCols + 1'>Location</th>
-                            <th ng-init='numCols = numCols + 1'>Cost</th>
-                            <th ng-init='numCols = numCols + 1'>Status</th>
-                            <th ng-init='numCols = numCols + 5' ng-if="course.status !== 'ended'">Enroll</th>
+                            <th ng-init='numColsAlwaysPresent = numColsAlwaysPresent + 1'>Location</th>
+                            <th ng-init='numColsAlwaysPresent = numColsAlwaysPresent + 1'>Cost</th>
+                            <th ng-init='numColsAlwaysPresent = numColsAlwaysPresent + 1'>Status</th>
+                            <th ng-if="course.status !== 'ended'">Enroll</th>
                             <!-- hack to keep col count correct -->
                           </tr>
                           <tr ng-style="(course.status == 'waitlist' || course.status == 'ended') && {'background-color': '#ddd'}">
@@ -693,7 +693,7 @@ schedule availability</a>.</p>
                               <span ng-if="course.status == 'waitlist'">Wait List</span><span ng-if="course.status == 'enroll'">Enroll!</span></a></td>
                           </tr>
 <!--                          <tr ng-if="course.additional"> -->
-                          <tr><td colspan="{{numCols}}"><span ng-style='{"color": deterministicWebColor("additional title")}'>{{numCols}}cols; Additional Info:</span>
+                          <tr><td colspan="{{numColsForCourse(numColsAlwaysPresent)}}"><span ng-style='{"color": deterministicWebColor("additional title")}'>{{numColsForCourse(numColsAlwaysPresent)}}cols; Additional Info:</span>
                             <span ng-style='{"color": deterministicWebColor("additional content")}'>{{course.additional}}</span></td>
                           </tr>
                         </table>
