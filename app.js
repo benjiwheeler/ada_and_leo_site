@@ -83,7 +83,7 @@ app.filter('isActive', [function() {
   };
 }]);
 
-app.factory('commonData', function(){
+app.factory('commonData', ['$http', function($http){
   var menu = {};
   var staff = [];
   var courses = [];
@@ -107,7 +107,7 @@ app.factory('commonData', function(){
       "testimonials": testimonials
     };
   };
-});
+}]);
 
 
 app.controller('ColorController', ['$scope', function($scope) {
