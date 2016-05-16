@@ -135,6 +135,12 @@ app.controller('MenuController', ['$scope', 'commonData', function($scope, commo
     $scope.hierarchicalMenuItems = data.menu.hierarchical;
     $scope.compactMenuItems = data.menu.compact;
   });
+
+  $scope.menuParentClicked = function(parentItem) {
+    if (parentItem.url === undefined || parentItem.url === null || parentItem.url.length < 1) {
+      return false;
+    }
+  };
 }]);
 
 
