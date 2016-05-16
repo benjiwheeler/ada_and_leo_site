@@ -138,14 +138,14 @@ app.controller('MenuController', ['$scope', 'commonData', function($scope, commo
 }]);
 
 
-app.controller('CoursesController', ['$scope', '$http', function($scope, $http) {
+app.controller('CoursesController', ['$scope', '$http', function($scope, commonData) {
   $scope.deterministicWebColor = deterministicWebColor;
 
-  $http.get('data.json').success(function(data) {
+  commonData.fetchData().then(function(data) {
     $scope.courses = data.courses;
     $scope.staff = data.staff;
-    console.log("courses: ");
-    console.log($scope.courses);
+    //console.log("courses: ");
+    //console.log($scope.courses);
   });
 
   $scope.seasons = function() {
@@ -172,24 +172,24 @@ app.controller('CoursesController', ['$scope', '$http', function($scope, $http) 
   };
 }]);
 
-app.controller('StaffController', ['$scope', '$http', function($scope, $http) {
+app.controller('StaffController', ['$scope', '$http', function($scope, commonData) {
   $scope.deterministicWebColor = deterministicWebColor;
 
-  $http.get('data.json').success(function(data) {
+  commonData.fetchData().then(function(data) {
     $scope.staff = data.staff;
   });
 }]);
 
-app.controller('FAQController', ['$scope', '$http', function($scope, $http) {
-  $http.get('data.json').success(function(data) {
+app.controller('FAQController', ['$scope', '$http', function($scope, commonData) {
+  commonData.fetchData().then(function(data) {
     $scope.faquestions = data.faquestions;
   });
 }]);
 
-app.controller('TestimonialController', ['$scope', '$http', function($scope, $http) {
+app.controller('TestimonialController', ['$scope', '$http', function($scope, commonData) {
   $scope.deterministicBlueColor = deterministicBlueColor;
 
-  $http.get('data.json').success(function(data) {
+  commonData.fetchData().then(function(data) {
     $scope.testimonials = data.testimonials;
   });
 }]);
