@@ -83,20 +83,15 @@ app.filter('isActive', [function() {
   };
 }]);
 
-app.factory('commonData', ['$http', function($http){
+app.factory('commonData', ['$http', '$q', function($http, $q){
   var menu = {};
   var staff = [];
   var courses = [];
   var faquestions = [];
   var testimonials = [];
 
-  $http.get('data.json').success(function(data) {
-    menu = data.menu;
-    staff = data.staff;
-    courses = data.courses;
-    faquestions = data.faquestions;
-    testimonials = data.testimonials;
-  });
+  var loaded = false;
+  var service={};
 
   var getData = function() {
     return {
@@ -107,6 +102,26 @@ app.factory('commonData', ['$http', function($http){
       "testimonials": testimonials
     };
   };
+
+  service.fetchData = function() {
+    var dataDefer = $q.defer();
+    if (loaded === false) {
+      dataDefer.resolve(getData());
+    } else {
+      $http.get('data.json').success(function(data) {
+        menu = data.menu;
+        staff = data.staff;
+        courses = data.courses;
+        faquestions = data.faquestions;
+        testimonials = data.testimonials;
+        loaded = true;
+        dataDefer.resolve(getData());
+      });
+     }
+     return dataDefer.promise;
+  };
+
+  return service;
 }]);
 
 
@@ -115,8 +130,10 @@ app.controller('ColorController', ['$scope', function($scope) {
 }]);
 
 app.controller('MenuController', ['$scope', 'commonData', function($scope, commonData) {
-  $scope.hierarchicalMenuItems = commonData.getData().menu.hierarchical;
-  $scope.compactMenuItems = commonData.getData().menu.compact;
+  commonData.fetchData().then(function(data) {
+    $scope.hierarchicalMenuItems = data.menu.hierarchical;
+    $scope.compactMenuItems = data.menu.compact;
+  });
 }]);
 
 
