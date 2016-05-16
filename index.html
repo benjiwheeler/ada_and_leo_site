@@ -168,33 +168,13 @@ side by side menu  -->
 
       <div id="header-mobile">
         <div class="container">
-
-          <!--
- MENU HAMBURGER
--->
+          <!-- MENU HAMBURGER -->
           <nav id="header-menu-mobile">
             <ul id="menu-primary-menu-1" class="menu">
-
-
-              <li class="menu-item-6847 menu-item menu-item-type-post_type menu-item-object-page "><a href="http://goo.gl/forms/MsaV1rG2Ni">Enroll</a></li>
-              <li class="menu-item-6847 menu-item menu-item-type-post_type menu-item-object-page "><a href="index.html#classschedule">Classes schedule</a></li>
-              <li class="menu-item-6867 menu-item menu-item-type-post_type menu-item-object-page "><a href="index.html#learnmore">About the program</a></li>
-              <li class="menu-item-6847 menu-item menu-item-type-post_type menu-item-object-page "><a href="index.html#creativetech">Creative tech</a>
-              <li class="menu-item-6847 menu-item menu-item-type-post_type menu-item-object-page "><a href="index.html#animation">Animation</a></li>
-              <li class="menu-item-6847 menu-item menu-item-type-post_type menu-item-object-page "><a href="index.html#gamedesign">Game design</a></li>
-              <li class="menu-item-6847 menu-item menu-item-type-post_type menu-item-object-page "><a href="index.html#whoweare">Who we are</a></li>
-              <li class="menu-item-6847 menu-item menu-item-type-post_type menu-item-object-page "><a href="index.html#testimonials">Testimonials</a></li>
-              <li class="menu-item-6847 menu-item menu-item-type-post_type menu-item-object-page "><a href="scholarship">Scholarships</a>
-              <li class="menu-item-6847 menu-item menu-item-type-post_type menu-item-object-page "><a href="index.html#location">Location</a></li>
-              <li class="menu-item-6847 menu-item menu-item-type-post_type menu-item-object-page "><a href="quicklinks.html">Quick Links</a></li>
-              <li class="menu-item-6847 menu-item menu-item-type-post_type menu-item-object-page "><a href="index.html#faq">FAQ</a></li>
-              <li class="menu-item-6847 menu-item menu-item-type-post_type menu-item-object-page "><a href="index.html#contact">Contact</a></li>
-
+              <li class="menu-item-6847 menu-item menu-item-type-post_type menu-item-object-page"
+              ng-repeat="menuItem in compactMenuItems"><a href="{{menuItem.url}}">{{menuItem.text}}</a></li>
             </ul>
-
-            <!--
-end of hamburger
--->
+            <!-- end of hamburger -->
           </nav>
         </div>
       </div>
