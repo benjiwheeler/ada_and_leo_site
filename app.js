@@ -138,7 +138,7 @@ app.controller('MenuController', ['$scope', 'commonData', function($scope, commo
 }]);
 
 
-app.controller('CoursesController', ['$scope', '$http', function($scope, commonData) {
+app.controller('CoursesController', ['$scope', 'commonData', function($scope, commonData) {
   $scope.deterministicWebColor = deterministicWebColor;
 
   commonData.fetchData().then(function(data) {
@@ -172,7 +172,7 @@ app.controller('CoursesController', ['$scope', '$http', function($scope, commonD
   };
 }]);
 
-app.controller('StaffController', ['$scope', '$http', function($scope, commonData) {
+app.controller('StaffController', ['$scope', 'commonData', function($scope, commonData) {
   $scope.deterministicWebColor = deterministicWebColor;
 
   commonData.fetchData().then(function(data) {
@@ -180,13 +180,13 @@ app.controller('StaffController', ['$scope', '$http', function($scope, commonDat
   });
 }]);
 
-app.controller('FAQController', ['$scope', '$http', function($scope, commonData) {
+app.controller('FAQController', ['$scope', 'commonData', function($scope, commonData) {
   commonData.fetchData().then(function(data) {
     $scope.faquestions = data.faquestions;
   });
 }]);
 
-app.controller('TestimonialController', ['$scope', '$http', function($scope, commonData) {
+app.controller('TestimonialController', ['$scope', 'commonData', function($scope, commonData) {
   $scope.deterministicBlueColor = deterministicBlueColor;
 
   commonData.fetchData().then(function(data) {
