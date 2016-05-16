@@ -4,7 +4,7 @@ var strSum = function(str) {
   str.toUpperCase().split('').forEach(function(alphabet) {
     sum += alphabet.charCodeAt(0) - 64;
   });
-  console.log("str: " + str + "; sum: " + sum);
+  //console.log("str: " + str + "; sum: " + sum);
   return sum;
 };
 
@@ -105,7 +105,7 @@ app.factory('commonData', ['$http', '$q', function($http, $q){
 
   service.fetchData = function() {
     var dataDefer = $q.defer();
-    if (loaded === false) {
+    if (loaded === true) {
       dataDefer.resolve(getData());
     } else {
       $http.get('data.json').success(function(data) {
@@ -115,6 +115,7 @@ app.factory('commonData', ['$http', '$q', function($http, $q){
         faquestions = data.faquestions;
         testimonials = data.testimonials;
         loaded = true;
+        console.log("commonData fetched");
         dataDefer.resolve(getData());
       });
      }
