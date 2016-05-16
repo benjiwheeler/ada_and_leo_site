@@ -83,15 +83,40 @@ app.filter('isActive', [function() {
   };
 }]);
 
+app.factory('commonData', function(){
+  var menu = {};
+  var staff = [];
+  var courses = [];
+  var faquestions = [];
+  var testimonials = [];
+
+  $http.get('data.json').success(function(data) {
+    menu = data.menu;
+    staff = data.staff;
+    courses = data.courses;
+    faquestions = data.faquestions;
+    testimonials = data.testimonials;
+  });
+
+  var getData = function() {
+    return {
+      "menu": menu,
+      "staff": staff,
+      "courses": courses,
+      "faquestions": faquestions,
+      "testimonials": testimonials
+    };
+  };
+});
+
+
 app.controller('ColorController', ['$scope', function($scope) {
   $scope.deterministicWebColor = deterministicWebColor;
 }]);
 
-app.controller('MenuController', ['$scope', '$http', function($scope, $http) {
-  $http.get('data.json').success(function(data) {
-    $scope.hierarchicalMenuItems = data.menu.hierarchical;
-    $scope.compactMenuItems = data.menu.compact;
-  });
+app.controller('MenuController', ['$scope', 'commonData', function($scope, commonData) {
+  $scope.hierarchicalMenuItems = commonData.getData().menu.hierarchical;
+  $scope.compactMenuItems = commonData.getData().menu.compact;
 }]);
 
 
