@@ -137,38 +137,19 @@ MM          MM  EE         NN        NNNN    UU      UU
 MM          MM  EEEEEEEEE  NN          NN      UUUUUU
 
 side by side menu  -->
-              <nav id="header-menu">
+              <nav id="header-menu" ng-controller="MenuController">
                 <ul id="menu-primary-menu" class="menu">
-                  <li class="menu-item-6276 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-11 current_page_item menu-item-has-children simple">
-                    <a href="index.html#classschedule">Classes</a>
+                  <li class="menu-item-6276 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-11 current_page_item menu-item-has-children simple"
+                  ng-repeat="menuItem in hierarchicalMenuItems">
+                    <a ng-href="menuItem.parent.url">{{menuItem.parent.text}}</a>
                     <ul class="sub-menu">
-                      <li class="menu-item-6849 menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#creativetech">Creative tech</a></li>
-                      <li class="menu-item-6849 menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#gamedesign">Game design</a></li>
-                      <li class="menu-item-6849 menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#animation">Animation</a></li>
-                      <li class="menu-item-6867 menu-item menu-item-type-post_type menu-item-object-page "><a href="index.html#classschedule">Class schedule</a></li>
-                      <li class="menu-item-6847 menu-item menu-item-type-post_type menu-item-object-page "><a href="http://goo.gl/forms/MsaV1rG2Ni">Enroll now</a></li>
+                      <li class="menu-item-6849 menu-item menu-item-type-custom menu-item-object-custom"
+                      ng-repeat="childItem in menuItem.children"><a
+                      ng-href="childItem.url">{{childItem.text}}</a></li>
                     </ul>
                   </li>
-                  <li class="menu-item-2 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-11 current_page_item menu-item-has-children simple">
-                    <a href="index.html#whoweare">Staff</a>
-                  </li>
-                  <li class="menu-item-5 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children simple"><a href="index.html#learnmore">Learn More</a>
-                    <ul class="sub-menu">
-                      <li class="menu-item-6724 menu-item menu-item-type-post_type menu-item-object-page "><a href="#learnmore">Program description</a></li></a></li>
-                      <li class="menu-item-6723 menu-item menu-item-type-post_type menu-item-object-page "><a href="index.html#whoweare">Who we are</a></li>
-                      <li class="menu-item-6883 menu-item menu-item-type-post_type menu-item-object-page "><a href="index.html#testimonials">Testimonials</a></li>
-                      <li class="menu-item-6883 menu-item menu-item-type-post_type menu-item-object-page "><a href="index.html#location">Location</a></li>
-                      <li class="menu-item-6883 menu-item menu-item-type-post_type menu-item-object-page "><a href="index.html#articles">Articles</a></li>
-                      <li class="menu-item-6883 menu-item menu-item-type-post_type menu-item-object-page "><a href="scholarship">Scholarships</a></li>
-                      <li class="menu-item-6883 menu-item menu-item-type-post_type menu-item-object-page "><a href="quicklinks.html">Quick Links</a></li>
-                      <li class="menu-item-6476 menu-item menu-item-type-post_type menu-item-object-page "><a href="index.html#faq">FAQ</a></li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-5 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children simple"><a href="index.html#contact">Contact</a>
                 </ul>
               </nav>
-
-
 
               <!--
  MENU HAMBURGER

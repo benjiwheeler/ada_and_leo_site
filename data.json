@@ -1,5 +1,64 @@
 {
-  "courses": [
+  "menu": {
+    "hierarchical": [
+      {
+        "parent": {"text": "Classes", "url": "index.html#classschedule"}
+        ,"children": [
+          {"text": "Creative tech", "url": "index.html#creativetech"}
+          ,{"text": "Game design", "url": "index.html#gamedesign"}
+          ,{"text": "Animation", "url": "index.html#animation"}
+          ,{"text": "Class schedule", "url": "index.html#classschedule"}
+          ,{"text": "Fees and pricing", "url": "index.html#classschedule"}
+          ,{"text": "Enroll now", "url": "http://goo.gl/forms/MsaV1rG2Ni"}
+        ]
+      }
+      ,{
+        "parent": {"text": "Staff", "url": "index.html#whoweare"}
+        ,"children": [
+        ]
+      }
+      ,{
+        "parent": {"text": "Learn More", "url": "index.html#learnmore"}
+        ,"children": [
+          {"text": "Program description", "url": "index.html#learnmore"}
+          ,{"text": "Who we are", "url": "index.html#whoweare"}
+          ,{"text": "Testimonials", "url": "index.html#testimonials"}
+          ,{"text": "Location", "url": "index.html#location"}
+          ,{"text": "Articles", "url": "index.html#articles"}
+          ,{"text": "Scholarships", "url": "scholarship"}
+          ,{"text": "Quick Links", "url": "quicklinks.html"}
+          ,{"text": "FAQ", "url": "index.html#faq"}
+        ]
+      }
+      ,{
+        "parent": {"text": "Contact", "url": "index.html#contact"}
+        ,"children": [
+        ]
+      }
+    ]
+    , "compact": [
+      {"text": "", "url": ""}
+      ,{"text": "", "url": ""}
+      ,{"text": "", "url": ""}
+      ,{"text": "", "url": ""}
+      ,{"text": "", "url": ""}
+      ,{"text": "", "url": ""}
+      ,{"text": "", "url": ""}
+      ,{"text": "", "url": ""}
+      ,{"text": "", "url": ""}
+      ,{"text": "", "url": ""}
+      ,{"text": "", "url": ""}
+      ,{"text": "", "url": ""}
+      ,{"text": "", "url": ""}
+      ,{"text": "", "url": ""}
+      ,{"text": "", "url": ""}
+      ,{"text": "", "url": ""}
+    ]
+                    <a href="index.html#classschedule">Classes</a>
+                    <ul class="sub-menu">
+
+  }
+  ,"courses": [
     {
     "session": "Spring 2016"
     ,"active": true

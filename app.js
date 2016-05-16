@@ -87,6 +87,14 @@ app.controller('ColorController', ['$scope', function($scope) {
   $scope.deterministicWebColor = deterministicWebColor;
 }]);
 
+app.controller('MenuController', ['$scope', '$http', function($scope, $http) {
+  $http.get('data.json').success(function(data) {
+    $scope.hierarchicalMenuItems = data.menu.hierarchical;
+    $scope.compactMenuItems = data.menu.compact;
+  });
+}]);
+
+
 app.controller('CoursesController', ['$scope', '$http', function($scope, $http) {
   $scope.deterministicWebColor = deterministicWebColor;
 
