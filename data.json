@@ -12,7 +12,7 @@
           ,{"text": "Fees and pricing", "url": "index.html#classschedule"}
         ]
       }
-      {
+      ,{
         "parent": {"text": "Enroll", "url": ""}
         ,"children": [
           {"text": "Enroll in summer classes", "url": "http://goo.gl/forms/N98WN8BFiJVaPSBu1"}
