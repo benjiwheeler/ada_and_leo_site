@@ -37,24 +37,25 @@
       }
     ]
     , "compact": [
-      {"text": "", "url": ""}
-      ,{"text": "", "url": ""}
-      ,{"text": "", "url": ""}
-      ,{"text": "", "url": ""}
-      ,{"text": "", "url": ""}
-      ,{"text": "", "url": ""}
-      ,{"text": "", "url": ""}
-      ,{"text": "", "url": ""}
-      ,{"text": "", "url": ""}
-      ,{"text": "", "url": ""}
-      ,{"text": "", "url": ""}
-      ,{"text": "", "url": ""}
-      ,{"text": "", "url": ""}
-      ,{"text": "", "url": ""}
-      ,{"text": "", "url": ""}
-      ,{"text": "", "url": ""}
+      {"text": "Enroll in summer classes", "url": "http://goo.gl/forms/N98WN8BFiJVaPSBu1"}
+      ,{"text": "Enroll in afterschool classes", "url": "http://goo.gl/forms/MsaV1rG2Ni"}
+      ,{"text": "Enroll in weekend classes", "url": "http://goo.gl/forms/MsaV1rG2Ni"}
+      ,{"text": "Classes schedule", "url": "index.html#classschedule"}
+      ,{"text": "About the program", "url": "index.html#learnmore"}
+      ,{"text": "Summer program", "url": "index.html#summer"}
+      ,{"text": "Creative tech", "url": "index.html#creativetech"}
+      ,{"text": "Animation", "url": "index.html#animation"}
+      ,{"text": "Game design", "url": "index.html#gamedesign"}
+      ,{"text": "Who we are", "url": "index.html#whoweare"}
+      ,{"text": "Testimonials", "url": "index.html#testimonials"}
+      ,{"text": "Scholarships", "url": "scholarship"}
+      ,{"text": "Location", "url": "index.html#location"}
+      ,{"text": "Quick Links", "url": "quicklinks.html"}
+      ,{"text": "FAQ", "url": "index.html#faq"}
+      ,{"text": "Contact", "url": "index.html#contact"}
     ]
   }
+
   ,"courses": [
     {
     "session": "Spring 2016"
@@ -280,6 +281,14 @@
     ,{
       "quote": "My daughter has taken this class twice now, last fall and this past winter. I thought I would have trouble getting her up on Saturday mornings, but I never did. She enjoyed Ben's class so very much and couldn't stop talking about all the things she learned once class was over."
       ,"person": "M.S.B, parent of 7 year old girl"
+    }
+    ,{
+      "quote": "Ben opened my eyes to help me see the fun and excitement that learning can offer!"
+      ,"person": "A.H., former student and now MS-Ed candidate"
+    }
+    ,{
+      "quote": "Ben was infinitely patient and helpful!"
+      ,"person": "Anonymous feedback"
     }
   ]
 }
