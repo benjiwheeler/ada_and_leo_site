@@ -60,6 +60,8 @@ var blueColors = ["45B2D3", "000080", "6090F0",
     "8028E0","4068E0", "0000E0",
     "9070D0", "4080B0", "403880", "337ab7"];
 
+var hilightColors = ["fff588", "ddff88", "ffddee",
+"ffdd77", "cceeff", "ddccff"];
 
 function deterministicWebColor(seed) {
   var rs = new RandomSeeded(seed);
@@ -71,6 +73,12 @@ function deterministicBlueColor(seed) {
   var rs = new RandomSeeded(seed);
   var rv = Math.floor(rs.rand(blueColors.length));
   return "#" + blueColors[rv];
+}
+
+function deterministicHilightColor(seed) {
+  var rs = new RandomSeeded(seed);
+  var rv = Math.floor(rs.rand(hilightColors.length));
+  return "#" + hilightColors[rv];
 }
 
 var app = angular.module('AdaLeoApp', ['ngSanitize']);
@@ -147,6 +155,7 @@ app.controller('MenuController', ['$scope', 'commonData', function($scope, commo
 
 app.controller('CoursesController', ['$scope', 'commonData', function($scope, commonData) {
   $scope.deterministicWebColor = deterministicWebColor;
+  $scope.deterministicHilightColor = deterministicHilightColor;
 
   commonData.fetchData().then(function(data) {
     $scope.courses = data.courses;
