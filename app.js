@@ -134,7 +134,7 @@ app.controller('MenuController', ['$scope', 'commonData', function($scope, commo
   commonData.fetchData().then(function(data) {
     $scope.hierarchicalMenuItems = data.menu.hierarchical;
     $scope.compactMenuItems = data.menu.compact;
-    console.log($scope.compactMenuItems);
+    // console.log($scope.compactMenuItems);
   });
 
   $scope.menuParentClicked = function(parentItem) {

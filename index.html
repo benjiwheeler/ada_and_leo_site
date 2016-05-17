@@ -111,7 +111,7 @@
 
 
     <header id="header" class=" transparent">
-      <div class="header-content" id="header-content">
+      <div class="header-content" id="header-content" ng-controller="MenuController">
         <div class="container">
           <div class="row">
             <div class="col-xs-7 col-sm-5 col-md-4 col-lg-4">
@@ -137,7 +137,7 @@ MM          MM  EE         NN        NNNN    UU      UU
 MM          MM  EEEEEEEEE  NN          NN      UUUUUU
 
 side by side menu  -->
-              <nav id="header-menu" ng-controller="MenuController">
+              <nav id="header-menu">
                 <ul id="menu-primary-menu" class="menu">
                   <li class="menu-item-6276 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-11 current_page_item menu-item-has-children simple"
                   ng-repeat="menuItem in hierarchicalMenuItems">
