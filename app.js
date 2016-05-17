@@ -60,8 +60,8 @@ var blueColors = ["45B2D3", "000080", "6090F0",
     "8028E0","4068E0", "0000E0",
     "9070D0", "4080B0", "403880", "337ab7"];
 
-var hilightColors = [ "cceeee", "ffee77", "fff588", "ddff88",
-"ffdd77", "cceeff", "ddccff", "ccccff", "ffcc88"];
+var hilightColors = [ "cceeee", "ffee77", "fff588",
+"ffdd77", "cceeff", "ddccff", "ccccff", "ffcc88",  "ddff99"];
 
 function deterministicWebColor(seed) {
   var rs = new RandomSeeded(seed);
