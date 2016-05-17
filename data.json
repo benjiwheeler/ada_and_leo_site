@@ -66,6 +66,51 @@
 
   ,"courses": [
     {
+    "session": "Summer 2016"
+    ,"active": true
+    ,"title": "Week 1: Creative programming"
+    ,"eligible": "all children!"
+    ,"ages": "6-10 years"
+    ,"times": "Weekdays 9am-3:30pm"
+    ,"dates": "July 25-29 (5 days)"
+    ,"teachers": ["Ben Wheeler", "additional subject teachers on a daily basis"]
+    ,"location": "40 Brevoort Pl. (near Franklin C and Nostrand A/C stops)"
+    ,"cost": "$525"
+    ,"status": "enroll"
+    ,"signupurl": "http://goo.gl/forms/N98WN8BFiJVaPSBu1"
+    ,"color": "#fe7"
+    }
+    ,{
+    "session": "Summer 2016"
+    ,"active": true
+    ,"title": "Week 2: Digital art"
+    ,"eligible": "all children!"
+    ,"ages": "6-10 years"
+    ,"times": "Weekdays 9am-3:30pm"
+    ,"dates": "August 1-5 (5 days)"
+    ,"teachers": ["Ben Wheeler", "additional subject teachers on a daily basis"]
+    ,"location": "40 Brevoort Pl. (near Franklin C and Nostrand A/C stops)"
+    ,"cost": "$525"
+    ,"status": "enroll"
+    ,"signupurl": "http://goo.gl/forms/N98WN8BFiJVaPSBu1"
+    ,"color": "#fe7"
+    }
+    ,{
+    "session": "Summer 2016"
+    ,"active": true
+    ,"title": "Week 3: Electric inventions"
+    ,"eligible": "all children!"
+    ,"ages": "6-10 years"
+    ,"times": "Weekdays 9am-3:30pm"
+    ,"dates": "August 8-12 (5 days)"
+    ,"teachers": ["Ben Wheeler", "additional subject teachers on a daily basis"]
+    ,"location": "40 Brevoort Pl. (near Franklin C and Nostrand A/C stops)"
+    ,"cost": "$525"
+    ,"status": "enroll"
+    ,"signupurl": "http://goo.gl/forms/N98WN8BFiJVaPSBu1"
+    ,"color": "#fe7"
+    }
+    ,{
     "session": "Spring 2016"
     ,"active": true
     ,"title": "Intro to Game Design"
