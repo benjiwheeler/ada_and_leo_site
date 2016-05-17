@@ -143,7 +143,8 @@ side by side menu  -->
                   ng-repeat="menuItem in hierarchicalMenuItems">
                     <a ng-href="{{menuItem.parent.url}}" ng-click="menuParentClicked(menuItem.parent)">{{menuItem.parent.text}}</a>
                     <ul class="sub-menu">
-                      <li ng-class="{{'menu-item-' + $index}}" class="menu-item menu-item-type-custom menu-item-object-custom"
+                      <li ng-class="{{'menu-item-' + $index}}"
+                      class="menu-item menu-item-type-custom menu-item-object-custom"
                       ng-repeat="childItem in menuItem.children"><a
                       ng-href="{{childItem.url}}">{{childItem.text}}</a></li>
                     </ul>
@@ -171,8 +172,9 @@ side by side menu  -->
           <!-- MENU HAMBURGER -->
           <nav id="header-menu-mobile">
             <ul id="menu-primary-menu-1" class="menu">
-              <li ng-class="{{'menu-item-' + $index}}" class="menu-item menu-item-type-post_type menu-item-object-page"
-              ng-repeat="menuItem in compactMenuItems"><a
+              <li ng-repeat="menuItem in compactMenuItems"
+              ng-class="{{'menu-item-' + $index}}"
+              class="menu-item menu-item-type-post_type menu-item-object-page"><a
               ng-href="{{menuItem.url}}">{{menuItem.text}}</a></li>
             </ul>
             <!-- end of hamburger -->
