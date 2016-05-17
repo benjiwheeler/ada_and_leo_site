@@ -658,7 +658,8 @@ many engineers whose discoveries and inventions we use today.
                           <h4 ng-if="$first">{{course.session}} Session</h4>
                           <dl class="dl-horizontal">
                             <dt>Title</dt>
-                            <dd ng-style='{"color": deterministicWebColor("title"), "font-size": "2em"}'>{{course.title}}
+                            <dd ng-style='{"color": deterministicWebColor("title"), "font-size": "2em",
+                            "padding": .1em,  "background-color": deterministicHilightColor(course.title)}'>{{course.title}}
                             </dd>
                             <dt>Times</dt>
                             <dd ng-style='{"color": deterministicWebColor("times"), "font-size": "1.5em"}'>{{course.times}}
@@ -750,7 +751,7 @@ many engineers whose discoveries and inventions we use today.
                             <!-- hack to keep col count correct -->
                           </tr>
                           <tr ng-style="(course.status == 'waitlist' || course.status == 'ended') && {'background-color': '#ddd'}">
-                            <td ng-style='{"color": deterministicWebColor("title"), padding: .1em, "font-size": "1.6em",   "background-color": deterministicHilightColor("title")}'>{{course.title}}
+                            <td ng-style='{"color": deterministicWebColor("title"), "font-size": "1.6em"}'>{{course.title}}
                             </td>
                             <td ng-style='{"color": deterministicWebColor("times"), "font-size": "1.3em"}'>{{course.times}}
                             </td>
