@@ -394,7 +394,7 @@ schedule availability</a>.</p>
 <a name="summer"></a>
 <p>&nbsp;</p>
 
-                        <h3>Summer Program</h3>
+                        <h3 style="background-color: #fd5; color: #39c">Summer Program</h3>
 
 <p>We're excited to announce that we are offering our first summer
 program!  we are going to have three weeks of creative technology,
@@ -647,17 +647,17 @@ many engineers whose discoveries and inventions we use today.
                             <dt>Title</dt>
                             <dd ng-style='{"color": deterministicWebColor("title"), "font-size": "2em"}'>{{course.title}}
                             </dd>
+                            <dt>Times</dt>
+                            <dd ng-style='{"color": deterministicWebColor("times"), "font-size": "1.5em"}'>{{course.times}}
+                            </dd>
+                            <dt>Dates</dt>
+                            <dd ng-style='{"color": deterministicWebColor("dates")}'>{{course.dates}}
+                            </dd>
                             <dt>Eligible students</dt>
                             <dd ng-style='{"color": deterministicWebColor("eligible")}'>{{course.eligible}}
                             </dd>
                             <dt>Ages</dt>
                             <dd ng-style='{"color": deterministicWebColor("ages")}'>{{course.ages}}
-                            </dd>
-                            <dt>Times</dt>
-                            <dd ng-style='{"color": deterministicWebColor("times")}'>{{course.times}}
-                            </dd>
-                            <dt>Dates</dt>
-                            <dd ng-style='{"color": deterministicWebColor("dates")}'>{{course.dates}}
                             </dd>
                             <dt><ng-pluralize count="course.teachers.length"
                    when="{'0': 'Teacher',
@@ -737,15 +737,15 @@ many engineers whose discoveries and inventions we use today.
                             <!-- hack to keep col count correct -->
                           </tr>
                           <tr ng-style="(course.status == 'waitlist' || course.status == 'ended') && {'background-color': '#ddd'}">
-                            <td ng-style='{"color": deterministicWebColor("title")}'>{{course.title}}
+                            <td ng-style='{"color": deterministicWebColor("title"), "font-size": "1.6em"}'>{{course.title}}
+                            </td>
+                            <td ng-style='{"color": deterministicWebColor("times"), "font-size": "1.3em"}'>{{course.times}}
+                            </td>
+                            <td ng-style='{"color": deterministicWebColor("dates")}'>{{course.dates}}
                             </td>
                             <td ng-style='{"color": deterministicWebColor("eligible")}'>{{course.eligible}}
                             </td>
                             <td ng-style='{"color": deterministicWebColor("ages")}'>{{course.ages}}
-                            </td>
-                            <td ng-style='{"color": deterministicWebColor("times")}'>{{course.times}}
-                            </td>
-                            <td ng-style='{"color": deterministicWebColor("dates")}'>{{course.dates}}
                             </td>
                             <td><a href="#whoweare"><span ng-repeat="teacher in getTeachers(course.teachers)"><span style="text-decoration: underline" ng-style='{"color": deterministicWebColor(teacher.fullname)}'>{{teacher.fullname}}</span><span style="color: #a9a;" ng-if="teacher.nutshell"> ({{teacher.nutshell}})</span><span ng-if="!$last && course.teachers.length > 1"> and </span></span></a></td>
                             <td ng-style='{"color": deterministicWebColor("location")}'>{{course.location}}

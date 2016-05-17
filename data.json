@@ -15,7 +15,7 @@
       ,{
         "parent": {"text": "Enroll", "url": ""}
         ,"children": [
-          {"text": "Summer classes", "url": "http://goo.gl/forms/N98WN8BFiJVaPSBu1"}
+          {"text": "Summer program", "url": "http://goo.gl/forms/N98WN8BFiJVaPSBu1"}
           ,{"text": "Afterschool classes", "url": "http://goo.gl/forms/MsaV1rG2Ni"}
           ,{"text": "Weekend classes", "url": "http://goo.gl/forms/MsaV1rG2Ni"}
         ]
@@ -45,7 +45,7 @@
       }
     ]
     , "compact": [
-      {"text": "Enroll in summer classes", "url": "http://goo.gl/forms/N98WN8BFiJVaPSBu1"}
+      {"text": "Enroll in summer program", "url": "http://goo.gl/forms/N98WN8BFiJVaPSBu1"}
       ,{"text": "Enroll in afterschool classes", "url": "http://goo.gl/forms/MsaV1rG2Ni"}
       ,{"text": "Enroll in weekend classes", "url": "http://goo.gl/forms/MsaV1rG2Ni"}
       ,{"text": "Classes schedule", "url": "index.html#classschedule"}
