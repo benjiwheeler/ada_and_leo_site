@@ -179,7 +179,8 @@ app.controller('CoursesController', ['$scope', 'commonData', function($scope, co
       if (teacherRecord) { return teacherRecord; }
       else {
         return {
-          "fullname": teacherFullname
+          "fullname": teacherFullname,
+          "nutshell": null
         };
       }
     });
