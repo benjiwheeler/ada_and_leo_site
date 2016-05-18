@@ -663,7 +663,7 @@ many engineers whose discoveries and inventions we use today.
                       <div class="row">
                         <div class="col-xs-10 col-offset-1">
                           <h4 ng-if="$first">{{course.session}} Session</h4>
-                          <dl class="dl-horizontal">
+                          <dl class="dl-horizontal" style="padding: .5em" ng-style="(course.status == 'waitlist' || course.status == 'ended') && {'background-color': '#eaeaea'}">
                             <dt>Title</dt>
                             <dd ng-style='{"color": deterministicWebColor("title"), "font-size": "2em",
                             "padding": ".1em", "background-color": deterministicHilightColor(course.title)}'>{{course.title}}
@@ -757,7 +757,7 @@ many engineers whose discoveries and inventions we use today.
                             <th ng-if="course.status !== 'ended'">Enroll</th>
                             <!-- hack to keep col count correct -->
                           </tr>
-                          <tr ng-style="(course.status == 'waitlist' || course.status == 'ended') && {'background-color': '#ddd'}">
+                          <tr ng-style="(course.status == 'waitlist' || course.status == 'ended') && {'background-color': '#eaeaea'}">
                             <td ng-style='{"color": deterministicWebColor("title"), "font-size": "1.6em"}'>{{course.title}}
                             </td>
                             <td ng-style='{"color": deterministicWebColor("times"), "font-size": "1.3em"}'>{{course.times}}
