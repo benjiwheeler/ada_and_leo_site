@@ -169,7 +169,7 @@ app.controller('CoursesController', ['$scope', 'commonData', function($scope, co
   };
 
   $scope.coursesForSeason = function(season) {
-    return _.where($scope.courses, {"session": season});
+    return _.where($scope.courses, {"session": season, "active": true});
   };
 
   // gets all the teacher objects for the fullnames listed for each course
