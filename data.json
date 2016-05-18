@@ -316,32 +316,36 @@
 
   ,"testimonials": [
     {
+      "quote": "J. is playing hooky from school today, but she does not want to play hooky from her creative tech class!"
+      ,"person": "Brian R., parent of 6 year old girl"
+    }
+    {
       "quote": "M. LOVED the first class yesterday. He was so excited about it!"
-      ,"person": "M.K., parent of 6 year old boy"
+      ,"person": "Marisa K., parent of 6 year old boy"
     }
     ,{
       "quote": "A. *LOVES* the class. I'm excited to find her [Tinkercad project]. And now I know she can play further and do other projects there. We'll check it out more later this week! Thank YOU."
-      ,"person": "J.D., parent of 6 year old girl"
+      ,"person": "Jenny D., parent of 6 year old girl"
     }
     ,{
       "quote": "R. is really enjoying his tech classes. He asked us why normal school was not as much fun..."
-      ,"person": "V.S., parent of 6 year old boy"
+      ,"person": "Vin S., parent of 6 year old boy"
     }
     ,{
       "quote": "Would totally do it again!"
-      ,"person": "E.G., parent of 7 year old boy"
+      ,"person": "Elizabeth G., parent of 7 year old boy"
     }
     ,{
       "quote": "My daughter has taken this class twice now, last fall and this past winter. I thought I would have trouble getting her up on Saturday mornings, but I never did. She enjoyed Ben's class so very much and couldn't stop talking about all the things she learned once class was over."
-      ,"person": "M.S.B, parent of 7 year old girl"
+      ,"person": "Marsha-Stephanie B., parent of 7 year old girl"
     }
     ,{
       "quote": "Ben opened my eyes to help me see the fun and excitement that learning can offer!"
-      ,"person": "A.H., former student and now MS-Ed candidate"
+      ,"person": "Arian H., former student and now MS-Ed candidate"
     }
     ,{
       "quote": "Ben was infinitely patient and helpful!"
-      ,"person": "Anonymous feedback"
+      ,"person": "Anonymous feedback from an adult programming student"
     }
   ]
 }
