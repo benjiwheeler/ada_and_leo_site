@@ -160,8 +160,8 @@ app.controller('CoursesController', ['$scope', 'commonData', function($scope, co
   commonData.fetchData().then(function(data) {
     $scope.courses = data.courses;
     $scope.staff = data.staff;
-    //console.log("courses: ");
-    //console.log($scope.courses);
+    console.log("courses: ");
+    console.log($scope.courses);
   });
 
   $scope.seasons = function() {
