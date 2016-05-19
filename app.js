@@ -86,7 +86,7 @@ var app = angular.module('AdaLeoApp', ['ngSanitize']);
 app.filter('isActive', [function() {
   return function(courses) {
     return courses.filter( function(course) {
-      return (course.hasOwnProperty('active'));
+      return (course.hasOwnProperty('active') && (course.active === true));
     });
   };
 }]);
@@ -169,7 +169,7 @@ app.controller('CoursesController', ['$scope', 'commonData', function($scope, co
   };
 
   $scope.activeCoursesForSeason = function(season) {
-    return _.where($scope.courses, {"session": season, "active": true});
+    return _.where($scope.courses, {"session": season});
   };
 
   // gets all the teacher objects for the fullnames listed for each course
