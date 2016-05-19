@@ -86,7 +86,7 @@ var app = angular.module('AdaLeoApp', ['ngSanitize']);
 app.filter('isActive', [function() {
   return function(courses) {
     return courses.filter( function(course) {
-      return (course.hasOwnProperty('active') && course.active === true);
+      return (course.hasOwnProperty('active'));
     });
   };
 }]);
