@@ -4,7 +4,7 @@ var strSum = function(str) {
   str.toUpperCase().split('').forEach(function(alphabet) {
     sum += alphabet.charCodeAt(0) - 64;
   });
-  //console.log("str: " + str + "; sum: " + sum);
+  console.log("str: " + str + "; sum: " + sum);
   return sum;
 };
 
