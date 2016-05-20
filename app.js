@@ -165,7 +165,7 @@ app.controller('CoursesController', ['$scope', 'commonData', function($scope, co
   });
 
   $scope.seasons = function() {
-    return _.uniq(_.pluck($scope.courses, "session"));
+    return _.uniq(_.map($scope.courses, "session"));
   };
 
   $scope.activeCoursesForSeason = function(season) {
