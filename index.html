@@ -699,7 +699,7 @@ many engineers whose discoveries and inventions we use today.
                        '1': 'Teacher',
                        'other': 'Teachers'}">
   </ng-pluralize></dt>
-                            <dd><a href="#whoweare"><span ng-repeat="teacher in getTeachers(course.teachers)"><span style="text-decoration: underline" ng-style='{"color": deterministicWebColor(teacher.fullname)}'>{{teacher.fullname}}</span><span style="color: #a9a;" ng-if="teacher.nutshell"> ({{teacher.nutshell}})</span><span ng-if="!$last && course.teachers.length > 1"> and </span></span></a></dd>
+                            <dd><a href="#whoweare"><span ng-repeat="teacher in getTeachers(course)"><span style="text-decoration: underline" ng-style='{"color": deterministicWebColor(teacher.fullname)}'>{{teacher.fullname}}</span><span style="color: #a9a;" ng-if="teacher.nutshell"> ({{teacher.nutshell}})</span><span ng-if="!$last && course.teachers.length > 1"> and </span></span></a></dd>
                             <dt>Location</dt>
                             <dd ng-style='{"color": deterministicWebColor("location")}'>{{course.location}}
                             </dd>
@@ -782,7 +782,7 @@ many engineers whose discoveries and inventions we use today.
                             </td>
                             <td ng-style='{"color": deterministicWebColor("ages")}'>{{course.ages}}
                             </td>
-                            <td><a href="#whoweare"><span ng-repeat="teacher in getTeachers(course.teachers)"><span style="text-decoration: underline" ng-style='{"color": deterministicWebColor(teacher.fullname)}'>{{teacher.fullname}}</span><span style="color: #a9a;" ng-if="teacher.nutshell"> ({{teacher.nutshell}})</span><span ng-if="!$last && course.teachers.length > 1"> and </span></span></a></td>
+                            <td><a href="#whoweare"><span ng-repeat="teacher in getTeachers(course)"><span style="text-decoration: underline" ng-style='{"color": deterministicWebColor(teacher.fullname)}'>{{teacher.fullname}}</span><span style="color: #a9a;" ng-if="teacher.nutshell"> ({{teacher.nutshell}})</span><span ng-if="!$last && course.teachers.length > 1"> and </span></span></a></td>
                             <td ng-style='{"color": deterministicWebColor("location")}'>{{course.location}}
                             </td>
                             <td ng-style='{"color": deterministicWebColor("cost")}'>{{course.cost}}

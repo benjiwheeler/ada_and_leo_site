@@ -154,6 +154,8 @@ app.controller('MenuController', ['$scope', 'commonData', function($scope, commo
 
 
 app.controller('CoursesController', ['$scope', 'commonData', function($scope, commonData) {
+  var teachersForCourse = {};
+
   $scope.deterministicWebColor = deterministicWebColor;
   $scope.deterministicHilightColor = deterministicHilightColor;
 
@@ -176,24 +178,23 @@ app.controller('CoursesController', ['$scope', 'commonData', function($scope, co
   };
 
   // gets all the teacher objects for the fullnames listed for each course
-  $scope.getTeachers = function(teacherFullnameArr) {
-    if (teacherFullnameArr === undefined || teacherFullnameArr === null
-      || teacherFullnameArr.length < 1) {
-      return [];
+  $scope.getTeachers = function(course) {
+    if (!(course in teacherFullnameArr)) {
+      teachersForCourse[course] = _.map(teacherFullnameArr, function(teacherFullname) {
+        var teacherRecord = _.find($scope.staff, {"fullname": teacherFullname});
+        if ((teacherRecord !== undefined) && (teacherRecord !== null)) {
+          //console.log("found teacher with fullname: " + teacherFullname);
+          return teacherRecord;
+        } else {
+          //console.log("found no teacher with fullname: " + teacherFullname);
+          return {
+            "fullname": teacherFullname,
+            "nutshell": null
+          };
+        }
+      });
     }
-    return _.map(teacherFullnameArr, function(teacherFullname) {
-      var teacherRecord = _.find($scope.staff, {"fullname": teacherFullname});
-      if ((teacherRecord !== undefined) && (teacherRecord !== null)) {
-        //console.log("found teacher with fullname: " + teacherFullname);
-        return teacherRecord;
-      } else {
-        //console.log("found no teacher with fullname: " + teacherFullname);
-        return {
-          "fullname": teacherFullname,
-          "nutshell": null
-        };
-      }
-    });
+    return teachersForCourse[course];
   };
 
   $scope.numColsForCourse = function(course, numColsAlwaysPresent) {
