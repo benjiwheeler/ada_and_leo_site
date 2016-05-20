@@ -184,10 +184,10 @@ app.controller('CoursesController', ['$scope', 'commonData', function($scope, co
     return _.map(teacherFullnameArr, function(teacherFullname) {
       var teacherRecord = _.find($scope.staff, {"fullname": teacherFullname});
       if ((teacherRecord !== undefined) && (teacherRecord !== null)) {
-        console.log("found teacher with fullname: " + teacherFullname);
+        //console.log("found teacher with fullname: " + teacherFullname);
         return teacherRecord;
       } else {
-        console.log("found no teacher with fullname: " + teacherFullname);
+        //console.log("found no teacher with fullname: " + teacherFullname);
         return {
           "fullname": teacherFullname,
           "nutshell": null
