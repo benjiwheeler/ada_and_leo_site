@@ -175,9 +175,10 @@ app.controller('CoursesController', ['$scope', 'commonData', function($scope, co
   // gets all the teacher objects for the fullnames listed for each course
   $scope.getTeachers = function(teacherFullnameArr) {
     return _.map(teacherFullnameArr, function(teacherFullname) {
-      var teacherRecord = _.findWhere($scope.staff, {"fullname": teacherFullname});
-      if (teacherRecord) { return teacherRecord; }
-      else {
+      var teacherRecord = _.find($scope.staff, {"fullname": teacherFullname});
+      if ((teacherRecord !== undefined) && (teacherRecord !== null)) {
+        return teacherRecord;
+      } else {
         return {
           "fullname": teacherFullname,
           "nutshell": null
