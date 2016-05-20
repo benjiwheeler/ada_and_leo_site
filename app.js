@@ -170,7 +170,7 @@ app.controller('CoursesController', ['$scope', 'commonData', function($scope, co
 
   $scope.activeCoursesForSeason = function(season) {
     return _.filter($scope.courses, function(course){
-      return _.includes("session", course.season);
+      return _.includes(season, course.session);
     });
   };
 
