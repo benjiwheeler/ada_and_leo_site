@@ -26,7 +26,7 @@
         ]
       }
       ,{
-        "parent": {"text": "Learn More", "url": "index.html#learnmore"}
+        "parent": {"text": "Learn More", "url": ""}
         ,"children": [
           {"text": "Program description", "url": "index.html#learnmore"}
           ,{"text": "Who we are", "url": "index.html#whoweare"}
@@ -34,8 +34,14 @@
           ,{"text": "Location", "url": "index.html#location"}
           ,{"text": "Articles", "url": "index.html#articles"}
           ,{"text": "Scholarships", "url": "scholarship"}
-          ,{"text": "Quick Links", "url": "quicklinks.html"}
           ,{"text": "FAQ", "url": "index.html#faq"}
+        ]
+      }
+      ,{
+        "parent": {"text": "Extras", "url": ""}
+        ,"children": [
+          {"text": "T-shirts", "url": "https://gum.co/hfJrt"}
+          ,{"text": "Quick Links", "url": "quicklinks.html"}
         ]
       }
       ,{
@@ -59,6 +65,7 @@
       ,{"text": "Scholarships", "url": "scholarship"}
       ,{"text": "Location", "url": "index.html#location"}
       ,{"text": "Quick Links", "url": "quicklinks.html"}
+      ,{"text": "T-shirts", "url": "https://gum.co/hfJrt"}
       ,{"text": "FAQ", "url": "index.html#faq"}
       ,{"text": "Contact", "url": "index.html#contact"}
     ]
