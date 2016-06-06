@@ -209,7 +209,8 @@ app.controller('CoursesController', ['$scope', 'commonData', function($scope, co
         }
       });
     }
-    console.log("already had course in teachersForCourse; teachers are: " + teachersForCourse[courseStr]);
+    console.log("already had course in teachersForCourse; teachers are: ");
+    console.log(teachersForCourse[courseStr]);
     return teachersForCourse[courseStr];
   };
 
