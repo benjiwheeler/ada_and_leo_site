@@ -179,14 +179,15 @@ app.controller('CoursesController', ['$scope', 'commonData', function($scope, co
 
   // gets all the teacher objects for the fullnames listed for each course
   $scope.getTeachers = function(course) {
+    console.log("getting teachers for course: " + course);
     if (!(course in teachersForCourse)) {
       teachersForCourse[course] = _.map(course.teachers, function(teacherFullname) {
         var teacherRecord = _.find($scope.staff, {"fullname": teacherFullname});
         if ((teacherRecord !== undefined) && (teacherRecord !== null)) {
-          //console.log("found teacher with fullname: " + teacherFullname);
+          console.log("found teacher with fullname: " + teacherFullname);
           return teacherRecord;
         } else {
-          //console.log("found no teacher with fullname: " + teacherFullname);
+          console.log("found no teacher with fullname: " + teacherFullname);
           return {
             "fullname": teacherFullname,
             "nutshell": null
@@ -194,6 +195,7 @@ app.controller('CoursesController', ['$scope', 'commonData', function($scope, co
         }
       });
     }
+    console.log("already had course in teachersForCourse; teachers are: " + teachersForCourse[course]);
     return teachersForCourse[course];
   };
 
