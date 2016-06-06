@@ -159,6 +159,19 @@ app.controller('CoursesController', ['$scope', 'commonData', function($scope, co
   $scope.deterministicWebColor = deterministicWebColor;
   $scope.deterministicHilightColor = deterministicHilightColor;
 
+  function stringifyCourse(course) {
+    var str = "";
+    if (course !== undefined && course !== null) {
+      if (course.title !== undefined && course.title !== null) {
+        str += course.title;
+      }
+      if (course.times !== undefined && course.times !== null) {
+        str += course.times;
+      }
+    }
+    return str;
+  }
+
   commonData.fetchData().then(function(data) {
     $scope.courses = data.courses;
     $scope.staff = data.staff;
@@ -179,9 +192,10 @@ app.controller('CoursesController', ['$scope', 'commonData', function($scope, co
 
   // gets all the teacher objects for the fullnames listed for each course
   $scope.getTeachers = function(course) {
-    console.log("getting teachers for course: " + course);
-    if (!(course in teachersForCourse)) {
-      teachersForCourse[course] = _.map(course.teachers, function(teacherFullname) {
+    var courseStr = stringifyCourse(course);
+    console.log("getting teachers for course: " + courseStr);
+    if (!(courseStr in teachersForCourse)) {
+      teachersForCourse[courseStr] = _.map(course.teachers, function(teacherFullname) {
         var teacherRecord = _.find($scope.staff, {"fullname": teacherFullname});
         if ((teacherRecord !== undefined) && (teacherRecord !== null)) {
           console.log("found teacher with fullname: " + teacherFullname);
@@ -195,8 +209,8 @@ app.controller('CoursesController', ['$scope', 'commonData', function($scope, co
         }
       });
     }
-    console.log("already had course in teachersForCourse; teachers are: " + teachersForCourse[course]);
-    return teachersForCourse[course];
+    console.log("already had course in teachersForCourse; teachers are: " + teachersForCourse[courseStr]);
+    return teachersForCourse[courseStr];
   };
 
   $scope.numColsForCourse = function(course, numColsAlwaysPresent) {
