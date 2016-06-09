@@ -126,15 +126,14 @@ input[type="search"],
 input[type="date"],
 .chosen-single{
 	width: 100%;
-	background: #f1f1f1;
-	border:1px solid rgba(0, 0, 0, 0);
-	padding: 10px 15px;
+	background: #fcfcfc;
+	border:1px solid rgba(0, 0, 0, 0.1);
+	padding: .5em;
     font-family: 'Open Sans';
-    font-size: 12px;
+    font-size: .75em;
     font-weight: normal;
-    border-radius:3px;
-    color: #3b474d;
-	border-color: rgba(0, 0, 0, 0.1);
+    border-radius:.5em;
+    color: #333;
 }
 
 textarea:focus,
