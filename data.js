@@ -1,4 +1,4 @@
-{
+var commonStaticData = {
   "menu": {
     "hierarchical": [
       {
@@ -359,4 +359,4 @@
       ,"person": "Anonymous feedback from an adult programming student"
     }
   ]
-}
+};
