@@ -148,12 +148,12 @@ side by side menu  -->
                 <ul id="menu-primary-menu" class="menu">
                   <li class="menu-item-6276 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-11 current_page_item menu-item-has-children simple"
                   ng-repeat="menuItem in hierarchicalMenuItems" ng-cloak>
-                    <a ng-href="{{menuItem.parent.url}}" ng-click="menuParentClicked(menuItem.parent)">{{menuItem.parent.text}}</a>
+                    <a ng-href="{{::menuItem.parent.url}}" ng-click="menuParentClicked(menuItem.parent)">{{::menuItem.parent.text}}</a>
                     <ul class="sub-menu">
-                      <li ng-class="{{'menu-item-' + $index}}"
+                      <li ng-class="{{::'menu-item-' + $index}}"
                       class="menu-item menu-item-type-custom menu-item-object-custom"
                       ng-repeat="childItem in menuItem.children"><a
-                      ng-href="{{childItem.url}}">{{childItem.text}}</a></li>
+                      ng-href="{{::childItem.url}}">{{::childItem.text}}</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -180,9 +180,9 @@ side by side menu  -->
           <nav id="header-menu-mobile">
             <ul id="menu-primary-menu-1" class="menu">
               <li ng-repeat="menuItem in compactMenuItems"
-              ng-class="{{'menu-item-' + $index}}"
+              ng-class="{{::'menu-item-' + $index}}"
               class="menu-item menu-item-type-post_type menu-item-object-page"><a
-              ng-href="{{menuItem.url}}">{{menuItem.text}}</a></li>
+              ng-href="{{::menuItem.url}}">{{::menuItem.text}}</a></li>
             </ul>
             <!-- end of hamburger -->
           </nav>
@@ -722,35 +722,35 @@ many engineers whose discoveries and inventions we use today.
                       <div class="clearfix" style="height:5px"></div>
                       <div class="row">
                         <div class="col-xs-10 col-offset-1">
-                          <h4 ng-if="$first">{{course.session}} Session</h4>
+                          <h4 ng-if="$first">{{::course.session}} Session</h4>
                           <dl class="dl-horizontal" style="padding: .5em" ng-style="(course.status == 'waitlist' || course.status == 'ended') && {'background-color': '#eaeaea'}">
                             <dt>Title</dt>
                             <dd ng-style='{"color": deterministicWebColor("title"), "font-size": "2em",
-                            "padding": ".1em", "background-color": deterministicHilightColor(course.title)}'>{{course.title}}
+                            "padding": ".1em", "background-color": deterministicHilightColor(course.title)}'>{{::course.title}}
                             </dd>
                             <dt>Times</dt>
-                            <dd ng-style='{"color": deterministicWebColor("times"), "font-size": "1.5em"}'>{{course.times}}
+                            <dd ng-style='{"color": deterministicWebColor("times"), "font-size": "1.5em"}'>{{::course.times}}
                             </dd>
                             <dt>Dates</dt>
-                            <dd ng-style='{"color": deterministicWebColor("dates")}'>{{course.dates}}
+                            <dd ng-style='{"color": deterministicWebColor("dates")}'>{{::course.dates}}
                             </dd>
                             <dt>Eligible students</dt>
-                            <dd ng-style='{"color": deterministicWebColor("eligible")}'>{{course.eligible}}
+                            <dd ng-style='{"color": deterministicWebColor("eligible")}'>{{::course.eligible}}
                             </dd>
                             <dt>Ages</dt>
-                            <dd ng-style='{"color": deterministicWebColor("ages")}'>{{course.ages}}
+                            <dd ng-style='{"color": deterministicWebColor("ages")}'>{{::course.ages}}
                             </dd>
                             <dt><ng-pluralize count="course.teachers.length"
                    when="{'0': 'Teacher',
                        '1': 'Teacher',
                        'other': 'Teachers'}">
   </ng-pluralize></dt>
-                            <dd><a href="#whoweare"><span ng-repeat="teacher in getTeachers(course)"><span style="text-decoration: underline" ng-style='{"color": deterministicWebColor(teacher.fullname)}'>{{teacher.fullname}}</span><span style="color: #a9a;" ng-if="teacher.nutshell"> ({{teacher.nutshell}})</span><span ng-if="!$last && course.teachers.length > 1"> and </span></span></a></dd>
+                            <dd><a href="#whoweare"><span ng-repeat="teacher in getTeachers(course)"><span style="text-decoration: underline" ng-style='{"color": deterministicWebColor(teacher.fullname)}'>{{::teacher.fullname}}</span><span style="color: #a9a;" ng-if="teacher.nutshell"> ({{::teacher.nutshell}})</span><span ng-if="!$last && course.teachers.length > 1"> and </span></span></a></dd>
                             <dt>Location</dt>
-                            <dd ng-style='{"color": deterministicWebColor("location")}'>{{course.location}}
+                            <dd ng-style='{"color": deterministicWebColor("location")}'>{{::course.location}}
                             </dd>
                             <dt>Cost</dt>
-                            <dd ng-style='{"color": deterministicWebColor("cost")}'>{{course.cost}}
+                            <dd ng-style='{"color": deterministicWebColor("cost")}'>{{::course.cost}}
                             </dd>
                             <dt>Status</dt>
                             <dd>
@@ -766,12 +766,12 @@ many engineers whose discoveries and inventions we use today.
                             </dd>
                             <dt ng-if="course.status !== 'ended'">Enroll</dt>
                             <dd ng-if="course.status !== 'ended'">
-                             <a ng-href="{{course.signupurl}}" class="md-button small button-hero style-2 "
+                             <a ng-href="{{::course.signupurl}}" class="md-button small button-hero style-2 "
                              style="width: 80px; display: block; border-color:#000; color:#2b2;"
                              data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 "><span ng-if="course.status == 'waitlist'">Wait List</span><span ng-if="course.status == 'enroll'">Enroll</span></a>
                             </dd>
                             <dt ng-if="course.additional">Additional Info</dt>
-                            <dd ng-style='{"color": deterministicWebColor("additional")}'>{{course.additional}}</dd>
+                            <dd ng-style='{"color": deterministicWebColor("additional")}'>{{::course.additional}}</dd>
                           </dl>
                         </div>
                       </div>
@@ -812,7 +812,7 @@ many engineers whose discoveries and inventions we use today.
                     <div ng-repeat="course in activeCoursesForSeason(season) | isActive">
                       <div class="clearfix" style="height:5px"></div>
                         <div class="row">
-                        <h4 ng-if="$first">{{course.session}} Session</h4>
+                        <h4 ng-if="$first">{{::course.session}} Session</h4>
                         <table class="table">
                         <!-- I'm getting a bit fancy here, but the numColsAlwaysPresent variable let's me very that number of columns while still having the additional info row span exactly the right number of columns. -->
                           <tr style="color: white" ng-init='numColsAlwaysPresent = 0' ng-style='{"background-color": course.color}'>
@@ -833,20 +833,20 @@ many engineers whose discoveries and inventions we use today.
                             <!-- hack to keep col count correct -->
                           </tr>
                           <tr ng-style="(course.status == 'waitlist' || course.status == 'ended') && {'background-color': '#eaeaea'}">
-                            <td ng-style='{"color": deterministicWebColor("title"), "font-size": "1.6em"}'>{{course.title}}
+                            <td ng-style='{"color": deterministicWebColor("title"), "font-size": "1.6em"}'>{{::course.title}}
                             </td>
-                            <td ng-style='{"color": deterministicWebColor("times"), "font-size": "1.3em"}'>{{course.times}}
+                            <td ng-style='{"color": deterministicWebColor("times"), "font-size": "1.3em"}'>{{::course.times}}
                             </td>
-                            <td ng-style='{"color": deterministicWebColor("dates")}'>{{course.dates}}
+                            <td ng-style='{"color": deterministicWebColor("dates")}'>{{::course.dates}}
                             </td>
-                            <td ng-style='{"color": deterministicWebColor("eligible")}'>{{course.eligible}}
+                            <td ng-style='{"color": deterministicWebColor("eligible")}'>{{::course.eligible}}
                             </td>
-                            <td ng-style='{"color": deterministicWebColor("ages")}'>{{course.ages}}
+                            <td ng-style='{"color": deterministicWebColor("ages")}'>{{::course.ages}}
                             </td>
-                            <td><a href="#whoweare"><span ng-repeat="teacher in getTeachers(course)"><span style="text-decoration: underline" ng-style='{"color": deterministicWebColor(teacher.fullname)}'>{{teacher.fullname}}</span><span style="color: #a9a;" ng-if="teacher.nutshell"> ({{teacher.nutshell}})</span><span ng-if="!$last && course.teachers.length > 1"> and </span></span></a></td>
-                            <td ng-style='{"color": deterministicWebColor("location")}'>{{course.location}}
+                            <td><a href="#whoweare"><span ng-repeat="teacher in getTeachers(course)"><span style="text-decoration: underline" ng-style='{"color": deterministicWebColor(teacher.fullname)}'>{{::teacher.fullname}}</span><span style="color: #a9a;" ng-if="teacher.nutshell"> ({{::teacher.nutshell}})</span><span ng-if="!$last && course.teachers.length > 1"> and </span></span></a></td>
+                            <td ng-style='{"color": deterministicWebColor("location")}'>{{::course.location}}
                             </td>
-                            <td ng-style='{"color": deterministicWebColor("cost")}'>{{course.cost}}
+                            <td ng-style='{"color": deterministicWebColor("cost")}'>{{::course.cost}}
                             </td>
                             <td>
                               <span ng-if="course.status == 'waitlist'">
@@ -859,15 +859,15 @@ many engineers whose discoveries and inventions we use today.
                                 <span style="color: darkgray">Course has ended</span>
                               </span>
                             </td>
-                            <td ng-if="course.status !== 'ended'"><a ng-href="{{course.signupurl}}"
+                            <td ng-if="course.status !== 'ended'"><a ng-href="{{::course.signupurl}}"
                               class="md-button small button-hero style-2 "
                               style="width: 100px; display: block; border-color:#000; color:#2b2; "
                               data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 ">
                               <span ng-if="course.status == 'waitlist'">Wait List</span><span ng-if="course.status == 'enroll'">Enroll!</span></a></td>
                           </tr>
                           <tr ng-if="course.additional">
-                            <td colspan="{{numColsForCourse(course, numColsAlwaysPresent)}}"><span ng-style='{"color": deterministicWebColor("additional title")}'>Additional Info:</span>
-                            <span ng-style='{"color": deterministicWebColor("additional content")}'>{{course.additional}}</span></td>
+                            <td colspan="{{::numColsForCourse(course, numColsAlwaysPresent)}}"><span ng-style='{"color": deterministicWebColor("additional title")}'>Additional Info:</span>
+                            <span ng-style='{"color": deterministicWebColor("additional content")}'>{{::course.additional}}</span></td>
                           </tr>
                         </table>
                       </div>
@@ -940,7 +940,7 @@ many engineers whose discoveries and inventions we use today.
                 <div class="row">
                   <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
                     <div ng-repeat="member in staff">
-                      <h4 ng-style='{"color": deterministicWebColor(member.fullname)}'>{{member.fullname}}</h4>
+                      <h4 ng-style='{"color": deterministicWebColor(member.fullname)}'>{{::member.fullname}}</h4>
                       <p><span ng-bind-html="member.bio"></span></p>
                     </div>
                   </div>
@@ -1067,8 +1067,8 @@ many engineers whose discoveries and inventions we use today.
                 <div class="row">
                   <div class="col-xs-10 col-offset-1">
                     <div ng-repeat="testimonial in testimonials">
-                      <h4 style="font-family: Raleway; font-weight: 400; margin-top: 1.2em" ng-style='{"color": deterministicBlueColor($index)}'>&ldquo;{{testimonial.quote}}&rdquo;</h4>
-                      <p ng-style='{"color": deterministicBlueColor($index)}'>-{{testimonial.person}}
+                      <h4 style="font-family: Raleway; font-weight: 400; margin-top: 1.2em" ng-style='{"color": deterministicBlueColor($index)}'>&ldquo;{{::testimonial.quote}}&rdquo;</h4>
+                      <p ng-style='{"color": deterministicBlueColor($index)}'>-{{::testimonial.person}}
                     </div>
                   </div>
                 </div>
@@ -1099,7 +1099,7 @@ many engineers whose discoveries and inventions we use today.
                 <div class="row">
                   <div class="col-xs-10 col-offset-1">
                     <div ng-repeat="question in faquestions">
-                      <h4>Q.<br><br>{{question.q}}</h4>
+                      <h4>Q.<br><br>{{::question.q}}</h4>
                       <p>
                         <b>A.</b>
                         <p ng-repeat="aParagraph in question.aParagraphs" ng-bind-html="aParagraph"></p>
