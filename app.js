@@ -183,9 +183,9 @@ app.controller('CoursesController', ['$scope', 'commonData', function($scope, co
 
   $scope.activeCoursesForSeason = function(season) {
     return _.filter($scope.courses, function(course){
-      return ((course.hasOwnProperty('active')
-        && (course.active === true)
-        && _.includes(season, course.session));
+      return (course.hasOwnProperty('active') &&
+        (course.active === true) &&
+        _.includes(season, course.session));
     });
   };
 
