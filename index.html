@@ -147,7 +147,7 @@ side by side menu  -->
               <nav id="header-menu">
                 <ul id="menu-primary-menu" class="menu">
                   <li class="menu-item-6276 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-11 current_page_item menu-item-has-children simple"
-                  ng-repeat="menuItem in hierarchicalMenuItems">
+                  ng-repeat="menuItem in hierarchicalMenuItems" ng-cloak>
                     <a ng-href="{{menuItem.parent.url}}" ng-click="menuParentClicked(menuItem.parent)">{{menuItem.parent.text}}</a>
                     <ul class="sub-menu">
                       <li ng-class="{{'menu-item-' + $index}}"

@@ -112,14 +112,20 @@ app.factory('commonData', ['$http', '$q', function($http, $q){
   };
 
   service.fetchData = function() {
-    menu = commonStaticData.menu;
-    staff = commonStaticData.staff;
-    courses = commonStaticData.courses;
-    faquestions = commonStaticData.faquestions;
-    testimonials = commonStaticData.testimonials;
-    loaded = true;
-    console.log("commonData fetched");
-    return dataDefer.resolve(getData());
+    var dataDefer = $q.defer();
+    if (loaded === true) {
+      dataDefer.resolve(getData());
+    } else {
+      menu = commonStaticData.menu;
+      staff = commonStaticData.staff;
+      courses = commonStaticData.courses;
+      faquestions = commonStaticData.faquestions;
+      testimonials = commonStaticData.testimonials;
+      loaded = true;
+      console.log("commonData fetched");
+      dataDefer.resolve(getData());
+    }
+    return dataDefer.promise;
   };
 
   return service;
