@@ -343,6 +343,10 @@ var commonStaticData = {
       ,"person": "Elizabeth G., parent of 7 year old boy"
     }
     ,{
+      "quote": "My kid is begging me to take your classes just based on kid referrals!"
+      ,"person": "Dawn M., parent of 8 year old girl"
+    }
+    ,{
       "quote": "A. really loved the class!"
       ,"person": "Cynthia P., parent of 7 year old girl"
     }
