@@ -73,8 +73,65 @@ var commonStaticData = {
 
   ,"courses": [
     {
-    "session": "Summer 2016"
+    "session": "Fall 2016"
     ,"active": true
+    ,"title": "Intro to creative tech"
+    ,"eligible": "all children!"
+    ,"ages": "6-10 years"
+    ,"times": "Saturdays 10am-11:15am"
+    ,"dates": "Sept 10, 17, 24; Oct 8, 15, 22, 29 (7 sessions)"
+    ,"teachers": ["Ben Wheeler"]
+    ,"location": "Trilok Center, 143 Waverly Ave (at Myrtle)"
+    ,"cost": "$280"
+    ,"status": "enroll"
+    ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
+    ,"color": "#97e"
+    ,"additional": [
+      "Note: Students and parents are encouraged to attend the Maker Faire on Sat Oct 1 or Sun Oct 2, where we will have a table and be showing student work! Children must be accompanied by an adult. <a href='http://makerfaire.com/new-york/'>Tickets and info</a>"
+      ]
+    }
+    ,{
+    "session": "Fall 2016"
+    ,"active": true
+    ,"title": "Intro to creative tech"
+    ,"eligible": "all children!"
+    ,"ages": "6-10 years"
+    ,"times": "Saturdays 12pm-1:15pm"
+    ,"dates": "Sept 10, 17, 24; Oct 8, 15, 22, 29 (7 sessions)"
+    ,"teachers": ["Ben Wheeler"]
+    ,"location": "Trilok Center, 143 Waverly Ave (at Myrtle)"
+    ,"cost": "$280"
+    ,"status": "enroll"
+    ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
+    ,"color": "#97e"
+    ,"additional": [
+      "Note: Students and parents are encouraged to attend the Maker Faire on Sat Oct 1 or Sun Oct 2, where we will have a table and be showing student work! Children must be accompanied by an adult. <a href='http://makerfaire.com/new-york/'>Tickets and info</a>"
+      ]
+    }
+    ,{
+    "session": "Fall 2016"
+    ,"active": true
+    ,"title": "Intro to creative tech"
+    ,"eligible": "all children!"
+    ,"ages": "6-10 years"
+    ,"times": "Wednesdays 2pm-3:15pm"
+    ,"dates": "Sept 14, 21, 28; Oct 5, 19, 26 (6 sessions)"
+    ,"teachers": ["Ben Wheeler"]
+    ,"location": "Trilok Center, 143 Waverly Ave (at Myrtle)"
+    ,"cost": "$240"
+    ,"status": "enroll"
+    ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
+    ,"color": "#97e"
+    ,"additional": [
+      "Optional: we will do pickup at Compass Charter School (300 Adelphi) at 1pm, transport students safely, and take care of students until the class starts at 2pm. Cost: $20 per pickup, or $90 if paid in advance for the full 6 classes (in which case the grand total is $330)."
+      ,"Note: Students and parents are encouraged to attend the Maker Faire on Sat Oct 1 or Sun Oct 2, where we will have a table and be showing student work! Children must be accompanied by an adult. <a href='http://makerfaire.com/new-york/'>Tickets and info</a>"
+      ]
+    }
+  ]
+  ,"courses_archive": [
+    {
+    "session": "Summer 2016"
+    ,"active": false
     ,"title": "Week 1: Creative programming"
     ,"eligible": "all children!"
     ,"ages": "6-10 years"
@@ -89,7 +146,7 @@ var commonStaticData = {
     }
     ,{
     "session": "Summer 2016"
-    ,"active": true
+    ,"active": false
     ,"title": "Week 2: Digital art"
     ,"eligible": "all children!"
     ,"ages": "6-10 years"
@@ -104,7 +161,7 @@ var commonStaticData = {
     }
     ,{
     "session": "Summer 2016"
-    ,"active": true
+    ,"active": false
     ,"title": "Week 3: Electric inventions"
     ,"eligible": "all children!"
     ,"ages": "6-10 years"
@@ -119,7 +176,7 @@ var commonStaticData = {
     }
     ,{
     "session": "Spring 2016"
-    ,"active": true
+    ,"active": false
     ,"title": "Intro to Game Design"
     ,"eligible": "all children!"
     ,"ages": "7-11 years"
@@ -135,7 +192,7 @@ var commonStaticData = {
     }
     ,{
     "session": "Spring 2016"
-    ,"active": true
+    ,"active": false
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
     ,"ages": "6-9 years"
@@ -151,7 +208,7 @@ var commonStaticData = {
     }
     ,{
     "session": "Spring 2016"
-    ,"active": true
+    ,"active": false
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
     ,"ages": "6-9 years"
@@ -167,7 +224,7 @@ var commonStaticData = {
     }
     ,{
     "session": "Spring 2016"
-    ,"active": true
+    ,"active": false
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
     ,"ages": "6-10 years"
@@ -182,7 +239,7 @@ var commonStaticData = {
     }
     ,{
     "session": "Spring 2016"
-    ,"active": true
+    ,"active": false
     ,"title": "Intro to Animation"
     ,"eligible": "all children!"
     ,"ages": "7-11 years"
@@ -197,7 +254,7 @@ var commonStaticData = {
     }
     ,{
     "session": "Spring 2016"
-    ,"active": true
+    ,"active": false
     ,"title": "Intro to creative tech"
     ,"eligible": "Students attending Brooklyn Coop School at Brevoort location"
     ,"ages": "6-9 years"
