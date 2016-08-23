@@ -874,8 +874,15 @@ many engineers whose discoveries and inventions we use today.
                               <span ng-if="course.status == 'waitlist'">Wait List</span><span ng-if="course.status == 'enroll'">Enroll!</span></a></td>
                           </tr>
                           <tr ng-if="course.additional">
-                            <td colspan="{{::numColsForCourse(course, numColsAlwaysPresent)}}"><span ng-style='{"color": deterministicWebColor("additional title")}'>Additional Info:</span>
-                            <span ng-style='{"color": deterministicWebColor("additional content")}'>{{::course.additional}}</span></td>
+                            <td colspan="{{::numColsForCourse(course, numColsAlwaysPresent)}}">
+                              <span ng-style='{"color": deterministicWebColor("additional title")}'>Additional Info:</span>
+                              <ul>
+                                <li ng-repeat="infoStr in course.additional">
+                                  <span ng-bind-html="infoStr" ng-style='{"color": deterministicWebColor(infoStr)}'>
+                                  </span>
+                                </li>
+                              </ul>
+                            </td>
                           </tr>
                         </table>
                       </div>
