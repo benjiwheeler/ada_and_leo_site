@@ -85,7 +85,7 @@ var commonStaticData = {
     ,"cost": "$280"
     ,"status": "enroll"
     ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
-    ,"color": "#97e"
+    ,"color": "#4a5"
     ,"additional": [
       "Note: Students and parents are encouraged to attend the Maker Faire on Sat Oct 1 or Sun Oct 2, where we will have a table and be showing student work! Children must be accompanied by an adult. <a href='http://makerfaire.com/new-york/'>Tickets and info</a>"
       ]
@@ -103,7 +103,7 @@ var commonStaticData = {
     ,"cost": "$280"
     ,"status": "enroll"
     ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
-    ,"color": "#97e"
+    ,"color": "#fa0"
     ,"additional": [
       "Note: Students and parents are encouraged to attend the Maker Faire on Sat Oct 1 or Sun Oct 2, where we will have a table and be showing student work! Children must be accompanied by an adult. <a href='http://makerfaire.com/new-york/'>Tickets and info</a>"
       ]
