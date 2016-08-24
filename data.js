@@ -408,6 +408,10 @@ var commonStaticData = {
       ,"person": "Cynthia P., parent of 7 year old girl"
     }
     ,{
+      "quote": "E. loved his week with you and learned so much!"
+      ,"person": "Doris C., parent of 9 year old boy"
+    }
+    ,{
       "quote": "My daughter has taken this class twice now, last fall and this past winter. I thought I would have trouble getting her up on Saturday mornings, but I never did. She enjoyed Ben's class so very much and couldn't stop talking about all the things she learned once class was over."
       ,"person": "Marsha-Stephanie B., parent of 7 year old girl"
     }
