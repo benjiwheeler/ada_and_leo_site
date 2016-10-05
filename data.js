@@ -2,27 +2,25 @@ var commonStaticData = {
   "menu": {
     "hierarchical": [
       {
-        "parent": {"text": "Classes", "url": "index.html#classschedule"}
-        ,"children": [
-          {"text": "Creative tech", "url": "index.html#creativetech"}
-          ,{"text": "Game design", "url": "index.html#gamedesign"}
-          ,{"text": "Animation", "url": "index.html#animation"}
-          ,{"text": "Class schedule", "url": "index.html#classschedule"}
-          ,{"text": "Summer program", "url": "index.html#summer"}
-          ,{"text": "Fees and pricing", "url": "index.html#classschedule"}
-        ]
-      }
-      ,{
         "parent": {"text": "Enroll", "url": ""}
         ,"children": [
-          {"text": "Summer program", "url": "http://goo.gl/forms/N98WN8BFiJVaPSBu1"}
-          ,{"text": "Afterschool classes", "url": "http://goo.gl/forms/MsaV1rG2Ni"}
-          ,{"text": "Weekend classes", "url": "http://goo.gl/forms/MsaV1rG2Ni"}
+          {"text": "Class schedule", "url": "index.html#classschedule"}
+          ,{"text": "Fees and pricing", "url": "index.html#classschedule"}
+          ,{"text": "Enroll: Afterschool classes", "url": "http://goo.gl/forms/MsaV1rG2Ni"}
+          ,{"text": "Enroll: Weekend classes", "url": "http://goo.gl/forms/MsaV1rG2Ni"}
+          ,{"text": "Enroll: Summer program", "url": "http://goo.gl/forms/N98WN8BFiJVaPSBu1"}
+          ,{"text": "Scholarships", "url": "scholarship"}
         ]
       }
       ,{
-        "parent": {"text": "Staff", "url": "index.html#whoweare"}
+        "parent": {"text": "Curriculum", "url": ""}
         ,"children": [
+          {"text": "Program overview", "url": "index.html#learnmore"}
+          ,{"text": "Creative tech: overview", "url": "index.html#creativetech"}
+          ,{"text": "Game design: overview", "url": "index.html#gamedesign"}
+          ,{"text": "Animation: overview", "url": "index.html#animation"}
+          ,{"text": "Summer program: overview", "url": "index.html#summer"}
+          ,{"text": "Lesson plans", "url": "curriculum/"}
         ]
       }
       ,{
@@ -30,10 +28,9 @@ var commonStaticData = {
         ,"children": [
           {"text": "Program description", "url": "index.html#learnmore"}
           ,{"text": "Who we are", "url": "index.html#whoweare"}
-          ,{"text": "Testimonials", "url": "index.html#testimonials"}
           ,{"text": "Location", "url": "index.html#location"}
-          ,{"text": "Articles", "url": "index.html#articles"}
-          ,{"text": "Scholarships", "url": "scholarship"}
+          ,{"text": "Student Work", "url": "studentwork.html"}
+          ,{"text": "Testimonials", "url": "index.html#testimonials"}
           ,{"text": "FAQ", "url": "index.html#faq"}
         ]
       }
@@ -41,6 +38,7 @@ var commonStaticData = {
         "parent": {"text": "Extras", "url": ""}
         ,"children": [
           {"text": "T-shirts", "url": "https://gumroad.com/anglesideangle"}
+          ,{"text": "Articles", "url": "index.html#articles"}
           ,{"text": "Quick Links", "url": "quicklinks.html"}
         ]
       }
@@ -55,15 +53,18 @@ var commonStaticData = {
       ,{"text": "Enroll in afterschool classes", "url": "http://goo.gl/forms/MsaV1rG2Ni"}
       ,{"text": "Enroll in weekend classes", "url": "http://goo.gl/forms/MsaV1rG2Ni"}
       ,{"text": "Classes schedule", "url": "index.html#classschedule"}
+      ,{"text": "Fees and pricing", "url": "index.html#classschedule"}
       ,{"text": "About the program", "url": "index.html#learnmore"}
-      ,{"text": "Summer program", "url": "index.html#summer"}
-      ,{"text": "Creative tech", "url": "index.html#creativetech"}
-      ,{"text": "Animation", "url": "index.html#animation"}
-      ,{"text": "Game design", "url": "index.html#gamedesign"}
+      ,{"text": "Location", "url": "index.html#location"}
+      ,{"text": "Summer program: overview", "url": "index.html#summer"}
+      ,{"text": "Creative tech: overview", "url": "index.html#creativetech"}
+      ,{"text": "Animation: overview", "url": "index.html#animation"}
+      ,{"text": "Game design: overview", "url": "index.html#gamedesign"}
       ,{"text": "Who we are", "url": "index.html#whoweare"}
       ,{"text": "Testimonials", "url": "index.html#testimonials"}
       ,{"text": "Scholarships", "url": "scholarship"}
-      ,{"text": "Location", "url": "index.html#location"}
+      ,{"text": "Student Work", "url": "studentwork.html"}
+      ,{"text": "Lesson plans", "url": "curriculum/"}
       ,{"text": "Quick Links", "url": "quicklinks.html"}
       ,{"text": "T-shirts", "url": "https://gumroad.com/anglesideangle"}
       ,{"text": "FAQ", "url": "index.html#faq"}
