@@ -83,14 +83,6 @@ function deterministicHilightColor(seed) {
 
 var app = angular.module('AdaLeoApp', ['ngSanitize']);
 
-app.filter('isActive', [function() {
-  return function(courses) {
-    return courses.filter( function(course) {
-      return (course.hasOwnProperty('active') && (course.active === true));
-    });
-  };
-}]);
-
 app.factory('commonData', ['$http', '$q', function($http, $q){
   var menu = {};
   var staff = [];
@@ -181,11 +173,9 @@ app.controller('CoursesController', ['$scope', 'commonData', function($scope, co
     return _.uniq(_.map($scope.courses, "session"));
   };
 
-  $scope.activeCoursesForSeason = function(season) {
-    return _.filter($scope.courses, function(course){
-      return (course.hasOwnProperty('active') &&
-        (course.active === true) &&
-        _.includes(season, course.session));
+  $scope.coursesForSeason = function(season) {
+    return _.filter($scope.courses, function(course) {
+      return _.includes(season, course.session);
     });
   };
 

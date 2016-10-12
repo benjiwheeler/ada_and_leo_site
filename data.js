@@ -75,7 +75,6 @@ var commonStaticData = {
   ,"courses": [
     {
     "session": "Late Fall 2016"
-    ,"active": true
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
     ,"ages": "6-10 years"
@@ -92,7 +91,6 @@ var commonStaticData = {
     }
     ,{
     "session": "Late Fall 2016"
-    ,"active": true
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
     ,"ages": "6-10 years"
@@ -109,7 +107,6 @@ var commonStaticData = {
     }
     ,{
     "session": "Late Fall 2016"
-    ,"active": true
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
     ,"ages": "6-10 years"
@@ -127,7 +124,6 @@ var commonStaticData = {
     }
     ,{
     "session": "Fall 2016"
-    ,"active": false
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
     ,"ages": "6-10 years"
@@ -145,7 +141,6 @@ var commonStaticData = {
     }
     ,{
     "session": "Fall 2016"
-    ,"active": true
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
     ,"ages": "6-10 years"
@@ -163,7 +158,6 @@ var commonStaticData = {
     }
     ,{
     "session": "Fall 2016"
-    ,"active": true
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
     ,"ages": "6-10 years"
@@ -184,7 +178,6 @@ var commonStaticData = {
   ,"courses_archive": [
     {
     "session": "Summer 2016"
-    ,"active": true
     ,"title": "Week 1: Creative programming"
     ,"eligible": "all children!"
     ,"ages": "6-10 years"
@@ -199,7 +192,6 @@ var commonStaticData = {
     }
     ,{
     "session": "Summer 2016"
-    ,"active": false
     ,"title": "Week 2: Digital art"
     ,"eligible": "all children!"
     ,"ages": "6-10 years"
@@ -214,7 +206,6 @@ var commonStaticData = {
     }
     ,{
     "session": "Summer 2016"
-    ,"active": false
     ,"title": "Week 3: Electric inventions"
     ,"eligible": "all children!"
     ,"ages": "6-10 years"
@@ -229,7 +220,6 @@ var commonStaticData = {
     }
     ,{
     "session": "Spring 2016"
-    ,"active": false
     ,"title": "Intro to Game Design"
     ,"eligible": "all children!"
     ,"ages": "7-11 years"
@@ -245,7 +235,6 @@ var commonStaticData = {
     }
     ,{
     "session": "Spring 2016"
-    ,"active": false
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
     ,"ages": "6-9 years"
@@ -261,7 +250,6 @@ var commonStaticData = {
     }
     ,{
     "session": "Spring 2016"
-    ,"active": false
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
     ,"ages": "6-9 years"
@@ -277,7 +265,6 @@ var commonStaticData = {
     }
     ,{
     "session": "Spring 2016"
-    ,"active": false
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
     ,"ages": "6-10 years"
@@ -292,7 +279,6 @@ var commonStaticData = {
     }
     ,{
     "session": "Spring 2016"
-    ,"active": false
     ,"title": "Intro to Animation"
     ,"eligible": "all children!"
     ,"ages": "7-11 years"
@@ -307,7 +293,6 @@ var commonStaticData = {
     }
     ,{
     "session": "Spring 2016"
-    ,"active": false
     ,"title": "Intro to creative tech"
     ,"eligible": "Students attending Brooklyn Coop School at Brevoort location"
     ,"ages": "6-9 years"
@@ -324,7 +309,6 @@ var commonStaticData = {
     "session": "Winter 2016"
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
-    ,"active": false
     ,"ages": "6-9 years"
     ,"times": "Saturdays 2:30pm-3:45pm"
     ,"dates": "Feb 27; Mar 5, 12, 19, 26; Apr 2, 9, 16, 23; May 7 (10 sessions)"
@@ -339,7 +323,6 @@ var commonStaticData = {
     "session": "Winter 2016"
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
-    ,"active": false
     ,"ages": "6-9 years"
     ,"times": "Saturdays 9:30am-10:45am"
     ,"dates": "Feb 6, 13, 27; Mar 5, 12, 19, 26; Apr 2, 9, 16 (10 sessions)"
