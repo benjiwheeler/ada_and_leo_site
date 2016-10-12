@@ -132,7 +132,7 @@ var commonStaticData = {
     ,"teachers": ["Ben Wheeler"]
     ,"location": "Trilok Center, 143 Waverly Ave (at Myrtle)"
     ,"cost": "$240"
-    ,"status": "enroll"
+    ,"status": "closed"
     ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
     ,"color": "#4a5"
     ,"additional": [
@@ -200,7 +200,7 @@ var commonStaticData = {
     ,"teachers": ["Ben Wheeler", "additional subject teachers on a daily basis"]
     ,"location": "40 Brevoort Pl. (near Franklin C and Nostrand A/C stops)"
     ,"cost": "$525"
-    ,"status": "enroll"
+    ,"status": "closed"
     ,"signupurl": "http://goo.gl/forms/N98WN8BFiJVaPSBu1"
     ,"color": "#fa0"
     }
@@ -214,7 +214,7 @@ var commonStaticData = {
     ,"teachers": ["Ben Wheeler", "additional subject teachers on a daily basis"]
     ,"location": "40 Brevoort Pl. (near Franklin C and Nostrand A/C stops)"
     ,"cost": "$525"
-    ,"status": "enroll"
+    ,"status": "closed"
     ,"signupurl": "http://goo.gl/forms/N98WN8BFiJVaPSBu1"
     ,"color": "#fa0"
     }
@@ -228,7 +228,7 @@ var commonStaticData = {
     ,"teachers": ["James Marion", "Pierre Depaz", "Chris Wallace"]
     ,"location": "30 Macon St. (near the Nostrand A train stop)"
     ,"cost": "$250"
-    ,"status": "enroll"
+    ,"status": "closed"
     ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
     ,"color": "#4a5"
     ,"additional": "Note: one teacher's schedule is subject to cool applications they're waiting to hear back from! Class will have at least 2 teachers present at all times."
@@ -243,7 +243,7 @@ var commonStaticData = {
     ,"teachers": ["Taylor Black"]
     ,"location": "30 Macon St. (near the Nostrand A train stop)"
     ,"cost": "$240"
-    ,"status": "waitlist"
+    ,"status": "closed"
     ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
     ,"color": "#77e"
     ,"additional": "Optional: we will do pickup at Compass Charter School (300 Adelphi) at 1pm, transport students safely, and take care of students until the class starts at 2pm. Cost: $16 per pickup, or $100 if paid in advance for the full 8 classes (in which case the grand total is $340)."
@@ -258,7 +258,7 @@ var commonStaticData = {
     ,"teachers": ["Bryn Haffey", "Katya Vasilaky"]
     ,"location": "30 Macon St. (near the Nostrand A train stop)"
     ,"cost": "$220"
-    ,"status": "enroll"
+    ,"status": "closed"
     ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
     ,"color": "#97e"
     ,"additional": "Note: Bryn and Katya will be trading off some classes. One or both of them will always be present at each class."
@@ -273,7 +273,7 @@ var commonStaticData = {
     ,"teachers": ["Hilary Fung"]
     ,"location": "30 Macon St. (near the Nostrand A train stop)"
     ,"cost": "$180"
-    ,"status": "enroll"
+    ,"status": "closed"
     ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
     ,"color": "#87e"
     }
@@ -287,7 +287,7 @@ var commonStaticData = {
     ,"teachers": ["Dakota Pailes-Friedman"]
     ,"location": "30 Macon St. (near the Nostrand A train stop)"
     ,"cost": "$200"
-    ,"status": "waitlist"
+    ,"status": "closed"
     ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
     ,"color": "#d35"
     }
@@ -301,7 +301,7 @@ var commonStaticData = {
     ,"teachers": ["Ben Wheeler"]
     ,"location": "40 Brevoort Pl."
     ,"cost": "$300"
-    ,"status": "waitlist"
+    ,"status": "closed"
     ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
     ,"color": "#97e"
     }
@@ -315,7 +315,7 @@ var commonStaticData = {
     ,"teachers": ["Ben Wheeler", "Ayodamola Okunseinde"]
     ,"location": "30 Macon St. (near the Nostrand A train stop)"
     ,"cost": "$300"
-    ,"status": "ended"
+    ,"status": "closed"
     ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
     ,"color": "#97e"
     }
@@ -329,7 +329,7 @@ var commonStaticData = {
     ,"teachers": ["Ben Wheeler", "Audrey Fox"]
     ,"location": "30 Macon St. (near the Nostrand A train stop)"
     ,"cost": "$300"
-    ,"status": "ended"
+    ,"status": "closed"
     ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
     ,"color": "#77e"
     }
