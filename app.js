@@ -175,7 +175,7 @@ app.controller('CoursesController', ['$scope', 'commonData', function($scope, co
 
   $scope.coursesForSeason = function(season) {
     return _.filter($scope.courses, function(course) {
-      return _.includes(season, course.session);
+      return season == course.session;
     });
   };
 
