@@ -204,7 +204,7 @@ app.controller('CoursesController', ['$scope', 'commonData', function($scope, co
   };
 
   $scope.numColsForCourse = function(course, numColsAlwaysPresent) {
-    if (course.status == "ended") {
+    if (course.status == "ended" || course.status == "closed") {
       return numColsAlwaysPresent;
     } else {
       return numColsAlwaysPresent + 1;
