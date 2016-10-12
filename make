@@ -8,7 +8,7 @@ wait until refreshed
 run:
 	 phantomjs scripts/phantom_load.js > index.html
 edit index.html
-delete section near top that says BEGIN SECTION DELETABLE AFTER HTML RENDER
+delete section near top that says BEGIN SECTION DELETABLE AFTER HTML RENDER, until END of same section
 commit
 push to github
 ( can use:
