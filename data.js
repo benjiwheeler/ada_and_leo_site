@@ -124,8 +124,8 @@ var commonStaticData = {
     ,"additional": [
       "Optional: we will do pickup at Compass Charter School (300 Adelphi) at 1pm, transport students safely, and take care of students until the class starts at 2pm. Cost: $20 per pickup, or $110 if paid in advance for the full 7 classes (in which case the grand total is $390)."
       ]
-    },
-    {
+    }
+    ,{
     "session": "Fall 2016"
     ,"active": false
     ,"title": "Intro to creative tech"
@@ -169,7 +169,7 @@ var commonStaticData = {
     ,"ages": "6-10 years"
     ,"times": "Wednesdays 2pm-3:15pm"
     ,"dates": "Sept 14, 21, 28; Oct 5, 19, 26 (6 sessions)"
-    ,"teachers": ["Ben Wheeler"]
+    ,"teachers": ["Ben Wheeler", "Taylor Black"]
     ,"location": "Trilok Center, 143 Waverly Ave (at Myrtle)"
     ,"cost": "$240"
     ,"status": "closed"
