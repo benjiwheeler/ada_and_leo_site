@@ -19,7 +19,7 @@ var commonStaticData = {
           ,{"text": "Creative tech: overview", "url": "index.html#creativetech"}
           ,{"text": "Game design: overview", "url": "index.html#gamedesign"}
           ,{"text": "Animation: overview", "url": "index.html#animation"}
-          ,{"text": "Summer program: overview", "url": "index.html#summer"}
+          ,{"text": "Summer program", "url": "index.html#summer"}
           ,{"text": "Lesson plans", "url": "curriculum/"}
         ]
       }
