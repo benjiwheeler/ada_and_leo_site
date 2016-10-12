@@ -158,6 +158,15 @@ app.controller('CoursesController', ['$scope', 'commonData', function($scope, co
       if (course.times !== undefined && course.times !== null) {
         str += course.times;
       }
+      if (course.session !== undefined && course.session !== null) {
+        str += course.session;
+      }
+      if (course.ages !== undefined && course.ages !== null) {
+        str += course.ages;
+      }
+      if (course.eligible !== undefined && course.eligible !== null) {
+        str += course.eligible;
+      }
     }
     return str;
   }
