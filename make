@@ -1,3 +1,11 @@
+NOTE: below process mostly works... but header of page messing up. for now, just doing:
+edit index_full.html, NOT index.html
+copy it to index.html
+push
+
+
+process was:
+
 edit index_full, NOT index.html
 commit
 push to github
