@@ -74,8 +74,60 @@ var commonStaticData = {
 
   ,"courses": [
     {
-    "session": "Fall 2016"
+    "session": "Late Fall 2016"
     ,"active": true
+    ,"title": "Intro to creative tech"
+    ,"eligible": "all children!"
+    ,"ages": "6-10 years"
+    ,"times": "Saturdays 10am-11:15am"
+    ,"dates": "Nov 5, 12, 19; Dec 3, 10, 17 (6 sessions)"
+    ,"teachers": ["Ben Wheeler"]
+    ,"location": "Trilok Center, 143 Waverly Ave (at Myrtle)"
+    ,"cost": "$240"
+    ,"status": "enroll"
+    ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
+    ,"color": "#396"
+    ,"additional": [
+      ]
+    }
+    ,{
+    "session": "Late Fall 2016"
+    ,"active": true
+    ,"title": "Intro to creative tech"
+    ,"eligible": "all children!"
+    ,"ages": "6-10 years"
+    ,"times": "Saturdays 12pm-1:15pm"
+    ,"dates": "Nov 5, 12, 19; Dec 3, 10, 17 (6 sessions)"
+    ,"teachers": ["Ben Wheeler"]
+    ,"location": "Trilok Center, 143 Waverly Ave (at Myrtle)"
+    ,"cost": "$240"
+    ,"status": "enroll"
+    ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
+    ,"color": "#eb2"
+    ,"additional": [
+      ]
+    }
+    ,{
+    "session": "Late Fall 2016"
+    ,"active": true
+    ,"title": "Intro to creative tech"
+    ,"eligible": "all children!"
+    ,"ages": "6-10 years"
+    ,"times": "Wednesdays 2pm-3:15pm"
+    ,"dates": "Nov 2, 9, 16, 30; Dec 7, 14, 21  (7 sessions)"
+    ,"teachers": ["Ben Wheeler"]
+    ,"location": "Trilok Center, 143 Waverly Ave (at Myrtle)"
+    ,"cost": "$280"
+    ,"status": "enroll"
+    ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
+    ,"color": "#b5f"
+    ,"additional": [
+      "Optional: we will do pickup at Compass Charter School (300 Adelphi) at 1pm, transport students safely, and take care of students until the class starts at 2pm. Cost: $20 per pickup, or $110 if paid in advance for the full 7 classes (in which case the grand total is $390)."
+      ]
+    },
+    {
+    "session": "Fall 2016"
+    ,"active": false
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
     ,"ages": "6-10 years"
@@ -93,7 +145,7 @@ var commonStaticData = {
     }
     ,{
     "session": "Fall 2016"
-    ,"active": true
+    ,"active": false
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
     ,"ages": "6-10 years"
@@ -111,7 +163,7 @@ var commonStaticData = {
     }
     ,{
     "session": "Fall 2016"
-    ,"active": true
+    ,"active": false
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
     ,"ages": "6-10 years"
