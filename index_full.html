@@ -734,7 +734,7 @@ many engineers whose discoveries and inventions we use today.
                       <div class="row">
                         <div class="col-xs-10 col-offset-1">
                           <h4 ng-if="$first">{{::course.session}} Session</h4>
-                          <dl class="dl-horizontal" style="padding: .5em" ng-style="(course.status == 'waitlist' || course.status == 'ended') && {'background-color': '#eaeaea'}">
+                          <dl class="dl-horizontal" style="padding: .5em" ng-style="(course.status == 'waitlist' || course.status == 'ended' || course.status == 'closed') && {'background-color': '#eaeaea'}">
                             <dt>Title</dt>
                             <dd ng-style='{"color": deterministicWebColor("title"), "font-size": "2em",
                             "padding": ".1em", "background-color": deterministicHilightColor(course.title)}'>{{::course.title}}
@@ -774,12 +774,17 @@ many engineers whose discoveries and inventions we use today.
                               <span ng-if="course.status == 'ended'">
                                 <span style="color: darkgray">Course has ended</span>
                               </span>
+                              <span ng-if="course.status == 'closed'">
+                                <span style="color: darkgray">Enrollment closed</span>
+                              </span>
                             </dd>
-                            <dt ng-if="course.status !== 'ended'">Enroll</dt>
-                            <dd ng-if="course.status !== 'ended'">
+                            <dt ng-if="course.status !== 'ended' && course.status != 'closed'">Enroll</dt>
+                            <dd ng-if="course.status !== 'ended' && course.status != 'closed'">
                              <a ng-href="{{::course.signupurl}}" class="md-button small button-hero style-2 "
                              style="width: 80px; display: block; border-color:#000; color:#2b2;"
-                             data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 "><span ng-if="course.status == 'waitlist'">Wait List</span><span ng-if="course.status == 'enroll'">Enroll</span></a>
+                             data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 "><span
+                             ng-if="course.status == 'waitlist'">Wait List</span><span
+                             ng-if="course.status == 'enroll'">Enroll</span></a>
                             </dd>
                             <dt ng-if="course.additional">Additional Info</dt>
                             <ul>
@@ -845,19 +850,19 @@ many engineers whose discoveries and inventions we use today.
                             <th ng-init='numColsAlwaysPresent = numColsAlwaysPresent + 1'>Location</th>
                             <th ng-init='numColsAlwaysPresent = numColsAlwaysPresent + 1'>Cost</th>
                             <th ng-init='numColsAlwaysPresent = numColsAlwaysPresent + 1'>Status</th>
-                            <th ng-if="course.status !== 'ended'">Enroll</th>
+                            <th ng-if="course.status !== 'ended' && course.status != 'closed'">Enroll</th>
                             <!-- hack to keep col count correct -->
                           </tr>
-                          <tr ng-style="(course.status == 'waitlist' || course.status == 'ended') && {'background-color': '#eaeaea'}">
+                          <tr ng-style="(course.status == 'waitlist' || course.status == 'ended' || course.status == 'closed') && {'background-color': '#eaeaea'}">
                             <td ng-style='{"color": deterministicWebColor("title"), "font-size": "1.6em"}'>{{::course.title}}
-                            </td>
-                            <td ng-style='{"color": deterministicWebColor("times"), "font-size": "1.3em"}'>{{::course.times}}
-                            </td>
-                            <td ng-style='{"color": deterministicWebColor("dates")}'>{{::course.dates}}
                             </td>
                             <td ng-style='{"color": deterministicWebColor("eligible")}'>{{::course.eligible}}
                             </td>
                             <td ng-style='{"color": deterministicWebColor("ages")}'>{{::course.ages}}
+                            </td>
+                            <td ng-style='{"color": deterministicWebColor("times"), "font-size": "1.3em"}'>{{::course.times}}
+                            </td>
+                            <td ng-style='{"color": deterministicWebColor("dates")}'>{{::course.dates}}
                             </td>
                             <td><a href="#whoweare"><span ng-repeat="teacher in getTeachers(course)"><span style="text-decoration: underline" ng-style='{"color": deterministicWebColor(teacher.fullname)}'>{{::teacher.fullname}}</span><span style="color: #a9a;" ng-if="teacher.nutshell"> ({{::teacher.nutshell}})</span><span ng-if="!$last && course.teachers.length > 1"> and </span></span></a></td>
                             <td ng-style='{"color": deterministicWebColor("location")}'>{{::course.location}}
@@ -874,8 +879,11 @@ many engineers whose discoveries and inventions we use today.
                               <span ng-if="course.status == 'ended'">
                                 <span style="color: darkgray">Course has ended</span>
                               </span>
+                              <span ng-if="course.status == 'closed'">
+                                <span style="color: darkgray">Enrollment closed</span>
+                              </span>
                             </td>
-                            <td ng-if="course.status !== 'ended'"><a ng-href="{{::course.signupurl}}"
+                            <td ng-if="course.status !== 'ended' && course.status != 'closed'"><a ng-href="{{::course.signupurl}}"
                               class="md-button small button-hero style-2 "
                               style="width: 100px; display: block; border-color:#000; color:#2b2; "
                               data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 ">

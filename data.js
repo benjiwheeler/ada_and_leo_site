@@ -145,7 +145,7 @@ var commonStaticData = {
     }
     ,{
     "session": "Fall 2016"
-    ,"active": false
+    ,"active": true
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
     ,"ages": "6-10 years"
@@ -154,7 +154,7 @@ var commonStaticData = {
     ,"teachers": ["Ben Wheeler"]
     ,"location": "Trilok Center, 143 Waverly Ave (at Myrtle)"
     ,"cost": "$240"
-    ,"status": "enroll"
+    ,"status": "closed"
     ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
     ,"color": "#fa0"
     ,"additional": [
@@ -163,7 +163,7 @@ var commonStaticData = {
     }
     ,{
     "session": "Fall 2016"
-    ,"active": false
+    ,"active": true
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
     ,"ages": "6-10 years"
@@ -172,7 +172,7 @@ var commonStaticData = {
     ,"teachers": ["Ben Wheeler"]
     ,"location": "Trilok Center, 143 Waverly Ave (at Myrtle)"
     ,"cost": "$240"
-    ,"status": "enroll"
+    ,"status": "closed"
     ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
     ,"color": "#97e"
     ,"additional": [
@@ -184,7 +184,7 @@ var commonStaticData = {
   ,"courses_archive": [
     {
     "session": "Summer 2016"
-    ,"active": false
+    ,"active": true
     ,"title": "Week 1: Creative programming"
     ,"eligible": "all children!"
     ,"ages": "6-10 years"
@@ -193,7 +193,7 @@ var commonStaticData = {
     ,"teachers": ["Ben Wheeler", "additional subject teachers on a daily basis"]
     ,"location": "40 Brevoort Pl. (near Franklin C and Nostrand A/C stops)"
     ,"cost": "$525"
-    ,"status": "enroll"
+    ,"status": "closed"
     ,"signupurl": "http://goo.gl/forms/N98WN8BFiJVaPSBu1"
     ,"color": "#fa0"
     }
