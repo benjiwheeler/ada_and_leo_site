@@ -6,7 +6,7 @@ var commonStaticData = {
         ,"children": [
           {"text": "Class schedule", "url": "index.html#classschedule"}
           ,{"text": "Fees and pricing", "url": "index.html#classschedule"}
-          ,{"text": "Enroll: Afterschool classes", "url": "http://goo.gl/forms/MsaV1rG2Ni"}
+          ,{"text": "Enroll: Afterschool", "url": "http://goo.gl/forms/MsaV1rG2Ni"}
           ,{"text": "Enroll: Weekend classes", "url": "http://goo.gl/forms/MsaV1rG2Ni"}
           ,{"text": "Enroll: Summer program", "url": "http://goo.gl/forms/N98WN8BFiJVaPSBu1"}
           ,{"text": "Scholarships", "url": "scholarship"}
