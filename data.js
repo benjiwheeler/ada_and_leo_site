@@ -424,6 +424,10 @@ var commonStaticData = {
       ,"person": "Marisa K., parent of 6 year old boy"
     }
     ,{
+      "quote": "J. loves the class!"
+      ,"person": "Brian R., parent of 8 year old girl"
+    }
+    ,{
       "quote": "A. *LOVES* the class. I'm excited to find her [Tinkercad project]. And now I know she can play further and do other projects there. We'll check it out more later this week! Thank YOU."
       ,"person": "Jenny D., parent of 6 year old girl"
     }
