@@ -420,6 +420,10 @@ var commonStaticData = {
       ,"person": "Brian R., parent of 6 year old girl"
     }
     ,{
+      "quote": "C. just LOVES Ada & Leo. He refuses to take his \"Dream in Code\" T-Shirt off, because he is so proud to be a part of it.  We cannot thank you enough for all that you've done to make it such a special experience."
+      ,"person": "Tom W., parent of 7 year old boy"
+    }
+    ,{
       "quote": "M. LOVED the first class yesterday. He was so excited about it!"
       ,"person": "Marisa K., parent of 6 year old boy"
     }
