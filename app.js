@@ -182,7 +182,7 @@ app.controller('CoursesController', ['$scope', 'commonData', function($scope, co
     return _.uniq(_.map($scope.courses, "session"));
   };
 
-  $scope.activeCoursesForSeason = function(season) {
+  $scope.coursesForSeason = function(season) {
     return _.filter($scope.courses, function(course) {
       return season == course.session;
     });
