@@ -115,7 +115,7 @@ var commonStaticData = {
     ,"teachers": ["Ben Wheeler"]
     ,"location": "Trilok Center, 143 Waverly Ave (at Myrtle)"
     ,"cost": "$280"
-    ,"status": "enroll"
+    ,"status": "closed"
     ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
     ,"color": "#b5f"
     ,"additional": [
