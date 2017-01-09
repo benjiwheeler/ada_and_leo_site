@@ -74,6 +74,45 @@ var commonStaticData = {
 
   ,"courses": [
     {
+    "session": "Winter 2017"
+    ,"title": "Intro to creative tech"
+    ,"eligible": "all children!"
+    ,"ages": "grades K-4"
+    ,"times": "Saturdays 10am-11:15am"
+    ,"dates": "Jan 21, 28; Feb 4, 11, 25; Mar 4, 11 (7 sessions)"
+    ,"teachers": ["Ben Wheeler"]
+    ,"location": "Trilok Center, 143 Waverly Ave (at Myrtle)"
+    ,"cost": "$280"
+    ,"status": "enroll"
+    ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
+    ,"color": "#396"
+    ,"additional": [
+      "Class is capped at 6 students",
+      "Note: no class on Feb 18th"
+      ]
+    }
+    ,{
+    "session": "Winter 2017"
+    ,"title": "Intro to creative tech"
+    ,"eligible": "all children!"
+    ,"ages": "grades 2-3"
+    ,"times": "Wednesdays 2pm-3:15pm"
+    ,"dates": "Jan 25; Feb 1, 8, 15; Mar 1, 8, 15 (8 sessions)"
+    ,"teachers": ["Ben Wheeler"]
+    ,"location": "Trilok Center, 143 Waverly Ave (at Myrtle)"
+    ,"cost": "$320"
+    ,"status": "enroll"
+    ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
+    ,"color": "#b5f"
+    ,"additional": [
+      "Class is capped at 8 students",
+      "Note: no class on Feb 22nd",
+      "Optional: we will do pickup at Compass Charter School (300 Adelphi) at 1pm, transport students safely, and take care of students until the class starts at 2pm. Cost: $20 per pickup, or $120 if paid in advance for the full 8 classes (in which case the grand total is $440)."
+      ]
+    }
+  ]
+  ,"courses_archive": [
+    {
     "session": "Late Fall 2016"
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
@@ -174,9 +213,7 @@ var commonStaticData = {
       ,"Note: Students and parents are encouraged to attend the Maker Faire on Sat Oct 1 or Sun Oct 2, where we will have a table and be showing student work! Children must be accompanied by an adult. <a href='http://makerfaire.com/new-york/'>Tickets and info</a>"
       ]
     }
-  ]
-  ,"courses_archive": [
-    {
+    ,{
     "session": "Summer 2016"
     ,"title": "Week 1: Creative programming"
     ,"eligible": "all children!"
