@@ -84,7 +84,7 @@ var commonStaticData = {
     ,"location": "Trilok Center, 143 Waverly Ave (at Myrtle)"
     ,"cost": "$280"
     ,"status": "enroll"
-    ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
+    ,"signupurl": "https://goo.gl/forms/EKc3SMTq7mDLAQGv2"
     ,"color": "#396"
     ,"additional": [
       "Class is capped at 6 students",
@@ -102,7 +102,7 @@ var commonStaticData = {
     ,"location": "Trilok Center, 143 Waverly Ave (at Myrtle)"
     ,"cost": "$320"
     ,"status": "enroll"
-    ,"signupurl": "http://goo.gl/forms/z4IY2m1aLR"
+    ,"signupurl": "https://goo.gl/forms/EKc3SMTq7mDLAQGv2"
     ,"color": "#b5f"
     ,"additional": [
       "Class is capped at 8 students",
