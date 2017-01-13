@@ -97,7 +97,7 @@ var commonStaticData = {
     ,"eligible": "all children!"
     ,"ages": "grades 2-3"
     ,"times": "Wednesdays 2pm-3:15pm"
-    ,"dates": "Jan 25; Feb 1, 8, 15; Mar 1, 8, 15 (8 sessions)"
+    ,"dates": "Jan 18, 25; Feb 1, 8, 15; Mar 1, 8, 15 (8 sessions)"
     ,"teachers": ["Ben Wheeler"]
     ,"location": "Trilok Center, 143 Waverly Ave (at Myrtle)"
     ,"cost": "$320"
