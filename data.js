@@ -8,8 +8,8 @@ var commonStaticData = {
         ,"children": [
           {"text": "Class schedule", "url": "index.html#classschedule"}
           ,{"text": "Fees and pricing", "url": "index.html#classschedule"}
-          ,{"text": "Enroll: Afterschool", "url": enrollmentformURL}
-          ,{"text": "Enroll: Weekend classes", "url": enrollmentformURL}
+          ,{"text": "Enroll: Afterschool", "url": enrollmentFormURL}
+          ,{"text": "Enroll: Weekend classes", "url": enrollmentFormURL}
           ,{"text": "Enroll: Summer program", "url": "http://goo.gl/forms/N98WN8BFiJVaPSBu1"}
           ,{"text": "Scholarships", "url": "scholarship"}
         ]
@@ -52,8 +52,8 @@ var commonStaticData = {
     ]
     , "compact": [
       {"text": "Enroll in summer program", "url": "http://goo.gl/forms/N98WN8BFiJVaPSBu1"}
-      ,{"text": "Enroll in afterschool classes", "url": enrollmentformURL}
-      ,{"text": "Enroll in weekend classes", "url": enrollmentformURL}
+      ,{"text": "Enroll in afterschool classes", "url": enrollmentFormURL}
+      ,{"text": "Enroll in weekend classes", "url": enrollmentFormURL}
       ,{"text": "Classes schedule", "url": "index.html#classschedule"}
       ,{"text": "Fees and pricing", "url": "index.html#classschedule"}
       ,{"text": "About the program", "url": "index.html#learnmore"}
@@ -86,7 +86,7 @@ var commonStaticData = {
     ,"location": "Trilok Center, 143 Waverly Ave (at Myrtle)"
     ,"cost": "$280"
     ,"status": "enroll"
-    ,"signupurl": enrollmentformURL
+    ,"signupurl": enrollmentFormURL
     ,"color": "#396"
     ,"additional": [
       "Class is capped at 6 students",
@@ -104,7 +104,7 @@ var commonStaticData = {
     ,"location": "Trilok Center, 143 Waverly Ave (at Myrtle)"
     ,"cost": "$320"
     ,"status": "waitlist"
-    ,"signupurl": enrollmentformURL
+    ,"signupurl": enrollmentFormURL
     ,"color": "#b5f"
     ,"additional": [
       "Class is capped at 8 students",
