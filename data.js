@@ -491,6 +491,14 @@ var commonStaticData = {
       ,"person": "Cynthia P., parent of 7 year old girl"
     }
     ,{
+      "quote": "I just wanted to let you know H. LOVED the class and can't wait to come back next week. Thanks!"
+      ,"person": "Rebekah K., parent of 6 year old boy"
+    }
+    ,{
+      "quote": "D keeps stopping mid-stride and asking me to watch how fast she's moving: \"Because the Earth is moving around the sun really fast, Mom! I learned that from Nina's Dad.\""
+      ,"person": "Lateefah T., parent of 5 year old girl"
+    }
+    ,{
       "quote": "E. loved his week with you and learned so much!"
       ,"person": "Doris C., parent of 9 year old boy"
     }
