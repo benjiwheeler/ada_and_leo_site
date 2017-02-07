@@ -112,6 +112,32 @@
 
 <!-- END SECTION DELETABLE AFTER HTML RENDER -->
 
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '256697761444447'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+
+// set up log_enroll class to quickly log enroll clicks
+$('a.log_enroll').click(function(event) {
+  var href = this.href; // Remember the link href
+  event.preventDefault(); // Don't follow the link
+  fbq('track', 'Enroll'); // log the enroll
+  window.location = href; // go to the link
+});
+
+
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=256697761444447&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+
 
 </head>
 <!-- end of effective header -->
@@ -161,7 +187,7 @@ side by side menu  -->
                       <li ng-class="{{::'menu-item-' + $index}}"
                       class="menu-item menu-item-type-custom menu-item-object-custom"
                       ng-repeat="childItem in menuItem.children"><a
-                      ng-href="{{::childItem.url}}">{{::childItem.text}}</a></li>
+                      ng-href="{{::childItem.url}}" ng-class="{{::childItem.class}}">{{::childItem.text}}</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -190,7 +216,7 @@ side by side menu  -->
               <li ng-repeat="menuItem in compactMenuItems"
               ng-class="{{::'menu-item-' + $index}}"
               class="menu-item menu-item-type-post_type menu-item-object-page"><a
-              ng-href="{{::menuItem.url}}">{{::menuItem.text}}</a></li>
+              ng-href="{{::menuItem.url}}" ng-class="{{::menuItem.class}}">{{::menuItem.text}}</a></li>
             </ul>
             <!-- end of hamburger -->
           </nav>
@@ -232,7 +258,7 @@ side by side menu  -->
                         style="float: left; width: 180px; margin: 10px; display: inline-block;border-color:#ffffff; color:#ffffff;"
                         data-color="#ffffff" data-color-hover="#111111" data-delay="100"><span class="lbl"></span>LEARN MORE</a>
 
-                      <a href="https://goo.gl/forms/EKc3SMTq7mDLAQGv2" class="md-button animate fadeInUp button-hero medium style-2"
+                      <a href="https://goo.gl/forms/EKc3SMTq7mDLAQGv2" class="log_enroll md-button animate fadeInUp button-hero medium style-2"
                         style="float: left; width: 180px; margin: 10px; display: inline-block; border-color:#fff; color:#2f2;"
                         data-color="#2b2" data-color-hover="#ff0" data-delay="400"><span class="lbl"></span>ENROLL</a>
 
@@ -271,7 +297,7 @@ side by side menu  -->
                       style="float: left; width: 180px; margin: 10px; display: inline-block;border-color:#ffffff; color:#ffffff;"
                       data-color="#ffffff" data-color-hover="#111111" data-delay="100"><span class="lbl"></span>LEARN MORE</a>
 
-                    <a href="https://goo.gl/forms/EKc3SMTq7mDLAQGv2" class="md-button animate fadeInUp button-hero medium style-2"
+                    <a href="https://goo.gl/forms/EKc3SMTq7mDLAQGv2" class="log_enroll md-button animate fadeInUp button-hero medium style-2"
                       style="float: left; width: 180px; margin: 10px; display: inline-block; border-color:#fff; color:#2f2;"
                       data-color="#2b2" data-color-hover="#ff0" data-delay="400"><span class="lbl"></span>ENROLL</a>
 
@@ -307,7 +333,7 @@ side by side menu  -->
 <!--                    <p style="padding-bottom: 0; font-weight: 400; font-size: 2.5rem; line-height: 120%;">Spring Session currently underway</p>
  -->
                   <div style="width: 180px; position: relative; margin: -15px auto 30px; padding: 10px 0 40px 10px;">
-                    <a href="https://goo.gl/forms/EKc3SMTq7mDLAQGv2" class="md-button animate fadeInUp button-hero medium style-2"
+                    <a href="https://goo.gl/forms/EKc3SMTq7mDLAQGv2" class="log_enroll md-button animate fadeInUp button-hero medium style-2"
                       style="float: left; width: 160px; margin: 10px; display: inline-block; border-color:#fff; color:#2f2;"
                       data-color="#2b2" data-color-hover="#ff0" data-delay="400"><span class="lbl"></span>ENROLL</a>
 
@@ -587,7 +613,7 @@ many engineers whose discoveries and inventions we use today.
 
                         <div style="position: relative; width: 100%; padding-top: 15px; ">
                           <div style="position: relative; width: 250px; margin: 0 auto; ">
-                            <a href="https://goo.gl/forms/EKc3SMTq7mDLAQGv2 " class="md-button animate fadeInUp button-hero large style-2 "
+                            <a href="https://goo.gl/forms/EKc3SMTq7mDLAQGv2 " class="log_enroll md-button animate fadeInUp button-hero large style-2 "
                               style="width: 250px; display: block; border-color:#000; color:#2b2; "
                               data-color="#2b2 " data-color-hover="#ff0 " data-delay="100"><span class="lbl "></span>ENROLL</a>
                           </div>
@@ -673,7 +699,7 @@ many engineers whose discoveries and inventions we use today.
 
                         <div style="position: relative; width: 100%; padding-top: 15px; ">
                           <div style="position: relative; width: 250px; margin: 0 auto; ">
-                            <a href="https://goo.gl/forms/EKc3SMTq7mDLAQGv2 " class="md-button animate fadeInUp button-hero large style-2 "
+                            <a href="https://goo.gl/forms/EKc3SMTq7mDLAQGv2 " class="log_enroll md-button animate fadeInUp button-hero large style-2 "
                               style="width: 250px; display: block; border-color:#000; color:#2b2; "
                               data-color="#2b2 " data-color-hover="#ff0 " data-delay="200 "><span class="lbl "></span>ENROLL</a>
                           </div>
@@ -793,7 +819,7 @@ many engineers whose discoveries and inventions we use today.
                             </dd>
                             <dt ng-if="course.status !== 'ended' && course.status != 'closed'">Enroll</dt>
                             <dd ng-if="course.status !== 'ended' && course.status != 'closed'">
-                             <a ng-href="{{::course.signupurl}}" class="md-button small button-hero style-2 "
+                             <a ng-href="{{::course.signupurl}}" class="log_enroll md-button small button-hero style-2 "
                              style="width: 80px; display: block; border-color:#000; color:#2b2;"
                              data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 "><span
                              ng-if="course.status == 'waitlist'">Wait List</span><span
@@ -897,7 +923,7 @@ many engineers whose discoveries and inventions we use today.
                               </span>
                             </td>
                             <td ng-if="course.status !== 'ended' && course.status != 'closed'"><a ng-href="{{::course.signupurl}}"
-                              class="md-button small button-hero style-2 "
+                              class="log_enroll md-button small button-hero style-2 "
                               style="width: 100px; display: block; border-color:#000; color:#2b2; "
                               data-color="#2b2 " data-color-hover="#ff0 " data-delay="50 ">
                               <span ng-if="course.status == 'waitlist'">Wait List</span><span ng-if="course.status == 'enroll'">Enroll!</span></a></td>

@@ -8,9 +8,9 @@ var commonStaticData = {
         ,"children": [
           {"text": "Class schedule", "url": "index.html#classschedule"}
           ,{"text": "Fees and pricing", "url": "index.html#classschedule"}
-          ,{"text": "Enroll: Afterschool", "url": enrollmentFormURL}
-          ,{"text": "Enroll: Weekend classes", "url": enrollmentFormURL}
-          ,{"text": "Enroll: Summer program", "url": "http://goo.gl/forms/N98WN8BFiJVaPSBu1"}
+          ,{"text": "Enroll: Afterschool", "url": enrollmentFormURL, "class": "log_enroll"}
+          ,{"text": "Enroll: Weekend classes", "url": enrollmentFormURL, "class": "log_enroll"}
+          ,{"text": "Enroll: Summer program", "url": "http://goo.gl/forms/N98WN8BFiJVaPSBu1", "class": "log_enroll"}
           ,{"text": "Scholarships", "url": "scholarship"}
         ]
       }
@@ -51,9 +51,9 @@ var commonStaticData = {
       }
     ]
     , "compact": [
-      {"text": "Enroll in summer program", "url": "http://goo.gl/forms/N98WN8BFiJVaPSBu1"}
-      ,{"text": "Enroll in afterschool classes", "url": enrollmentFormURL}
-      ,{"text": "Enroll in weekend classes", "url": enrollmentFormURL}
+      {"text": "Enroll in summer program", "url": "http://goo.gl/forms/N98WN8BFiJVaPSBu1", "class": "log_enroll"}
+      ,{"text": "Enroll in afterschool classes", "url": enrollmentFormURL, "class": "log_enroll"}
+      ,{"text": "Enroll in weekend classes", "url": enrollmentFormURL, "class": "log_enroll"}
       ,{"text": "Classes schedule", "url": "index.html#classschedule"}
       ,{"text": "Fees and pricing", "url": "index.html#classschedule"}
       ,{"text": "About the program", "url": "index.html#learnmore"}
