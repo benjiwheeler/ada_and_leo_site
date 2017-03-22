@@ -163,6 +163,10 @@ var commonStaticData = {
       ,"person": "Elizabeth G., parent of 7 year old boy"
     }
     ,{
+      "quote": "B. and I are endlessly grateful for what you bring into our daughter's life. Your curriculum is visionary and she comes home so joyful every week!"
+      ,"person": "Megan P., parent of 8 year old girl"
+    }
+    ,{
       "quote": "My kid is begging me to take your classes just based on kid referrals!"
       ,"person": "Dawn M., parent of 8 year old girl"
     }
@@ -193,6 +197,10 @@ var commonStaticData = {
     ,{
       "quote": "Ben was infinitely patient and helpful!"
       ,"person": "Anonymous feedback from an adult programming student"
+    }
+    ,{
+      "quote": "We and all of our kids are so lucky to be able to be a part of Ada and Leo!"
+      ,"person": "Irwin C., parent of 7 year old boy"
     }
   ]
 };
