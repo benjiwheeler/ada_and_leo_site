@@ -77,34 +77,36 @@ var commonStaticData = {
     ,"eligible": "all children!"
     ,"ages": "grades K-4"
     ,"times": "Saturdays 10am-11:15am"
-    ,"dates": "April 29; May 6, 13, 20; June 3, 10, 17 (7 sessions)"
+    ,"dates": "April 29; May 6, 13, 20; June 10, 17 (6 sessions)"
     ,"teachers": ["Ben Wheeler"]
     ,"location": "Trilok Center, 143 Waverly Ave (at Myrtle)"
-    ,"cost": "$280"
+    ,"cost": "$240"
     ,"status": "enroll"
     ,"signupurl": enrollmentFormURL
     ,"color": "#396"
     ,"additional": [
-      "Class is capped at 6 students",
-      "Note: no class on May 27th (Memorial Day weekend)"
+      "Class is capped at 7 students",
+      "No class on May 27th (Memorial Day weekend) or June 3rd",
+      "Scholarships available"
       ]
     }
     ,{
     "session": "Spring 2017"
-    ,"title": "Intro to creative tech"
+    ,"title": "Game creation"
     ,"eligible": "all children!"
     ,"ages": "grades 2-3"
-    ,"times": "Wednesdays 2pm-3:15pm"
-    ,"dates": "April 5, 19, 26; May 3, 10, 17, 24 (7 sessions)"
+    ,"times": "Saturdays 11:30am-12:45pm"
+    ,"dates": "April 29; May 6, 13, 20; June 10, 17 (6 sessions)"
     ,"teachers": ["Ben Wheeler"]
     ,"location": "Trilok Center, 143 Waverly Ave (at Myrtle)"
-    ,"cost": "$280"
+    ,"cost": "$240"
     ,"status": "waitlist"
     ,"signupurl": enrollmentFormURL
     ,"color": "#b5f"
     ,"additional": [
       "Class is capped at 8 students",
-      "Optional: we will do pickup at Compass Charter School (300 Adelphi) at 1pm, transport students safely, and take care of students until the class starts at 2pm. Cost: $20 per pickup, or $100 if paid in advance for the full 7 classes (in which case the grand total is $380)."
+      "No class on May 27th (Memorial Day weekend) or June 3rd",
+      "Scholarships available"
       ]
     }
   ]
