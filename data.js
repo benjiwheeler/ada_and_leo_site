@@ -77,7 +77,7 @@ var commonStaticData = {
     ,"eligible": "all children!"
     ,"ages": "grades K-4"
     ,"times": "Saturdays 10am-11:15am"
-    ,"dates": "April 29; May 6, 13, 20; June 10, 17 (6 sessions)"
+    ,"dates": "May 6, 13, 20; June 3, 10, 17 (6 sessions)"
     ,"teachers": ["Ben Wheeler"]
     ,"location": "Trilok Center, 143 Waverly Ave (at Myrtle)"
     ,"cost": "$240"
@@ -96,7 +96,7 @@ var commonStaticData = {
     ,"eligible": "all children!"
     ,"ages": "grades 2-3"
     ,"times": "Saturdays 11:30am-12:45pm"
-    ,"dates": "April 29; May 6, 13, 20; June 10, 17 (6 sessions)"
+    ,"dates": "May 6, 13, 20; June 3, 10, 17 (6 sessions)"
     ,"teachers": ["Ben Wheeler"]
     ,"location": "Trilok Center, 143 Waverly Ave (at Myrtle)"
     ,"cost": "$240"
