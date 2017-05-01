@@ -86,7 +86,7 @@ var commonStaticData = {
     ,"color": "#396"
     ,"additional": [
       "Class is capped at 7 students",
-      "No class on May 27th (Memorial Day weekend) or June 3rd",
+      "No class on May 27th (Memorial Day weekend)",
       "Scholarships available"
       ]
     }
