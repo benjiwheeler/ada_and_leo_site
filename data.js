@@ -72,21 +72,20 @@ var commonStaticData = {
 
   ,"courses": [
     {
-    "session": "Spring 2017"
+    "session": "Late Spring 2018"
     ,"title": "Intro to creative tech"
     ,"eligible": "all children!"
     ,"ages": "grades K-4"
     ,"times": "Saturdays 10am-11:15am"
-    ,"dates": "May 6, 13, 20; June 3, 10, 17 (6 sessions)"
+    ,"dates": "TBA (6 sessions)"
     ,"teachers": ["Ben Wheeler"]
     ,"location": "Trilok Center, 143 Waverly Ave (at Myrtle)"
     ,"cost": "$240"
-    ,"status": "waitlist"
+    ,"status": "closed"
     ,"signupurl": enrollmentFormURL
     ,"color": "#396"
     ,"additional": [
-      "Class is capped at 7 students",
-      "No class on May 27th (Memorial Day weekend)",
+      "Class is capped at 8 students",
       "Scholarships available"
       ]
     }
